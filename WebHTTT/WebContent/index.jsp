@@ -284,157 +284,136 @@
 			</div>
 			<div class="row">
 				<div class="col-md-4">
-					<div class="card-box-d">
-						<div class="card-img-d">
-							<img src="img/agent-4.jpg" alt="" class="img-d img-fluid">
+					<div class="carousel-item-b">
+					<div class="card-box-a card-shadow">
+						<div class="img-box-a">
+							<img src="img/property-10.jpg" alt="" class="img-a img-fluid">
 						</div>
-						<div class="card-overlay card-overlay-hover">
-							<div class="card-header-d">
-								<div class="card-title-d align-self-center">
-									<h3 class="title-d">
-										<a href="agent-single.html" class="link-two">Margaret
-											Sotillo <br> Escala
+						<div class="card-overlay">
+							<div class="card-overlay-a-content">
+								<div class="card-header-a">
+									<h2 class="card-title-a">
+										<a href="property-single.html">Tour Hà Nội- Lào Cai -Sapa <br />
 										</a>
-									</h3>
+									</h2>
 								</div>
-							</div>
-							<div class="card-body-d">
-								<p class="content-d color-text-a">Sed porttitor lectus nibh,
-									Cras ultricies ligula sed magna dictum porta two.</p>
-								<div class="info-agents color-a">
-									<p>
-										<strong>Phone: </strong> +54 356 945234
-									</p>
-									<p>
-										<strong>Email: </strong> agents@example.com
-									</p>
+								<div class="card-body-a">
+									<div class="price-box d-flex">
+										<span class="price-a">Giá | 8,990,000 VND</span>
+									</div>
+									<a href="#" class="link-a">Click here to view <span
+										class="ion-ios-arrow-forward"></span>
+									</a>
 								</div>
-							</div>
-							<div class="card-footer-d">
-								<div class="socials-footer d-flex justify-content-center">
-									<ul class="list-inline">
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-facebook" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-twitter" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-instagram" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-pinterest-p" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-dribbble" aria-hidden="true"></i>
-										</a></li>
+								<div class="card-footer-a">
+									<ul class="card-info d-flex justify-content-around">
+										<li>
+											<h4 class="card-info-title">Ngày</h4> <span>5N4Đ </span>
+										</li>
+										<li>
+											<h4 class="card-info-title">Người</h4> <span><center>5</center></span>
+										</li>
+										<li>
+											<h4 class="card-info-title">Khách sạn</h4> <span>FLC Hạ Long  </span>
+										</li>
+										<li>
+											<h4 class="card-info-title">Phương tiện</h4> <span>Limousine
+												bus</span>
+										</li>
 									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				</div>
 				<div class="col-md-4">
-					<div class="card-box-d">
-						<div class="card-img-d">
-							<img src="img/agent-1.jpg" alt="" class="img-d img-fluid">
+					<div class="carousel-item-b">
+					<div class="card-box-a card-shadow">
+						<div class="img-box-a">
+							<img src="img/property-10.jpg" alt="" class="img-a img-fluid">
 						</div>
-						<div class="card-overlay card-overlay-hover">
-							<div class="card-header-d">
-								<div class="card-title-d align-self-center">
-									<h3 class="title-d">
-										<a href="agent-single.html" class="link-two">Stiven
-											Spilver <br> Darw
+						<div class="card-overlay">
+							<div class="card-overlay-a-content">
+								<div class="card-header-a">
+									<h2 class="card-title-a">
+										<a href="property-single.html">Tour Phan Thiết - Mũi Né -Bàu Trắng <br />
 										</a>
-									</h3>
+									</h2>
 								</div>
-							</div>
-							<div class="card-body-d">
-								<p class="content-d color-text-a">Sed porttitor lectus nibh,
-									Cras ultricies ligula sed magna dictum porta two.</p>
-								<div class="info-agents color-a">
-									<p>
-										<strong>Phone: </strong> +54 356 945234
-									</p>
-									<p>
-										<strong>Email: </strong> agents@example.com
-									</p>
+								<div class="card-body-a">
+									<div class="price-box d-flex">
+										<span class="price-a">Giá | 3,190,000 VND</span>
+									</div>
+									<a href="#" class="link-a">Click here to view <span
+										class="ion-ios-arrow-forward"></span>
+									</a>
 								</div>
-							</div>
-							<div class="card-footer-d">
-								<div class="socials-footer d-flex justify-content-center">
-									<ul class="list-inline">
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-facebook" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-twitter" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-instagram" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-pinterest-p" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-dribbble" aria-hidden="true"></i>
-										</a></li>
+								<div class="card-footer-a">
+									<ul class="card-info d-flex justify-content-around">
+										<li>
+											<h4 class="card-info-title">Ngày</h4> <span>5Đ4N </span>
+										</li>
+										<li>
+											<h4 class="card-info-title">Người</h4> <span><center>10</center></span>
+										</li>
+										<li>
+											<h4 class="card-info-title">Khách sạn</h4> <span>Cát Trắng  </span>
+										</li>
+										<li>
+											<h4 class="card-info-title">Phương tiện</h4> <span>Limousine
+												bus</span>
+										</li>
 									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				</div>
 				<div class="col-md-4">
-					<div class="card-box-d">
-						<div class="card-img-d">
-							<img src="img/agent-5.jpg" alt="" class="img-d img-fluid">
+					<div class="carousel-item-b">
+					<div class="card-box-a card-shadow">
+						<div class="img-box-a">
+							<img src="img/property-10.jpg" alt="" class="img-a img-fluid">
 						</div>
-						<div class="card-overlay card-overlay-hover">
-							<div class="card-header-d">
-								<div class="card-title-d align-self-center">
-									<h3 class="title-d">
-										<a href="agent-single.html" class="link-two">Emma Toledo <br>
-											Cascada
+						<div class="card-overlay">
+							<div class="card-overlay-a-content">
+								<div class="card-header-a">
+									<h2 class="card-title-a">
+										<a href="property-single.html">Tour Miền Tây - Sa Đéc- Cần Thơ <br />
 										</a>
-									</h3>
+									</h2>
 								</div>
-							</div>
-							<div class="card-body-d">
-								<p class="content-d color-text-a">Sed porttitor lectus nibh,
-									Cras ultricies ligula sed magna dictum porta two.</p>
-								<div class="info-agents color-a">
-									<p>
-										<strong>Phone: </strong> +54 356 945234
-									</p>
-									<p>
-										<strong>Email: </strong> agents@example.com
-									</p>
+								<div class="card-body-a">
+									<div class="price-box d-flex">
+										<span class="price-a">Giá | 3,490,000 VND</span>
+									</div>
+									<a href="#" class="link-a">Click here to view <span
+										class="ion-ios-arrow-forward"></span>
+									</a>
 								</div>
-							</div>
-							<div class="card-footer-d">
-								<div class="socials-footer d-flex justify-content-center">
-									<ul class="list-inline">
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-facebook" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-twitter" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-instagram" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-pinterest-p" aria-hidden="true"></i>
-										</a></li>
-										<li class="list-inline-item"><a href="#" class="link-one">
-												<i class="fa fa-dribbble" aria-hidden="true"></i>
-										</a></li>
+								<div class="card-footer-a">
+									<ul class="card-info d-flex justify-content-around">
+										<li>
+											<h4 class="card-info-title">Ngày</h4> <span>3Đ2N </span>
+										</li>
+										<li>
+											<h4 class="card-info-title">Người</h4> <span><center>6</center></span>
+										</li>
+										<li>
+											<h4 class="card-info-title">Khách sạn</h4> <span>Tây Ta </span>
+										</li>
+										<li>
+											<h4 class="card-info-title">Phương tiện</h4> <span>Limousine
+												bus</span>
+										</li>
 									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
 				</div>
 			</div>
 		</div>
@@ -448,12 +427,7 @@
 				<div class="col-md-12">
 					<div class="title-wrap d-flex justify-content-between">
 						<div class="title-box">
-							<h2 class="title-a">Latest News</h2>
-						</div>
-						<div class="title-link">
-							<a href="blog-grid.html">All News <span
-								class="ion-ios-arrow-forward"></span>
-							</a>
+							<h2 class="title-a">Điểm đến yêu thích</h2>
 						</div>
 					</div>
 				</div>
@@ -466,17 +440,15 @@
 						</div>
 						<div class="card-overlay">
 							<div class="card-header-b">
-								<div class="card-category-b">
-									<a href="#" class="category-b">House</a>
-								</div>
+						
 								<div class="card-title-b">
 									<h2 class="title-2">
-										<a href="blog-single.html">House is comming <br> new
+										<a href="blog-single.html"><center>Vịnh Hạ Long</center>
 										</a>
 									</h2>
 								</div>
 								<div class="card-date">
-									<span class="date-b">18 Sep. 2017</span>
+									<h3 class="date-b"><center>Đã có 1,600* lượt khách</center></h3>
 								</div>
 							</div>
 						</div>
@@ -489,17 +461,14 @@
 						</div>
 						<div class="card-overlay">
 							<div class="card-header-b">
-								<div class="card-category-b">
-									<a href="#" class="category-b">Travel</a>
-								</div>
 								<div class="card-title-b">
 									<h2 class="title-2">
-										<a href="blog-single.html">Travel is comming <br> new
+										<a href="blog-single.html"><center>Sa Pa</center>
 										</a>
 									</h2>
 								</div>
 								<div class="card-date">
-									<span class="date-b">18 Sep. 2017</span>
+									<h3 class="date-b">Đã có 1,200* lượt khách</h3>
 								</div>
 							</div>
 						</div>
@@ -512,17 +481,14 @@
 						</div>
 						<div class="card-overlay">
 							<div class="card-header-b">
-								<div class="card-category-b">
-									<a href="#" class="category-b">Park</a>
-								</div>
 								<div class="card-title-b">
 									<h2 class="title-2">
-										<a href="blog-single.html">Park is comming <br> new
+										<a href="blog-single.html"><center>Qui Nhơn</center>
 										</a>
 									</h2>
 								</div>
 								<div class="card-date">
-									<span class="date-b">18 Sep. 2017</span>
+									<h3 class="date-b">Đã có 1,900* lượt khách</h3>
 								</div>
 							</div>
 						</div>
@@ -535,17 +501,14 @@
 						</div>
 						<div class="card-overlay">
 							<div class="card-header-b">
-								<div class="card-category-b">
-									<a href="#" class="category-b">Travel</a>
-								</div>
 								<div class="card-title-b">
 									<h2 class="title-2">
-										<a href="#">Travel is comming <br> new
+										<a href="#"><center>Đà Nẵng</center>
 										</a>
 									</h2>
 								</div>
 								<div class="card-date">
-									<span class="date-b">18 Sep. 2017</span>
+									<h3 class="date-b">Đã có 1,600* lượt khách</h3>
 								</div>
 							</div>
 						</div>
@@ -596,33 +559,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="carousel-item-a">
-					<div class="testimonials-box">
-						<div class="row">
-							<div class="col-sm-12 col-md-6">
-								<div class="testimonial-img">
-									<img src="img/testimonial-2.jpg" alt="" class="img-fluid">
-								</div>
-							</div>
-							<div class="col-sm-12 col-md-6">
-								<div class="testimonial-ico">
-									<span class="ion-ios-quote"></span>
-								</div>
-								<div class="testimonials-content">
-									<p class="testimonial-text">Lorem ipsum dolor sit amet,
-										consectetur adipisicing elit. Omnis, cupiditate ea nam
-										praesentium debitis hic ber quibusdam voluptatibus officia
-										expedita corpori.</p>
-								</div>
-								<div class="testimonial-author-box">
-									<img src="img/mini-testimonial-2.jpg" alt=""
-										class="testimonial-avatar">
-									<h5 class="testimonial-author">Pablo & Emma</h5>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+				
 			</div>
 		</div>
 	</section>
