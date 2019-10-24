@@ -88,7 +88,7 @@
 				<div class="col-md-12">
 					<div class="title-wrap d-flex justify-content-between">
 						<div class="title-box">
-							<h2 class="title-a">Tour Hot nước ngoài</h2>
+							<h2 class="title-a">Tour nước ngoài</h2>
 						</div>
 
 					</div>
@@ -276,7 +276,7 @@
 				<div class="col-md-12">
 					<div class="title-wrap d-flex justify-content-between">
 						<div class="title-box">
-							<h2 class="title-a">Tour Hot trong nước</h2>
+							<h2 class="title-a">Tour trong nước</h2>
 						</div>
 						
 					</div>
@@ -526,7 +526,7 @@
 				<div class="col-md-12">
 					<div class="title-wrap d-flex justify-content-between">
 						<div class="title-box">
-							<h2 class="title-a">Testimonials</h2>
+							<h2 class="title-a">Tại sao đặt tour ở đây ?</h2>
 						</div>
 					</div>
 				</div>
@@ -541,20 +541,38 @@
 								</div>
 							</div>
 							<div class="col-sm-12 col-md-6">
-								<div class="testimonial-ico">
-									<span class="ion-ios-quote"></span>
+								
+								<div class="testimonials-content">
+									<p class="testimonial-text">
+									1. MẠNG BÁN TOUR <br>
+									Ứng dụng hàng  tại Việt Nam<br> Ứng dụng công nghệ mới nhất.
+									</p>
 								</div>
 								<div class="testimonials-content">
-									<p class="testimonial-text">Lorem ipsum dolor sit amet,
-										consectetur adipisicing elit. Omnis, cupiditate ea nam
-										praesentium debitis hic ber quibusdam voluptatibus officia
-										expedita corpori.</p>
+									<p class="testimonial-text">
+									2.THANH TOÁN<br>
+									An toàn và linh hoạt<br> Liên kết với các tổ chức tài chính.
+									</p>
 								</div>
-								<div class="testimonial-author-box">
-									<img src="img/mini-testimonial-1.jpg" alt=""
-										class="testimonial-avatar">
-									<h5 class="testimonial-author">Albert & Erika</h5>
+								<div class="testimonials-content">
+									<p class="testimonial-text">
+									3. GIÁ CẢ <br>
+									Ứng dụng hàng  tại Việt Nam<br> Ứng dụng công nghệ mới nhất.
+									</p>
 								</div>
+								<div class="testimonials-content">
+									<p class="testimonial-text">
+									4. SẢN PHẨM <br>
+									Đa dạng chất lượng<br> Đạt chất lượng tốt nhất
+									</p>
+								</div>
+								<div class="testimonials-content">
+									<p class="testimonial-text">
+									5. ĐẶT TOUR <br>
+									Dễ dàng và nhanh chóng<br> Đặt tour chỉ với 3 bước.
+									</p>
+								</div>
+							
 							</div>
 						</div>
 					</div>
