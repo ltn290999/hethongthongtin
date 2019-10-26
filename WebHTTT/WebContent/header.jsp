@@ -4,7 +4,27 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- Favicons -->
+<link href="img/favicon.png" rel="icon">
+<link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
+<!-- Google Fonts -->
+<link
+	href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
+	rel="stylesheet">
+
+<!-- Bootstrap CSS File -->
+<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Libraries CSS Files -->
+<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="lib/animate/animate.min.css" rel="stylesheet">
+<link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+<link href="lib/owlcarousel/assets/owl.carousel.min.css"
+	rel="stylesheet">
+
+<!-- Main Stylesheet File -->
+<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 	<header>
@@ -124,15 +144,16 @@
 
 		<!--/ Nav Star /-->
 		<nav
-			class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
-			<div class="container">
+			class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top" style = "margin:-29px">
+			<div class="container" >
+						<a href = "index.jsp"><img src="img\logo.png" width= '100%' height= '100%' ></a>
 				<button class="navbar-toggler collapsed" type="button"
 					data-toggle="collapse" data-target="#navbarDefault"
 					aria-controls="navbarDefault" aria-expanded="false"
 					aria-label="Toggle navigation">
 					<span></span> <span></span> <span></span>
 				</button>
-				<img src="img\logo.png"width: '16%' height: '16%'>
+	
 				<button type="button"
 					class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none"
 					data-toggle="collapse" data-target="#navbarTogglerDemo01"
@@ -142,10 +163,10 @@
 				<div class="navbar-collapse collapse justify-content-center"
 					id="navbarDefault">
 					<ul class="navbar-nav">
-						<li class="nav-item"><a class="nav-link active"
-							href="index.html">Tour trong nước </a></li>
+						<li class="nav-item"><a class="nav-link "
+							href=".html">Tour nước ngoài </a></li>
 						<li class="nav-item"><a class="nav-link" href="about.html">Tour
-								nước ngoài</a></li>
+								trong nước</a></li>
 						<li class="nav-item"><a class="nav-link"
 							href="property-grid.html">Blog</a></li>
 						<li class="nav-item"><a class="nav-link"
@@ -168,4 +189,5 @@
 		<!--/ Nav End /-->
 	</header>
 </body>
+
 </html>
