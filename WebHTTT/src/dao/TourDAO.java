@@ -9,7 +9,7 @@ import model.Tour;
 import utils.DbUtils;
 
 public class TourDAO {
-	public ArrayList<Tour> getTour() {
+	public  ArrayList<Tour> getTour() {
 		ArrayList<Tour> listTour = new ArrayList<>();
 		try {
 			Connection conn = DbUtils.getConnection();
@@ -30,4 +30,5 @@ public class TourDAO {
 		}
 		return listTour;
 	}
+	
 }

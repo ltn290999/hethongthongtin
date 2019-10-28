@@ -56,5 +56,11 @@ public class Tour {
 	public void setImg_url(String img_url) {
 		this.img_url = img_url;
 	}
+	@Override
+	public String toString() {
+		return "Tour [tour_id=" + tour_id + ", tour_name=" + tour_name + ", tour_des=" + tour_des + ", tour_price="
+				+ tour_price + ", tour_vehicle=" + tour_vehicle + ", img_url=" + img_url + "]";
+	}
+	
 
 }
