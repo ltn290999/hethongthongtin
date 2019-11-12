@@ -35,58 +35,61 @@
 				<div class="col-md-12">
 					<div class="title-wrap d-flex justify-content-between">
 						<div class="title-box">
-							<h2 class="title-a">Tour trong nước </h2>
+							<h2 class="title-a">Tour trong nước</h2>
 						</div>
 
 					</div>
 				</div>
 			</div>
-						
+
 			<div id="property-carousel" class="owl-carousel owl-theme">
 				<c:forEach items="${listTour }" var="listTour">
-				<div class="carousel-item-b">
-					<div class="card-box-a card-shadow">
-						<div class="img-box-a">
-							<img src="${listTour.img_url}" alt="" class="img-a img-fluid">
-						</div>
-						<div class="card-overlay">
-							<div class="card-overlay-a-content">
-								<div class="card-header-a">
-									<h2 class="card-title-a">
-										<a href="property-single.html">${listTour.tour_name }<br />
-										</a>
-									</h2>
-								</div>
-								<div class="card-body-a">
-									<div class="price-box d-flex">
-										<span class="price-a">Giá | ${listTour.tour_price } Vnd</span>
+					<div class="carousel-item-b">
+						<div class="card-box-a card-shadow">
+							<div class="img-box-a">
+								<img src="${listTour.img_url}" alt="" class="img-a img-fluid">
+							</div>
+							<div class="card-overlay">
+								<div class="card-overlay-a-content">
+									<div class="card-header-a">
+										<h2 class="card-title-a">
+											<a href="property-single.html">${listTour.tour_name }<br />
+											</a>
+										</h2>
 									</div>
-									<a href="#" class="link-a">Click here to view <span
-										class="ion-ios-arrow-forward"></span>
-									</a>
-								</div>
-								<div class="card-footer-a">
-									<ul class="card-info d-flex justify-content-around">
-										<li>
-											<h4 class="card-info-title">Ngày</h4> <span>${listTour.tour_date } </span>
-										</li>
-										<li>
-											<h4 class="card-info-title">Người</h4> <span><center>${listTour.tour_people } </center></span>
-										</li>
-										<li>
-											<h4 class="card-info-title">Khách sạn</h4> <span>${listTour.tour_hotel }</span>
-										</li>
-										<li>
-											<h4 class="card-info-title">Phương tiện</h4> <span>${listTour.tour_vehicle }
-												</span>
-										</li>
-									</ul>
+									<div class="card-body-a">
+										<div class="price-box d-flex">
+											<span class="price-a">Giá | ${listTour.tour_price }
+												Vnd</span>
+										</div>
+										<a href="#" class="link-a">Click here to view <span
+											class="ion-ios-arrow-forward"></span>
+										</a>
+									</div>
+									<div class="card-footer-a">
+										<ul class="card-info d-flex justify-content-around">
+											<li>
+												<h4 class="card-info-title">Ngày</h4> <span>${listTour.tour_date }
+											</span>
+											</li>
+											<li>
+												<h4 class="card-info-title">Người</h4> <span><center>${listTour.tour_people }
+													</center></span>
+											</li>
+											<li>
+												<h4 class="card-info-title">Khách sạn</h4> <span>${listTour.tour_hotel }</span>
+											</li>
+											<li>
+												<h4 class="card-info-title">Phương tiện</h4> <span>${listTour.tour_vehicle }
+											</span>
+											</li>
+										</ul>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-					</c:forEach>
+				</c:forEach>
 			</div>
 		</div>
 	</section>
