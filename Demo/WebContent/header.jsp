@@ -26,6 +26,61 @@
 <!-- Main Stylesheet File -->
 <link href="css/style.css" rel="stylesheet">
 </head>
+<style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: -2px 28px;
+  text-align: center;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: green;
+}
+</style>
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: green;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
 <body>
 	<header>
 
@@ -172,10 +227,18 @@
 						<li class="nav-item"><a class="nav-link"
 							href="contactus.jsp">Liên hệ</a></li>
 						<li class="nav-item"><a class="nav-link"
-							href="register.jsp"><button>Đăng kí</button></a></li>
+							href="register.jsp"><button class="button" >Đăng kí</button></a></li>
 						<li class="nav-item"><a class="nav-link"
-							href="login.jsp"><button>Đăng nhập</button></a></li>
-
+							href="login.jsp"><button class="button" >Đăng nhập</button></a></li>
+					<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Tài khoản </button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home" style="font-size: 12px" >Thông tin tài khoản</a>
+    <a href="#home"style="font-size: 12px">Tour của bạn</a>
+    <a href="#home"style="font-size: 12px">Lịch sử giao dịch</a>
+    <a href="#about"style="font-size: 12px">Đăng xuất</a>
+  </div>
+</div>
 					</ul>
 				</div>
 				<button type="button"
@@ -189,5 +252,25 @@
 		<!--/ Nav End /-->
 	</header>
 </body>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
 
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 </html>
