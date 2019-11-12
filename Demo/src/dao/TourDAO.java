@@ -26,6 +26,7 @@ public class TourDAO {
 				tour.setTour_vehicle(rss.getString("tour_vehicle"));
 				tour.setTour_place(rss.getString("tour_place"));
 				tour.setImg_url(rss.getString("img_url"));
+				tour.setTour_insite(rss.getBoolean("tour_insite"));
 				listTour.add(tour);
 			}
 		} catch (SQLException e) {

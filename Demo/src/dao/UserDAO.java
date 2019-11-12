@@ -40,7 +40,7 @@ public class UserDAO {
 				bl = true;
 			}
 		} catch (SQLException e) {
-
+			e.printStackTrace();
 		}
 		return bl;
 	}

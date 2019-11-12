@@ -1,5 +1,7 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,58 +30,62 @@
 </head>
 <style>
 .button {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: -2px 28px;
-  text-align: center;
-  font-size: 19px;
-  cursor: pointer;
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: -2px 28px;
+	text-align: center;
+	font-size: 19px;
+	cursor: pointer;
 }
 
 .button:hover {
-  background-color: green;
+	background-color: green;
 }
 </style>
 <style>
 .dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+	background-color: #4CAF50;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
 }
 
 .dropbtn:hover, .dropbtn:focus {
-  background-color: green;
+	background-color: green;
 }
 
 .dropdown {
-  position: relative;
-  display: inline-block;
+	position: relative;
+	display: inline-block;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	overflow: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
 }
 
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
 }
 
-.dropdown a:hover {background-color: #ddd;}
+.dropdown a:hover {
+	background-color: #ddd;
+}
 
-.show {display: block;}
+.show {
+	display: block;
+}
 </style>
 <body>
 	<header>
@@ -153,8 +159,7 @@
 						<div class="col-md-6 mb-2">
 							<div class="form-group">
 								<label for="garages">Giá</label> <select
-									class="form-control form-control-lg form-control-a"
-									id="Giá">
+									class="form-control form-control-lg form-control-a" id="Giá">
 									<option>Dưới 1 triệu</option>
 									<option>1 triệu đến 2 triệu</option>
 									<option>2 triệu đến 5 triệu</option>
@@ -172,14 +177,15 @@
 									id="Phương tiện">
 									<option>Máy bay</option>
 									<option>Xe tour</option>
-						
+
 								</select>
 							</div>
 						</div>
 						<div class="col-md-6 mb-2">
 							<div class="form-group">
 								<label for="price">Số người</label> <select
-									class="form-control form-control-lg form-control-a" id="Số người">
+									class="form-control form-control-lg form-control-a"
+									id="Số người">
 									<option>Dưới 2 người</option>
 									<option>Dưới 5 người</option>
 									<option>Dưới 10 người</option>
@@ -199,16 +205,18 @@
 
 		<!--/ Nav Star /-->
 		<nav
-			class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top" style = "margin:-22px">
-			<div class="container" >
-						<a href = "index.jsp"><img src="img\logo.png" width= '100%' height= '100%' ></a>
+			class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top"
+			style="margin: -22px">
+			<div class="container">
+				<a href="index.jsp"><img src="img\logo.png" width='100%'
+					height='100%'></a>
 				<button class="navbar-toggler collapsed" type="button"
 					data-toggle="collapse" data-target="#navbarDefault"
 					aria-controls="navbarDefault" aria-expanded="false"
 					aria-label="Toggle navigation">
 					<span></span> <span></span> <span></span>
 				</button>
-	
+
 				<button type="button"
 					class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none"
 					data-toggle="collapse" data-target="#navbarTogglerDemo01"
@@ -220,57 +228,62 @@
 					<ul class="navbar-nav">
 						<li class="nav-item"><a class="nav-link "
 							href="tournuocngoai.jsp">Tour nước ngoài </a></li>
-						<li class="nav-item"><a class="nav-link" href="tourtrongnuoc.jsp">Tour
-								trong nước</a></li>
 						<li class="nav-item"><a class="nav-link"
-							href="blog.jsp">Blog</a></li>
-						<li class="nav-item"><a class="nav-link"
-							href="contactus.jsp">Liên hệ</a></li>
-						<li class="nav-item"><a class="nav-link"
-							href="register.jsp"><button class="button" >Đăng kí</button></a></li>
-						<li class="nav-item"><a class="nav-link"
-							href="login.jsp"><button class="button" >Đăng nhập</button></a></li>
-					<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Tài khoản </button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#home" style="font-size: 12px" >Thông tin tài khoản</a>
-    <a href="#home"style="font-size: 12px">Tour của bạn</a>
-    <a href="#home"style="font-size: 12px">Lịch sử giao dịch</a>
-    <a href="#about"style="font-size: 12px">Đăng xuất</a>
-  </div>
-</div>
-					</ul>
+							href="tourtrongnuoc.jsp">Tour trong nước</a></li>
+						<li class="nav-item"><a class="nav-link" href="blog.jsp">Blog</a></li>
+						<li class="nav-item"><a class="nav-link" href="contactus.jsp">Liên
+								hệ</a></li>
+						<c:choose>
+							<c:when test="${username != null}">
+								<div class="dropdown">
+									<button onclick="myFunction()" class="dropbtn">${username }</button>
+									<div id="myDropdown" class="dropdown-content">
+										<a href="#home" style="font-size: 12px">Thông tin tài
+											khoản</a> <a href="#home" style="font-size: 12px">Tour của
+											bạn</a> <a href="#home" style="font-size: 12px">Lịch sử giao
+											dịch</a> <a href="#about" style="font-size: 12px">Đăng xuất</a>
+									</div>
+							</c:when>
+							<c:otherwise>
+								<li class="nav-item"><a class="nav-link"
+									href="register.jsp"><button class="button">Đăng kí</button></a></li>
+								<li class="nav-item"><a class="nav-link" href="login.jsp"><button
+											class="button">Đăng nhập</button></a></li>
+							</c:otherwise>
+						</c:choose>
 				</div>
-				<button type="button"
-					class="btn btn-b-n navbar-toggle-box-collapse d-none d-md-block"
-					data-toggle="collapse" data-target="#navbarTogglerDemo01"
-					aria-expanded="false">
-					<span class="fa fa-search" aria-hidden="true"></span>
-				</button>
+				</ul>
+			</div>
+			<button type="button"
+				class="btn btn-b-n navbar-toggle-box-collapse d-none d-md-block"
+				data-toggle="collapse" data-target="#navbarTogglerDemo01"
+				aria-expanded="false">
+				<span class="fa fa-search" aria-hidden="true"></span>
+			</button>
 			</div>
 		</nav>
 		<!--/ Nav End /-->
 	</header>
 </body>
 <script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
+	/* When the user clicks on the button, 
+	 toggle between hiding and showing the dropdown content */
+	function myFunction() {
+		document.getElementById("myDropdown").classList.toggle("show");
+	}
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
+	// Close the dropdown if the user clicks outside of it
+	window.onclick = function(event) {
+		if (!event.target.matches('.dropbtn')) {
+			var dropdowns = document.getElementsByClassName("dropdown-content");
+			var i;
+			for (i = 0; i < dropdowns.length; i++) {
+				var openDropdown = dropdowns[i];
+				if (openDropdown.classList.contains('show')) {
+					openDropdown.classList.remove('show');
+				}
+			}
+		}
+	}
 </script>
 </html>

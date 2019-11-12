@@ -39,6 +39,11 @@ public class UserController extends HttpServlet {
 			HttpSession session = request.getSession();
 			session.setAttribute("username", username);
 			response.sendRedirect("TourController");
+		} else {
+			String message = "Loi";
+			request.setAttribute("message", message);
+			RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
+			rd.forward(request, response);
 		}
 	}
 
