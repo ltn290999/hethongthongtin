@@ -19,7 +19,9 @@ public class TourDAO {
 				Tour tour = new Tour();
 				tour.setTour_id(rss.getInt("tour_id"));
 				tour.setTour_name(rss.getString("tour_name"));
-				tour.setTour_des(rss.getString("tour_des"));
+				tour.setTour_date(rss.getString("tour_date"));
+				tour.setTour_people(rss.getInt("tour_people"));
+				tour.setTour_hotel(rss.getString("tour_hotel"));
 				tour.setTour_price(rss.getDouble("tour_price"));
 				tour.setTour_vehicle(rss.getString("tour_vehicle"));
 				tour.setImg_url(rss.getString("img_url"));

@@ -144,7 +144,7 @@
 
 		<!--/ Nav Star /-->
 		<nav
-			class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top" style = "margin:-29px">
+			class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top" style = "margin:-22px">
 			<div class="container" >
 						<a href = "index.jsp"><img src="img\logo.png" width= '100%' height= '100%' ></a>
 				<button class="navbar-toggler collapsed" type="button"
@@ -164,17 +164,17 @@
 					id="navbarDefault">
 					<ul class="navbar-nav">
 						<li class="nav-item"><a class="nav-link "
-							href=".html">Tour nước ngoài </a></li>
-						<li class="nav-item"><a class="nav-link" href="about.html">Tour
+							href="tournuocngoai.jsp">Tour nước ngoài </a></li>
+						<li class="nav-item"><a class="nav-link" href="tourtrongnuoc.jsp">Tour
 								trong nước</a></li>
 						<li class="nav-item"><a class="nav-link"
-							href="property-grid.html">Blog</a></li>
+							href="blog.jsp">Blog</a></li>
 						<li class="nav-item"><a class="nav-link"
-							href="property-grid.html">Liên hệ</a></li>
+							href="contactus.jsp">Liên hệ</a></li>
 						<li class="nav-item"><a class="nav-link"
-							href="blog-grid.html"><button>Đăng kí</button></a></li>
+							href="register.jsp"><button>Đăng kí</button></a></li>
 						<li class="nav-item"><a class="nav-link"
-							href="blog-grid.html"><button>Đăng nhập</button></a></li>
+							href="login.jsp"><button>Đăng nhập</button></a></li>
 
 					</ul>
 				</div>

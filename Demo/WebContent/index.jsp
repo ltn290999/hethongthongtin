@@ -75,30 +75,31 @@
 				<div class="col-md-12">
 					<div class="title-wrap d-flex justify-content-between">
 						<div class="title-box">
-							<h2 class="title-a">Tour nước ngoài</h2>
+							<a href = "tournuocngoai.jsp"><h2 class="title-a">Tour nước ngoài</h2></a>
 						</div>
 
 					</div>
 				</div>
 			</div>
+						
 			<div id="property-carousel" class="owl-carousel owl-theme">
+				<c:forEach items="${listTour }" var="listTour">
 				<div class="carousel-item-b">
 					<div class="card-box-a card-shadow">
 						<div class="img-box-a">
-							<img src="img/property-6.jpg" alt="" class="img-a img-fluid">
+							<img src="${listTour.img_url}" alt="" class="img-a img-fluid">
 						</div>
 						<div class="card-overlay">
 							<div class="card-overlay-a-content">
 								<div class="card-header-a">
 									<h2 class="card-title-a">
-										<a href="property-single.html">Tour Nhật Bản Tokyo- Phú
-											Sĩ- Nikko <br />
+										<a href="property-single.html">${listTour.tour_name }<br />
 										</a>
 									</h2>
 								</div>
 								<div class="card-body-a">
 									<div class="price-box d-flex">
-										<span class="price-a">Giá | 29,990,000 VND</span>
+										<span class="price-a">Giá | ${listTour.tour_price } Vnd</span>
 									</div>
 									<a href="#" class="link-a">Click here to view <span
 										class="ion-ios-arrow-forward"></span>
@@ -107,17 +108,17 @@
 								<div class="card-footer-a">
 									<ul class="card-info d-flex justify-content-around">
 										<li>
-											<h4 class="card-info-title">Ngày</h4> <span>2N1Đ </span>
+											<h4 class="card-info-title">Ngày</h4> <span>${listTour.tour_date } </span>
 										</li>
 										<li>
-											<h4 class="card-info-title">Người</h4> <span><center>10</span>
+											<h4 class="card-info-title">Người</h4> <span><center>${listTour.tour_people } </center></span>
 										</li>
 										<li>
-											<h4 class="card-info-title">Khách sạn</h4> <span>Osaka</span>
+											<h4 class="card-info-title">Khách sạn</h4> <span>${listTour.tour_hotel }</span>
 										</li>
 										<li>
-											<h4 class="card-info-title">Phương tiện</h4> <span>Limousine
-												bus</span>
+											<h4 class="card-info-title">Phương tiện</h4> <span>${listTour.tour_vehicle }
+												</span>
 										</li>
 									</ul>
 								</div>
@@ -125,138 +126,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="carousel-item-b">
-					<div class="card-box-a card-shadow">
-						<div class="img-box-a">
-							<img src="img/property-3.jpg" alt="" class="img-a img-fluid">
-						</div>
-						<div class="card-overlay">
-							<div class="card-overlay-a-content">
-								<div class="card-header-a">
-									<h2 class="card-title-a">
-										<a href="property-single.html">Tour Mỹ - Los Angeles-
-											Hollywood <br />
-										</a>
-									</h2>
-								</div>
-								<div class="card-body-a">
-									<div class="price-box d-flex">
-										<span class="price-a">Giá | 59,990,000 VND</span>
-									</div>
-									<a href="#" class="link-a">Click here to view <span
-										class="ion-ios-arrow-forward"></span>
-									</a>
-								</div>
-								<div class="card-footer-a">
-									<ul class="card-info d-flex justify-content-around">
-										<li>
-											<h4 class="card-info-title">Ngày</h4> <span>9N8Đ </span>
-										</li>
-										<li>
-											<h4 class="card-info-title">Người</h4> <span><center>10</center></span>
-										</li>
-										<li>
-											<h4 class="card-info-title">Khách sạn</h4> <span>Crowne
-										</span>
-										</li>
-										<li>
-											<h4 class="card-info-title">Phương tiện</h4> <span>Limousine
-												bus</span>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="carousel-item-b">
-					<div class="card-box-a card-shadow">
-						<div class="img-box-a">
-							<img src="img/property-7.jpg" alt="" class="img-a img-fluid">
-						</div>
-						<div class="card-overlay">
-							<div class="card-overlay-a-content">
-								<div class="card-header-a">
-									<h2 class="card-title-a">
-										<a href="property-single.html">Tour Anh - Luân Đôn -
-											Manchester <br />
-										</a>
-									</h2>
-								</div>
-								<div class="card-body-a">
-									<div class="price-box d-flex">
-										<span class="price-a">Giá | 39,990,000 VND</span>
-									</div>
-									<a href="#" class="link-a">Click here to view <span
-										class="ion-ios-arrow-forward"></span>
-									</a>
-								</div>
-								<div class="card-footer-a">
-									<ul class="card-info d-flex justify-content-around">
-										<li>
-											<h4 class="card-info-title">Ngày</h4> <span>5N4 </span>
-										</li>
-										<li>
-											<h4 class="card-info-title">Người</h4> <span><center>20</center></span>
-										</li>
-										<li>
-											<h4 class="card-info-title">Khách sạn</h4> <span>Asernal
-										</span>
-										</li>
-										<li>
-											<h4 class="card-info-title">Phương tiện</h4> <span>Limousine
-												bus</span>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="carousel-item-b">
-					<div class="card-box-a card-shadow">
-						<div class="img-box-a">
-							<img src="img/property-10.jpg" alt="" class="img-a img-fluid">
-						</div>
-						<div class="card-overlay">
-							<div class="card-overlay-a-content">
-								<div class="card-header-a">
-									<h2 class="card-title-a">
-										<a href="property-single.html">Tour Hàn Quốc - Seoul -
-											Osaka <br />
-										</a>
-									</h2>
-								</div>
-								<div class="card-body-a">
-									<div class="price-box d-flex">
-										<span class="price-a">Giá | 14,990,000 VND</span>
-									</div>
-									<a href="#" class="link-a">Click here to view <span
-										class="ion-ios-arrow-forward"></span>
-									</a>
-								</div>
-								<div class="card-footer-a">
-									<ul class="card-info d-flex justify-content-around">
-										<li>
-											<h4 class="card-info-title">Ngày</h4> <span>5Đ4N </span>
-										</li>
-										<li>
-											<h4 class="card-info-title">Người</h4> <span><center>20</center></span>
-										</li>
-										<li>
-											<h4 class="card-info-title">Khách sạn</h4> <span>Everland
-										</span>
-										</li>
-										<li>
-											<h4 class="card-info-title">Phương tiện</h4> <span>Limousine
-												bus</span>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+					</c:forEach>
 			</div>
 		</div>
 	</section>
@@ -269,7 +139,7 @@
 				<div class="col-md-12">
 					<div class="title-wrap d-flex justify-content-between">
 						<div class="title-box">
-							<h2 class="title-a">Tour trong nước</h2>
+							<a href = "tourtrongnuoc.jsp"><h2 class="title-a">Tour trong nước</h2></a>
 						</div>
 
 					</div>
@@ -295,7 +165,7 @@
 										</div>
 										<div class="card-body-a">
 											<div class="price-box d-flex">
-												<span class="price-a">Giá | ${listTour.tour_price }</span>
+												<span class="price-a">Giá | ${listTour.tour_price } Vnd</span>
 											</div>
 											<a href="#" class="link-a">Click here to view <span
 												class="ion-ios-arrow-forward"></span>
@@ -304,14 +174,14 @@
 										<div class="card-footer-a">
 											<ul class="card-info d-flex justify-content-around">
 												<li>
-													<h4 class="card-info-title">Ngày</h4> <span>5N4Đ </span>
+													<h4 class="card-info-title">Ngày</h4> <span>${listTour.tour_date } </span>
 												</li>
 												<li>
-													<h4 class="card-info-title">Người</h4> <span><center>5</center></span>
+													<h4 class="card-info-title">Người</h4> <span><center>${listTour.tour_people }</center></span>
 												</li>
 												<li>
-													<h4 class="card-info-title">Khách sạn</h4> <span>FLC
-														Hạ Long </span>
+													<h4 class="card-info-title">Khách sạn</h4> <span>${listTour.tour_hotel }
+													</span>
 												</li>
 												<li>
 													<h4 class="card-info-title">Phương tiện</h4> <span>${listTour.tour_vehicle }</span>
@@ -448,7 +318,7 @@
 							<div class="row">
 								<div class="col-sm-12 col-md-6">
 									<div class="testimonial-img">
-										<img src="img/testimonial-1.jpg" alt="" class="img-fluid">
+										<img src="img/anhdattour.jpg" alt="" class="img-fluid">
 									</div>
 								</div>
 								<div class="col-sm-12 col-md-6">
