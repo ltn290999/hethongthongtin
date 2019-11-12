@@ -33,8 +33,9 @@
 	<img src = "img/hinhthuyen.jpg" height ="100%" width="100%" style = "padding-top: 5%"> 
  <div class="loginbox">
         <img src="img/avatar.png" class="avatar">
-        <h1>Register</h1>
-        <form method="post">
+          <p style="color:red">${error }</p>
+       
+        <form method="post" action="UserController">
             <p>Username</p>
             <input type="text" name ="username" placeholder="Enter Username" >
             <p>Password</p>
@@ -43,6 +44,8 @@
             <input type="password" name="confirm" placeholder="Enter Password" >
             <input type="submit" value="Register" name="">
         </form>
+      
+        
     </div>
 	<!--/ Carousel Star /-->
 		<!-- JavaScript Libraries -->

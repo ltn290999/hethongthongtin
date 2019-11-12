@@ -33,7 +33,7 @@
 	<img src = "img/hinhthuyen.jpg" height ="100%" width="100%" style = "padding-top: 5%"> 
 	<div class="loginbox">
 		<img src="img/avatar.png" class="avatar">
-		<h1>Login here</h1>
+		<p>${message }</p>
 		<form action="#" method="post">
 			<p>Username</p>
 			<input type="text" name="username" placeholder="Enter Username" required="">

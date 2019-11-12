@@ -24,6 +24,7 @@ public class TourDAO {
 				tour.setTour_hotel(rss.getString("tour_hotel"));
 				tour.setTour_price(rss.getDouble("tour_price"));
 				tour.setTour_vehicle(rss.getString("tour_vehicle"));
+				tour.setTour_place(rss.getString("tour_place"));
 				tour.setImg_url(rss.getString("img_url"));
 				listTour.add(tour);
 			}
