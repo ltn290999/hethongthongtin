@@ -76,7 +76,7 @@
 					<div class="title-wrap d-flex justify-content-between">
 						<div class="title-box">
 							<a href="tournuocngoai.jsp"><h2 class="title-a">Tour
-									nước ngoài</h2></a>
+									</h2></a>
 						</div>
 
 					</div>
@@ -136,74 +136,6 @@
 	</section>
 	<!--/ Property End /-->
 
-	<!--/ Agents Star /-->
-	<section class="section-agents section-t8">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="title-wrap d-flex justify-content-between">
-						<div class="title-box">
-							<a href="tourtrongnuoc.jsp"><h2 class="title-a">Tour
-									trong nước</h2></a>
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-
-			<div class="row">
-				<c:forEach items="${listTour }" var="listTour">
-					<div class="col-md-4">
-						<div class="carousel-item-b">
-							<div class="card-box-a card-shadow">
-								<div class="img-box-a">
-									<img src="${listTour.img_url}" alt="" class="img-a img-fluid">
-								</div>
-								<div class="card-overlay">
-									<div class="card-overlay-a-content">
-										<div class="card-header-a">
-											<h2 class="card-title-a">
-												<a href="property-single.html">${listTour.tour_name } <br />
-												</a>
-											</h2>
-										</div>
-										<div class="card-body-a">
-											<div class="price-box d-flex">
-												<span class="price-a">Giá | ${listTour.tour_price }
-													Vnd</span>
-											</div>
-											<a href="#" class="link-a">Click here to view <span
-												class="ion-ios-arrow-forward"></span>
-											</a>
-										</div>
-										<div class="card-footer-a">
-											<ul class="card-info d-flex justify-content-around">
-												<li>
-													<h4 class="card-info-title">Ngày</h4> <span>${listTour.tour_date }
-												</span>
-												</li>
-												<li>
-													<h4 class="card-info-title">Người</h4> <span><center>${listTour.tour_people }</center></span>
-												</li>
-												<li>
-													<h4 class="card-info-title">Khách sạn</h4> <span>${listTour.tour_hotel }
-												</span>
-												</li>
-												<li>
-													<h4 class="card-info-title">Phương tiện</h4> <span>${listTour.tour_vehicle }</span>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</c:forEach>
-
-			</div>
-		</div>
 
 
 
@@ -372,80 +304,7 @@
 		<!--/ Testimonials End /-->
 
 		<!--/ footer Star /-->
-		<section class="section-footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12 col-md-4">
-						<div class="widget-a">
-							<div class="w-header-a">
-								<h3 class="w-title-a text-brand">EstateAgency</h3>
-							</div>
-							<div class="w-body-a">
-								<p class="w-text-a color-text-a">Enim minim veniam quis
-									nostrud exercitation ullamco laboris nisi ut aliquip exea
-									commodo consequat duis sed aute irure.</p>
-							</div>
-							<div class="w-footer-a">
-								<ul class="list-unstyled">
-									<li class="color-a"><span class="color-text-a">Phone
-											.</span> contact@example.com</li>
-									<li class="color-a"><span class="color-text-a">Email
-											.</span> +54 356 945234</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-4 section-md-t3">
-						<div class="widget-a">
-							<div class="w-header-a">
-								<h3 class="w-title-a text-brand">The Company</h3>
-							</div>
-							<div class="w-body-a">
-								<div class="w-body-a">
-									<ul class="list-unstyled">
-										<li class="item-list-a"><i class="fa fa-angle-right"></i>
-											<a href="#">Site Map</a></li>
-										<li class="item-list-a"><i class="fa fa-angle-right"></i>
-											<a href="#">Legal</a></li>
-										<li class="item-list-a"><i class="fa fa-angle-right"></i>
-											<a href="#">Agent Admin</a></li>
-										<li class="item-list-a"><i class="fa fa-angle-right"></i>
-											<a href="#">Careers</a></li>
-										<li class="item-list-a"><i class="fa fa-angle-right"></i>
-											<a href="#">Affiliate</a></li>
-										<li class="item-list-a"><i class="fa fa-angle-right"></i>
-											<a href="#">Privacy Policy</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-4 section-md-t3">
-						<div class="widget-a">
-							<div class="w-header-a">
-								<h3 class="w-title-a text-brand">International sites</h3>
-							</div>
-							<div class="w-body-a">
-								<ul class="list-unstyled">
-									<li class="item-list-a"><i class="fa fa-angle-right"></i>
-										<a href="#">Venezuela</a></li>
-									<li class="item-list-a"><i class="fa fa-angle-right"></i>
-										<a href="#">China</a></li>
-									<li class="item-list-a"><i class="fa fa-angle-right"></i>
-										<a href="#">Hong Kong</a></li>
-									<li class="item-list-a"><i class="fa fa-angle-right"></i>
-										<a href="#">Argentina</a></li>
-									<li class="item-list-a"><i class="fa fa-angle-right"></i>
-										<a href="#">Singapore</a></li>
-									<li class="item-list-a"><i class="fa fa-angle-right"></i>
-										<a href="#">Philippines</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+		
 		<jsp:include page="footer.jsp"></jsp:include>
 
 		<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>

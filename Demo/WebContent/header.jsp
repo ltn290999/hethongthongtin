@@ -227,12 +227,8 @@
 					id="navbarDefault">
 					<ul class="navbar-nav">
 						<li class="nav-item"><a class="nav-link "
-							href="tournuocngoai.jsp">Tour nước ngoài </a></li>
-						<li class="nav-item"><a class="nav-link"
-							href="tourtrongnuoc.jsp">Tour trong nước</a></li>
-						<li class="nav-item"><a class="nav-link" href="blog.jsp">Blog</a></li>
-						<li class="nav-item"><a class="nav-link" href="contactus.jsp">Liên
-								hệ</a></li>
+							href="tournuocngoai.jsp">Tour Hot</a></li>
+								<li class="nav-item"><a class="nav-link" href="contactus.jsp">My Tour</a></li>
 						<c:choose>
 							<c:when test="${username != null}">
 								<div class="dropdown">
