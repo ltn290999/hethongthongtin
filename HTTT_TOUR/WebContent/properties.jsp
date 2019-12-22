@@ -50,8 +50,8 @@
 		<div class="container py-1">
 			<div class="row align-items-center">
 				<div class="col-8 col-md-8 col-lg-4">
-					<h1 class="">
-						<a href="index.jsp" class="h5 text-uppercase text-black"><strong>HomeTourist<span
+							<h1 class="">
+						<a href="trang-chu" class="h5 text-uppercase text-black"><strong>HomeTourist<span
 								class="text-danger">.</span></strong></a>
 					</h1>
 				</div>
@@ -66,11 +66,10 @@
 
 						<ul class="site-menu js-clone-nav d-none d-lg-block"
 							style="margin-left: -200px">
-							<li><a href="trang-chu">TRANG CHỦ</a></li>
 							<li class="active"><a href="tour-trong-nuoc">TOUR TRONG
 									NƯỚC</a></li>
 							<li><a href="tour-nuoc-ngoai">TOUR NƯỚC NGOÀI</a></li>
-							<li><a href="./Login/login.jsp">ĐĂNG NHẬP</a></li>
+							<li><a href="dang-nhap">ĐĂNG NHẬP</a></li>
 
 							<li><a href="booking-tour"><button
 										class="btn btn-deep-orange " type="button"
@@ -90,7 +89,7 @@
 	<div class="slide-one-item home-slider owl-carousel tour-image">
 
 		<div class="site-blocks-cover domestic-tour"
-			style="background-image: url(user/images/domesticbannertour.jpg); min-height: 250px; height: calc(100vh - 45vh);"
+			style="background-image: url(user/user/images/domesticbannertour.jpg); min-height: 250px; height: calc(100vh - 45vh);"
 			data-aos="fade" data-stellar-background-ratio="0.5"></div>
 	</div>
 	<div class="location-from">
@@ -113,7 +112,7 @@
 						<label for="#">Từ ngày </label>
 						<div class="form-field">
 							<div class="icon">
-								<span><img src="images/calender.png" width="18px"></span>
+								<span><img src="user/images/calender.png" width="18px"></span>
 							</div>
 							<input type="text" class="form-control checkin_date"
 								placeholder=" Chọn ngày đi">
@@ -125,7 +124,7 @@
 						<label for="#">Đến ngày</label>
 						<div class="form-field">
 							<div class="icon">
-								<span><img src="images/calender.png" width="18px"></span>
+								<span><img src="user/images/calender.png" width="18px"></span>
 							</div>
 							<input type="text" class="form-control checkout_date"
 								placeholder=" Chọn ngày đến">
@@ -171,7 +170,7 @@
 			<div class="card-salesoff">
 				<div class="card sales" style="width: 400px; height: 500px">
 
-					<img class="card-img-top" height="250px" src="images/image8.jpg"
+					<img class="card-img-top" height="250px" src="user/images/image8.jpg"
 						alt="Card image">
 					<div class="sales-text">
 						<p>Sales 30%</p>
@@ -189,7 +188,7 @@
 					</div>
 				</div>
 				<div class="card sales2" style="width: 400px; height: 500px">
-					<img class="card-img-top" height="250px" src="images/image6.jpg"
+					<img class="card-img-top" height="250px" src="user/images/image6.jpg"
 						alt="Card image">
 					<div class="sales-text">
 						<p>Sales 30%</p>
@@ -208,7 +207,7 @@
 				</div>
 
 				<div class="card sales2" style="width: 400px; height: 500px">
-					<img class="card-img-top" height="250px" src="images/image9.jpg"
+					<img class="card-img-top" height="250px" src="user/images/image9.jpg"
 						alt="Card image">
 					<div class="sales-text">
 						<p>Sales 30%</p>
@@ -230,7 +229,7 @@
 			</div>
 			<div class="card-salesoff">
 				<div class="card sales" style="width: 400px; height: 500px">
-					<img class="card-img-top" height="250px" src="images/image11.jpg"
+					<img class="card-img-top" height="250px" src="user/images/image11.jpg"
 						alt="Card image">
 					<div class="sales-text">
 						<p>Sales 30%</p>
@@ -248,7 +247,7 @@
 					</div>
 				</div>
 				<div class="card sales2" style="width: 400px; height: 500px">
-					<img class="card-img-top" height="250px" src="images/image12.jpg"
+					<img class="card-img-top" height="250px" src="user/images/image12.jpg"
 						alt="Card image">
 					<div class="sales-text">
 						<p>Sales 30%</p>
@@ -266,7 +265,7 @@
 					</div>
 				</div>
 				<div class="card sales2" style="width: 400px; height: 500px">
-					<img class="card-img-top" height="250px" src="images/image3.jpg"
+					<img class="card-img-top" height="250px" src="user/images/image3.jpg"
 						alt="Card image">
 					<div class="sales-text">
 						<p>Sales 30%</p>
@@ -297,7 +296,7 @@
 			<div class="card">
 				<div class="row ">
 					<div class="col-md-4">
-						<img src="images/image9.jpg" class="w-100">
+						<img src="user/images/image9.jpg" class="w-100">
 					</div>
 
 					<div class="row">
@@ -344,7 +343,7 @@
 			<div class="card">
 				<div class="row ">
 					<div class="col-md-4">
-						<img src="images/image3.jpg" class="w-100">
+						<img src="user/images/image3.jpg" class="w-100">
 					</div>
 
 					<div class="row">
@@ -391,7 +390,7 @@
 			<div class="card">
 				<div class="row ">
 					<div class="col-md-4">
-						<img src="images/image4.jpg" class="w-100">
+						<img src="user/images/image4.jpg" class="w-100">
 					</div>
 
 					<div class="row">
@@ -440,7 +439,7 @@
 			<div class="card">
 				<div class="row ">
 					<div class="col-md-4">
-						<img src="images/image5.jpg" class="w-100">
+						<img src="user/images/image5.jpg" class="w-100">
 					</div>
 
 					<div class="row">
@@ -487,7 +486,7 @@
 			<div class="card">
 				<div class="row ">
 					<div class="col-md-4">
-						<img src="images/image6.jpg" class="w-100">
+						<img src="user/images/image6.jpg" class="w-100">
 					</div>
 
 					<div class="row">
@@ -534,7 +533,7 @@
 			<div class="card">
 				<div class="row ">
 					<div class="col-md-4">
-						<img src="images/image7.jpg" class="w-100">
+						<img src="user/images/image7.jpg" class="w-100">
 					</div>
 
 					<div class="row">
@@ -581,7 +580,7 @@
 			<div class="card">
 				<div class="row ">
 					<div class="col-md-4">
-						<img src="images/image8.jpg" class="w-100">
+						<img src="user/images/image8.jpg" class="w-100">
 					</div>
 
 					<div class="row">
@@ -628,7 +627,7 @@
 			<div class="card">
 				<div class="row ">
 					<div class="col-md-4">
-						<img src="images/image9.jpg" class="w-100">
+						<img src="user/images/image9.jpg" class="w-100">
 					</div>
 
 					<div class="row">

@@ -116,8 +116,8 @@
 		<div class="container py-1">
 			<div class="row align-items-center">
 				<div class="col-8 col-md-8 col-lg-4">
-					<h1 class="">
-						<a href="index.jsp" class="h5 text-uppercase text-black"><strong>HomeTourist<span
+							<h1 class="">
+						<a href="trang-chu" class="h5 text-uppercase text-black"><strong>HomeTourist<span
 								class="text-danger">.</span></strong></a>
 					</h1>
 				</div>
@@ -131,10 +131,9 @@
 						</div>
 
 						<ul class="site-menu js-clone-nav d-none d-lg-block">
-							<li><a href="trang-chu">TRANG CHỦ</a></li>
 							<li><a href="tour-trong-nuoc">TOUR TRONG NƯỚC</a></li>
 							<li><a href="tour-nuoc-ngoai">TOUR NƯỚC NGOÀI</a></li>
-							<li><a href="./Login/login.jsp">ĐĂNG NHẬP</a></li>
+							<li><a href="dang-nhap">ĐĂNG NHẬP</a></li>
 
 						</ul>
 
@@ -149,7 +148,7 @@
 	<div class="slide-one-item home-slider owl-carousel tour-image">
 
 		<div class="site-blocks-cover domestic-tour"
-			style="background-image: url(images/banner1.jpg); min-height: 300px; height: calc(100vh - 45vh);"
+			style="background-image: url(user/images/banner1.jpg); min-height: 300px; height: calc(100vh - 45vh);"
 			data-aos="fade" data-stellar-background-ratio="0.5"></div>
 	</div>
 
@@ -283,32 +282,32 @@
 				<div class="col-md-4 col-sm-6 col-xs-12 isotopeSelector "
 					style="margin-bottom: 25px">
 					<img width="100%" height="65.9%" alt="image tour"
-						src="images/halongbay.jpg">
+						src="user/images/halongbay.jpg">
 				</div>
 				<div class="col-md-4 col-sm-6 col-xs-12 isotopeSelector "
 					style="margin-bottom: 25px">
 					<img width="100%" height="65.9%" alt="image tour"
-						src="images/badinh.jpg">
+						src="user/images/badinh.jpg">
 				</div>
 				<div class="col-md-4 col-sm-6 col-xs-12 isotopeSelector "
 					style="margin-bottom: 25px">
 					<img width="100%" height="65.9%" alt="image tour"
-						src="images/hoangthanh.jpg">
+						src="user/images/hoangthanh.jpg">
 				</div>
 				<div class="col-md-4 col-sm-6 col-xs-12 isotopeSelector "
 					style="margin-bottom: 25px">
 					<img width="100%" height="65.9%" alt="image tour"
-						src="images/gado.jpg">
+						src="user/images/gado.jpg">
 				</div>
 				<div class="col-md-4 col-sm-6 col-xs-12 isotopeSelector "
 					style="margin-bottom: 25px">
 					<img width="100%" height="65.9%" alt="image tour"
-						src="images/TrongMai.jpg">
+						src="user/images/TrongMai.jpg">
 				</div>
 				<div class="col-md-4 col-sm-6 col-xs-12 isotopeSelector "
 					style="margin-bottom: 25px">
 					<img width="100%" height="65.9%" alt="image tour"
-						src="images/trangan.jpg">
+						src="user/images/trangan.jpg">
 				</div>
 			</div>
 	</section>

@@ -48,7 +48,7 @@
 			<div class="row align-items-center">
 				<div class="col-8 col-md-8 col-lg-4">
 					<h1 class="">
-						<a href="index.jsp" class="h5 text-uppercase text-black"><strong>HomeTourist<span
+						<a href="trang-chu" class="h5 text-uppercase text-black"><strong>HomeTourist<span
 								class="text-danger">.</span></strong></a>
 					</h1>
 				</div>
@@ -63,10 +63,9 @@
 
 						<ul class="site-menu js-clone-nav d-none d-lg-block"
 							style="margin-left: -200px">
-							<li class="active"><a href="trang-chu">TRANG CHỦ</a></li>
 							<li><a href="tour-trong-nuoc">TOUR TRONG NƯỚC</a></li>
 							<li><a href="tour-nuoc-ngoai">TOUR NƯỚC NGOÀI</a></li>
-							<li><a href="./Login/login.jsp">ĐĂNG NHẬP</a></li>
+							<li><a href="dang-nhap">ĐĂNG NHẬP</a></li>
 							<li><a href="booking-tour"><button
 										class="btn btn-deep-orange " type="button"
 										style="width: 120px; font-size: 15px; padding-left: 8px; color: #ffffff; background: #f89d13;">
@@ -85,7 +84,7 @@
 	<div class="slide-one-item home-slider owl-carousel">
 
 		<div class="site-blocks-cover"
-			style="background-image: url(images/banner1.jpg);" data-aos="fade"
+			style="background-image: url(user/images/banner1.jpg);" data-aos="fade"
 			data-stellar-background-ratio="0.5">
 
 			<div class="text">
@@ -108,7 +107,7 @@
 		</div>
 
 		<div class="site-blocks-cover"
-			style="background-image: url(images/banner2.jpg);" data-aos="fade"
+			style="background-image: url(user/images/banner2.jpg);" data-aos="fade"
 			data-stellar-background-ratio="0.5">
 
 			<div class="text">
@@ -152,7 +151,7 @@
 						<label for="#">Từ ngày </label>
 						<div class="form-field">
 							<div class="icon">
-								<span><img src="images/calender.png" width="18px"></span>
+								<span><img src="user/images/calender.png" width="18px"></span>
 							</div>
 							<input type="text" class="form-control checkin_date"
 								placeholder=" Chọn ngày đi">
@@ -164,7 +163,7 @@
 						<label for="#">Đến ngày</label>
 						<div class="form-field">
 							<div class="icon">
-								<span><img src="images/calender.png" width="18px"></span>
+								<span><img src="user/images/calender.png" width="18px"></span>
 							</div>
 							<input type="text" class="form-control checkout_date"
 								placeholder=" Chọn ngày đến">
@@ -211,7 +210,7 @@
 				<div class="col-md-6 col-lg-4 mb-4">
 					<a href="booking.jsp" class="prop-entry d-block">
 						<figure>
-							<img src="images/tour1.jpg" alt="Image" class="img-fluid">
+							<img src="user/images/tour1.jpg" alt="Image" class="img-fluid">
 						</figure>
 						<div class="prop-text">
 							<div class="inner">
@@ -239,7 +238,7 @@
 				<div class="col-md-6 col-lg-4 mb-4">
 					<a href="booking.jsp" class="prop-entry d-block">
 						<figure>
-							<img src="images/tour2.jpg" alt="Image" class="img-fluid">
+							<img src="user/images/tour2.jpg" alt="Image" class="img-fluid">
 						</figure>
 						<div class="prop-text">
 							<div class="inner">
@@ -267,7 +266,7 @@
 				<div class="col-md-6 col-lg-4 mb-4">
 					<a href="booking.jsp" class="prop-entry d-block">
 						<figure>
-							<img src="images/tour3.jpg" alt="Image" class="img-fluid">
+							<img src="user/images/tour3.jpg" alt="Image" class="img-fluid">
 						</figure>
 						<div class="prop-text">
 							<div class="inner">
@@ -294,7 +293,7 @@
 				<div class="col-md-6 col-lg-4 mb-4">
 					<a href="booking.jsp" class="prop-entry d-block">
 						<figure>
-							<img src="images/tour4.jpg" alt="Image" class="img-fluid">
+							<img src="user/images/tour4.jpg" alt="Image" class="img-fluid">
 						</figure>
 						<div class="prop-text">
 							<div class="inner">
@@ -322,7 +321,7 @@
 				<div class="col-md-6 col-lg-4 mb-4">
 					<a href="booking.jsp" class="prop-entry d-block">
 						<figure>
-							<img src="images/tour5.jpg" alt="Image" class="img-fluid">
+							<img src="user/images/tour5.jpg" alt="Image" class="img-fluid">
 						</figure>
 						<div class="prop-text">
 							<div class="inner">
@@ -350,7 +349,7 @@
 				<div class="col-md-6 col-lg-4 mb-4">
 					<a href="booking.jsp" class="prop-entry d-block">
 						<figure>
-							<img src="images/tour6.jpg" alt="Image" class="img-fluid">
+							<img src="user/images/tour6.jpg" alt="Image" class="img-fluid">
 						</figure>
 						<div class="prop-text">
 							<div class="inner">
@@ -402,7 +401,7 @@
 			<div class="card">
 				<div class="row ">
 					<div class="col-md-4">
-						<img src="images/image11.jpg" class="w-100">
+						<img src="user/images/image11.jpg" class="w-100">
 					</div>
 
 					<div class="row">
@@ -449,7 +448,7 @@
 			<div class="card">
 				<div class="row ">
 					<div class="col-md-4">
-						<img src="images/image3.jpg" class="w-100">
+						<img src="user/images/image3.jpg" class="w-100">
 					</div>
 
 					<div class="row">
@@ -496,7 +495,7 @@
 			<div class="card">
 				<div class="row ">
 					<div class="col-md-4">
-						<img src="images/image4.jpg" class="w-100">
+						<img src="user/images/image4.jpg" class="w-100">
 					</div>
 
 					<div class="row">
@@ -545,7 +544,7 @@
 			<div class="card">
 				<div class="row ">
 					<div class="col-md-4">
-						<img src="images/image5.jpg" class="w-100">
+						<img src="user/images/image5.jpg" class="w-100">
 					</div>
 
 					<div class="row">
@@ -592,7 +591,7 @@
 			<div class="card">
 				<div class="row ">
 					<div class="col-md-4">
-						<img src="images/image6.jpg" class="w-100">
+						<img src="user/images/image6.jpg" class="w-100">
 					</div>
 
 					<div class="row">
@@ -639,7 +638,7 @@
 			<div class="card">
 				<div class="row ">
 					<div class="col-md-4">
-						<img src="images/image7.jpg" class="w-100">
+						<img src="user/images/image7.jpg" class="w-100">
 					</div>
 
 					<div class="row">
@@ -686,7 +685,7 @@
 			<div class="card">
 				<div class="row ">
 					<div class="col-md-4">
-						<img src="images/image8.jpg" class="w-100">
+						<img src="user/images/image8.jpg" class="w-100">
 					</div>
 
 					<div class="row">
@@ -733,7 +732,7 @@
 			<div class="card">
 				<div class="row ">
 					<div class="col-md-4">
-						<img src="images/image9.jpg" class="w-100">
+						<img src="user/images/image9.jpg" class="w-100">
 					</div>
 
 					<div class="row">
@@ -780,7 +779,7 @@
 			<div class="card">
 				<div class="row ">
 					<div class="col-md-4">
-						<img src="images/image10.jpg" class="w-100">
+						<img src="user/images/image10.jpg" class="w-100">
 					</div>
 
 					<div class="row">
@@ -828,7 +827,7 @@
 			<div class="card">
 				<div class="row ">
 					<div class="col-md-4">
-						<img src="images/image11.jpg" class="w-100">
+						<img src="user/images/image11.jpg" class="w-100">
 					</div>
 
 					<div class="row">
@@ -875,7 +874,7 @@
 			<div class="card">
 				<div class="row ">
 					<div class="col-md-4">
-						<img src="images/image12.jpg" class="w-100">
+						<img src="user/images/image12.jpg" class="w-100">
 					</div>
 
 					<div class="row">

@@ -54,8 +54,8 @@
 		<div class="container py-1">
 			<div class="row align-items-center">
 				<div class="col-8 col-md-8 col-lg-4">
-					<h1 class="">
-						<a href="index.jsp" class="h5 text-uppercase text-black"><strong>HomeTourist<span
+						<h1 class="">
+						<a href="trang-chu" class="h5 text-uppercase text-black"><strong>HomeTourist<span
 								class="text-danger">.</span></strong></a>
 					</h1>
 				</div>
@@ -70,10 +70,9 @@
 
 						<ul class="site-menu js-clone-nav d-none d-lg-block"
 							style="margin-left: -200px">
-							<li><a href="trang-chu">TRANG CHỦ</a></li>
 							<li><a href="tour-trong-nuoc">TOUR TRONG NƯỚC</a></li>
 							<li><a href="tour-nuoc-ngoai">TOUR NƯỚC NGOÀI</a></li>
-							<li><a href="./Login/login.jsp">ĐĂNG NHẬP</a></li>
+							<li><a href="dang-nhap">ĐĂNG NHẬP</a></li>
 							<li><a href="booking-tour"><button
 										class="btn btn-deep-orange " type="button"
 										style="width: 120px; font-size: 15px; padding-left: 8px; color: #ffffff; background: #f89d13;">
