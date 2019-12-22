@@ -131,9 +131,9 @@
 						</div>
 
 						<ul class="site-menu js-clone-nav d-none d-lg-block">
-							<li><a href="index.jsp">TRANG CHỦ</a></li>
-							<li><a href="properties.jsp">TOUR TRONG NƯỚC</a></li>
-							<li><a href="internationaltour.jsp">TOUR NƯỚC NGOÀI</a></li>
+							<li><a href="trang-chu">TRANG CHỦ</a></li>
+							<li><a href="tour-trong-nuoc">TOUR TRONG NƯỚC</a></li>
+							<li><a href="tour-nuoc-ngoai">TOUR NƯỚC NGOÀI</a></li>
 							<li><a href="./Login/login.jsp">ĐĂNG NHẬP</a></li>
 
 						</ul>
