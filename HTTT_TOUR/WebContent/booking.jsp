@@ -116,7 +116,7 @@
 		<div class="container py-1">
 			<div class="row align-items-center">
 				<div class="col-8 col-md-8 col-lg-4">
-							<h1 class="">
+					<h1 class="">
 						<a href="trang-chu" class="h5 text-uppercase text-black"><strong>HomeTourist<span
 								class="text-danger">.</span></strong></a>
 					</h1>
@@ -216,7 +216,6 @@
 							<th scope="col">MÃ TOUR</th>
 							<th scope="col">GIÁ</th>
 							<th scope="col">GIÁ TRẺ EM</th>
-							<th scope="col">GIÁ EM BÉ</th>
 							<th scope="col"></th>
 						</tr>
 						</div>
@@ -227,8 +226,7 @@
 							<th>STN084-2019-03738</th>
 							<td>4.539.000</td>
 							<td>3.279.000</td>
-							<td>2.270.000</td>
-							<td><a href="service.jsp"><button
+							<td><a href="service"><button
 										class="btn btn-deep-orange " type="button"
 										style="width: 110px; font-size: 14px; height: 30px; color: #ffffff; background: #4B87E8; text-align: center;">
 										ĐẶT CHỖ</button></a></td>
@@ -238,8 +236,7 @@
 							<th>STN084-2019-03739</th>
 							<td>4.539.000</td>
 							<td>3.279.000</td>
-							<td>2.270.000</td>
-							<td><a href="service.jsp"><button
+							<td><a href="service"><button
 										class="btn btn-deep-orange " type="button"
 										style="width: 110px; font-size: 14px; height: 30px; color: #ffffff; background: #f89d13; text-align: center;">
 										MUA ONLINE</button></a></td>
@@ -249,8 +246,7 @@
 							<th>STN084-2019-037398</th>
 							<td>4.539.000</td>
 							<td>3.279.000</td>
-							<td>2.270.000</td>
-							<td><a href="infomationUser.jsp"><button
+							<td><a href="service"><button
 										class="btn btn-deep-orange " type="button"
 										style="width: 110px; font-size: 14px; height: 30px; color: #ffffff; background: #f89d13; text-align: center;">
 										MUA ONLINE</button></a></td>
@@ -274,9 +270,7 @@
 					trùng điệp. - Du ngoạn vịnh Hạ Long - một trong 7 kỳ quan thiên
 					nhiên mới của thế giới. Chiêm ngưỡng động Thiên Cung, các hòn Đỉnh
 					Hương - Trống Mái (Gà Chọi)- Chó Đá</div>
-				<a href="#"><button class="btn btn-deep-orange " type="button"
-						style="width: 120px; font-size: 14px; height: 30px; color: #ffffff; background: #f89d13; text-align: center; margin-bottom: 10px;">
-						In chương trình</button></a>
+			
 			</div>
 			<div class="row row-image-box isdesktop">
 				<div class="col-md-4 col-sm-6 col-xs-12 isotopeSelector "
@@ -312,18 +306,6 @@
 			</div>
 	</section>
 	<!-- menu nav -->
-
-
-
-
-
-
-
-
-
-
-
-
 
 	<footer class="site-footer">
 		<div class="container">

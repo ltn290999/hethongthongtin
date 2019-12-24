@@ -91,7 +91,7 @@
 	<div class="slide-one-item home-slider owl-carousel tour-image">
 
 		<div class="site-blocks-cover domestic-tour"
-			style="background-image: url(images/banner4.jpg); min-height: 300px; height: calc(100vh - 45vh);"
+			style="background-image: url(user/images/banner4.jpg); min-height: 300px; height: calc(100vh - 45vh);"
 			data-aos="fade" data-stellar-background-ratio="0.5"></div>
 	</div>
 
@@ -109,33 +109,17 @@
 			</div>
 		</div>
 
+		
 		<div class="col">
 			<div class="card" style="border-style: none;">
 				<div class="card-body"
 					style="width: 200px; border-radius: 10px; margin: auto; text-align: center; height: 55px;">
 					<p style="color: black; font-size: 14px; font-weight: bold;">2.
-						NHẬP THÔNG TIN HÀNH KHÁCH</p>
-				</div>
-			</div>
-		</div>
-		<div class="col">
-			<div class="card" style="border-style: none;">
-				<div class="card-body"
-					style="width: 200px; border-radius: 10px; margin: auto; text-align: center; height: 55px;">
-					<p style="color: black; font-size: 14px; font-weight: bold;">3.
 						THANH TOÁN</p>
 				</div>
 			</div>
 		</div>
-		<div class="col">
-			<div class="card" style="border-style: none;">
-				<div class="card-body"
-					style="width: 200px; border-radius: 10px; margin: auto; text-align: center; height: 55px;">
-					<p style="color: black; font-size: 14px; font-weight: bold;">4.XÁC
-						NHÂN</p>
-				</div>
-			</div>
-		</div>
+		
 	</div>
 
 	<div class="row" style="width: 80%; margin: auto; padding-top: 50px;">
@@ -148,61 +132,21 @@
 					<input type="text" class="input-form" placeholder="1"><br>
 					<p>Trẻ em</p>
 					<input type="text" class="input-form" placeholder="0">
-					<p>Em bé</p>
-					<input type="text" class="input-form" placeholder="0">
+				
 				</div>
 				<div class="col">
 
 					<div style="margin-top: 15px">
 						<ul class="highlight-text">
-							<li>Tour nước ngoài: áp dụng từ 2 đến dưới 12 tuổi</li>
-							<li>Tour trong nước và tour Campuchia: áp dụng từ 6 đến 11
-								tuổi</li>
-						</ul>
+							<li>Trẻ em dưới 10 tuổi được tính giá vé khác.</li>
+												</ul>
 
-						<ul class="highlight-text">
-							<li>Tour nước ngoài: áp dụng từ Dưới 2 tuổi</li>
-							<li>Tour trong nước và tour Campuchia: áp dụng từ 2 đến 5
-								tuổi</li>
-						</ul>
+						
 					</div>
 				</div>
 			</div>
-			<h4 style="font-weight: bold; color: #000000; margin-top: 20px;">DỊCH
-				VỤ CỘNG THÊM</h4>
-			<div class="row add-on-services">
-				<div class="col-md-3 col-sm-3 col-xs-12 no-padding">
-					<div class="service-box-image">
-						<img
-							src="https://www.saigontourist.net/uploads/images/dichvucongthem/Phong%20KS/DaLat/MaiThang/Sanh%20Mai%20Thang.jpg"
-							alt="Image" class="img-fluid">
-					</div>
-				</div>
-				<div class="col-md-5 col-sm-5 col-xs-12 no-padding">
-					<div class="service-box-content">
-						<a
-							href="/vi/dich-vu-di-kem/chi-tiet/5/phu-thu-phong-don-%20tour%20-da-lat"
-							target="_blank" class="content-title"
-							title="Phụ thu phòng đơn - Tour Đà Lạt"> Phụ thu phòng đơn -
-							Tour du lịch Phú Quốc </a>
-						<div class="content-description">- Khách sạn 3
-							sao:&nbsp;&nbsp;Mai Vàng, Nice Dream Hoặc các khách sạn khác
-							tương đương&nbsp;</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-4 col-xs-12 no-padding">
-					<div class="service-box-price">
-						<div class="price-info">
-							Giá <strong>1.160.000</strong> đ/khách
-						</div>
-						<div class="price-number">
-							<span class="label-price-number">Chọn số lượng: </span> <input
-								data-price="1160000" type="number" name="extraServices[5]"
-								class="input-price-number input-price-extra-service" min="0">
-						</div>
-					</div>
-				</div>
-			</div>
+		
+			
 			<h4 style="font-weight: bold; color: #000000; margin-top: 20px;">PHƯƠNG
 				THỨC THANH TOÁN</h4>
 
@@ -242,7 +186,7 @@
 				</div>
 				<div class="col-md-7 col-sm-7 col-xs-12 no-padding">
 					<ul class="highlight-text" style="margin-top: 0; color: red">
-						<li>Chỉ áp dụng cho thành viên hometourist.tk</li>
+						<li>Chỉ áp dụng cho thành viên hometourist</li>
 						<li>Chỉ áp dụng cho thanh toán online hoặc đặt cọc</li>
 					</ul>
 				</div>
@@ -292,8 +236,7 @@
 				style="width: 100%; height: 250px; overflow-y: scroll; padding: 10px; margin: 0; border: 1px solid #ccc; border-right: 2px solid #ccc;">
 				<p>
 					Điều khoản này là sự thoả thuận đồng ý của quý khách khi sử dụng
-					dịch vụ thanh toán trên trang web <a
-						href="http://www.http://tourmanagement.tk/">www.http://tourmanagement.tk/</a>
+					dịch vụ thanh toán trên trang web
 					của Công ty Dịch vụ Lữ hành tourmanagement (Lữ hành tourmanagement)
 					và những trang web của bên thứ ba. Việc quý khách đánh dấu vào ô
 					“Đồng ý” và nhấp chuột vào thanh “Chấp nhận” nghĩa là quý khách
@@ -458,7 +401,7 @@
 						<a href="booking.jsp"><button class="button">TRỞ VỀ</button></a>
 					</div>
 					<div class="col" style="text-align: right;">
-						<a href="informationuser.jsp"><button class="button">TIẾP
+						<a href="thanh-toan"><button class="button">TIẾP
 								TỤC</button></a>
 					</div>
 				</div>
@@ -475,7 +418,7 @@
 					</div>
 				</div>
 				<div class="card" style="width: 100%">
-					<img src="images/tour2.jpg" class="card-img-top">
+					<img src="user/images/tour2.jpg" class="card-img-top">
 					<div class="card-body">
 						<h5 class="card-title" style="font-size: 16px;">DU LỊCH PHÚ
 							QUỐC - CÂU CÁ - NGẮM SAN HÔ</h5>
