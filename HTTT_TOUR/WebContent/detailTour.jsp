@@ -184,8 +184,8 @@
 					<div class="col-md-12 col-sm-4 col-xs-12">
 						<div class="right-detail-tour-box help-tour">
 							<div class="title">Hỗ trợ khách hàng</div>
-							<p>Hotline: 1900 1808</p>
-							<p style="margin-top: -10px;">Email: info@saigontourist.net</p>
+							<p>Hotline: 1900</p>
+							<p style="margin-top: -10px;">Email:</p>
 							<a href="#"><button>Bạn muốn được gọi lại?</button></a>
 						</div>
 					</div>
@@ -213,7 +213,7 @@
 					<thead>
 						<tr class="title-tour">
 							<th scope="col">KHỞI HÀNH</th>
-							<th scope="col">MÃ TOUR</th>
+							
 							<th scope="col">GIÁ</th>
 							<th scope="col">GIÁ TRẺ EM</th>
 							<th scope="col"></th>
@@ -221,19 +221,10 @@
 						</div>
 					</thead>
 					<tbody>
-						<tr class="title-body">
-							<th scope="row">22/11/2019</th>
-							<th>STN084-2019-03738</th>
-							<td>4.539.000</td>
-							<td>3.279.000</td>
-							<td><a href="service"><button
-										class="btn btn-deep-orange " type="button"
-										style="width: 110px; font-size: 14px; height: 30px; color: #ffffff; background: #4B87E8; text-align: center;">
-										ĐẶT CHỖ</button></a></td>
-						</tr>
+
 						<tr class="title-body">
 							<th scope="row">29/11/2019</th>
-							<th>STN084-2019-03739</th>
+								
 							<td>4.539.000</td>
 							<td>3.279.000</td>
 							<td><a href="service"><button
@@ -241,16 +232,7 @@
 										style="width: 110px; font-size: 14px; height: 30px; color: #ffffff; background: #f89d13; text-align: center;">
 										MUA ONLINE</button></a></td>
 						</tr>
-						<tr class="title-body">
-							<th scope="row">1/12/2019</th>
-							<th>STN084-2019-037398</th>
-							<td>4.539.000</td>
-							<td>3.279.000</td>
-							<td><a href="service"><button
-										class="btn btn-deep-orange " type="button"
-										style="width: 110px; font-size: 14px; height: 30px; color: #ffffff; background: #f89d13; text-align: center;">
-										MUA ONLINE</button></a></td>
-						</tr>
+
 					</tbody>
 				</table>
 			</div>
@@ -270,40 +252,9 @@
 					trùng điệp. - Du ngoạn vịnh Hạ Long - một trong 7 kỳ quan thiên
 					nhiên mới của thế giới. Chiêm ngưỡng động Thiên Cung, các hòn Đỉnh
 					Hương - Trống Mái (Gà Chọi)- Chó Đá</div>
+
+			</div>
 			
-			</div>
-			<div class="row row-image-box isdesktop">
-				<div class="col-md-4 col-sm-6 col-xs-12 isotopeSelector "
-					style="margin-bottom: 25px">
-					<img width="100%" height="65.9%" alt="image tour"
-						src="user/images/halongbay.jpg">
-				</div>
-				<div class="col-md-4 col-sm-6 col-xs-12 isotopeSelector "
-					style="margin-bottom: 25px">
-					<img width="100%" height="65.9%" alt="image tour"
-						src="user/images/badinh.jpg">
-				</div>
-				<div class="col-md-4 col-sm-6 col-xs-12 isotopeSelector "
-					style="margin-bottom: 25px">
-					<img width="100%" height="65.9%" alt="image tour"
-						src="user/images/hoangthanh.jpg">
-				</div>
-				<div class="col-md-4 col-sm-6 col-xs-12 isotopeSelector "
-					style="margin-bottom: 25px">
-					<img width="100%" height="65.9%" alt="image tour"
-						src="user/images/gado.jpg">
-				</div>
-				<div class="col-md-4 col-sm-6 col-xs-12 isotopeSelector "
-					style="margin-bottom: 25px">
-					<img width="100%" height="65.9%" alt="image tour"
-						src="user/images/TrongMai.jpg">
-				</div>
-				<div class="col-md-4 col-sm-6 col-xs-12 isotopeSelector "
-					style="margin-bottom: 25px">
-					<img width="100%" height="65.9%" alt="image tour"
-						src="user/images/trangan.jpg">
-				</div>
-			</div>
 	</section>
 	<!-- menu nav -->
 

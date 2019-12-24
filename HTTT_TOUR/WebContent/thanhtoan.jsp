@@ -190,42 +190,9 @@
 					</tbody>
 				</table>
 			</div>
-			<div class="div_order">
-				<div class="tit_tt_khachhang_coban">DANH SÁCH KHÁCH ĐI TOUR</div>
-				<table class="table table-bordered tableRefix" id="tbl_tourdetail">
-					<thead>
-						<tr class="bgcolor">
-							<th class="auto-style1">Họ và tên</th>
-
-							<th class="auto-style1">Độ tuổi</th>
-							<th class="auto-style1">Giới tính</th>
-
-							<th class="auto-style1">Thành tiền</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-
-							<td data-title="Họ tên:">em thu ma</td>
-
-							<td data-title="Độ tuổi:"><span>Người lớn</span></td>
-							<td data-title="Giới tính:"><span>Nam</span></td>
-
-							<td data-title="Thành tiền:">3,390,000 đ</td>
-						</tr>
-
-					</tbody>
-					<tfoot>
-						<tr>
-							<td colspan="8" style="text-align: right;"><span>Tổng
-									cộng: </span> <input name="txt_tongcong" type="text"
-								value="3,390,000 đ" id="txt_tongcong" disabled="disabled"
-								class="aspNetDisabled"></td>
-						</tr>
-
-					</tfoot>
-				</table>
-			</div>
+			<span>Tổng cộng: </span> <input name="txt_tongcong" type="text"
+				value="3,390,000 đ" id="txt_tongcong" readonly="readonly"
+				class="aspNetDisabled">
 			<div class="div_next">
 				<input type="submit" value="Thanh toán"
 					class="form-control-date btn btn-primary">

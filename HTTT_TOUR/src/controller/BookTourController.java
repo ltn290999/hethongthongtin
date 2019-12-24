@@ -12,14 +12,14 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class ServiceController
  */
-@WebServlet("/service")
-public class ServiceController extends HttpServlet {
+@WebServlet("/book-tour")
+public class BookTourController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public ServiceController() {
+	public BookTourController() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -30,7 +30,7 @@ public class ServiceController extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		RequestDispatcher rd = request.getRequestDispatcher("service.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("bookTour.jsp");
 		rd.forward(request, response);
 	}
 

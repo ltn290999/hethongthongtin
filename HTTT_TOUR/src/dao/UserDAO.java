@@ -13,11 +13,8 @@ import utils.DbUtils;
 public class UserDAO {
 
 	
-	public static void main(String[] args) {
-		UserDAO s = new UserDAO();
-		System.out.println(s.register("zxczxczx", "123123"));
-	}
-	public boolean register(String username, String password) {
+	
+	public boolean register(String username, String password,String email) {
 		boolean bl = false;
 		ArrayList<String> listUser =  getUser();
 		for (String user : listUser) {
@@ -27,11 +24,12 @@ public class UserDAO {
 			} else {
 				Connection conn = DbUtils.getConnection();
 				try {
-					String sql = "insert into user_db (user_name, user_password,role_id) values (?,?,?)";
+					String sql = "insert into user_db (user_name, user_password,role_id,email) values (?,?,?,?)";
 					PreparedStatement ps = conn.prepareStatement(sql);
 					ps.setString(1, username);
 					ps.setString(2, password);
 					ps.setInt(3, 2);
+					ps.setString(4, email);
 					if (ps.executeUpdate() > 0) {
 						bl = true;
 						conn.commit();

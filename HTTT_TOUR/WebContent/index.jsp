@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -84,8 +85,8 @@
 	<div class="slide-one-item home-slider owl-carousel">
 
 		<div class="site-blocks-cover"
-			style="background-image: url(user/images/banner1.jpg);" data-aos="fade"
-			data-stellar-background-ratio="0.5">
+			style="background-image: url(user/images/banner1.jpg);"
+			data-aos="fade" data-stellar-background-ratio="0.5">
 
 			<div class="text">
 				<h2>Quảng trường đà lạt</h2>
@@ -107,8 +108,8 @@
 		</div>
 
 		<div class="site-blocks-cover"
-			style="background-image: url(user/images/banner2.jpg);" data-aos="fade"
-			data-stellar-background-ratio="0.5">
+			style="background-image: url(user/images/banner2.jpg);"
+			data-aos="fade" data-stellar-background-ratio="0.5">
 
 			<div class="text">
 				<h2>Cầu rồng</h2>
@@ -196,6 +197,8 @@
 	</div>
 
 
+
+
 	<div class="site-section site-section-sm bg-light"
 		style="margin-top: 50px;">
 		<div class="container">
@@ -207,185 +210,46 @@
 				</div>
 			</div>
 			<div class="row mb-5">
-				<div class="col-md-6 col-lg-4 mb-4">
-					<a href="booking.jsp" class="prop-entry d-block">
-						<figure>
-							<img src="user/images/tour1.jpg" alt="Image" class="img-fluid">
-						</figure>
-						<div class="prop-text">
-							<div class="inner">
-								<span class="price rounded">1,930,000đ</span>
-								<h3 class="title">DU LỊCH NHA TRANG - ĐÀ LẠT</h3>
-								<p class="location">TP. HỒ CHÍ MINH - ĐÀ LẠT | NHA TRANG</p>
-							</div>
-							<div class="prop-more-info">
-								<div class="inner d-flex">
-									<div class="col">
-										<span>Thời gian:</span> <strong>4 ngày 5 đêm</strong>
-									</div>
-									<div class="col">
-										<span>Phương tiện:</span> <strong>Đi về bằng xe</strong>
-									</div>
-									<div class="col">
-										<span>Mô tả:</span> <strong>Hòn Bà</strong>
-									</div>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
 
-				<div class="col-md-6 col-lg-4 mb-4">
-					<a href="booking.jsp" class="prop-entry d-block">
-						<figure>
-							<img src="user/images/tour2.jpg" alt="Image" class="img-fluid">
-						</figure>
-						<div class="prop-text">
-							<div class="inner">
-								<span class="price rounded">2,438,000đ</span>
-								<h3 class="title">DU LỊCH ĐÀ NẴNG- HUẾ</h3>
-								<p class="location">TP. HỒ CHÍ MINH - HUẾ | ĐÀ NẴNG</p>
-							</div>
-							<div class="prop-more-info">
-								<div class="inner d-flex">
-									<div class="col">
-										<span>Thời gian :</span> <strong>5 ngày 4 đêm</strong>
-									</div>
-									<div class="col">
-										<span>Phương tiện :</span> <strong>Hàng không</strong>
-									</div>
-									<div class="col">
-										<span>Địa điểm:</span> <strong>Kinh Thành Huế</strong>
-									</div>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
 
-				<div class="col-md-6 col-lg-4 mb-4">
-					<a href="booking.jsp" class="prop-entry d-block">
-						<figure>
-							<img src="user/images/tour3.jpg" alt="Image" class="img-fluid">
-						</figure>
-						<div class="prop-text">
-							<div class="inner">
-								<span class="price rounded">5,320,000đ</span>
-								<h3 class="title">DU LỊCH MỘC CHÂU - SƠN LA</h3>
-								<p class="location">SƠN LA</p>
-							</div>
-							<div class="prop-more-info">
-								<div class="inner d-flex">
-									<div class="col">
-										<span>Thời gian:</span> <strong>5 ngày 4 đêm</strong>
-									</div>
-									<div class="col">
-										<span>Phương tiện:</span> <strong>Hàng không</strong>
-									</div>
-									<div class="col">
-										<span>Mô tả:</span> <strong>đèo Pha Đin</strong>
-									</div>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-6 col-lg-4 mb-4">
-					<a href="booking.jsp" class="prop-entry d-block">
-						<figure>
-							<img src="user/images/tour4.jpg" alt="Image" class="img-fluid">
-						</figure>
-						<div class="prop-text">
-							<div class="inner">
-								<span class="price rounded">2,350,000đ</span>
-								<h3 class="title">DU LỊCH ĐÀ LẠT TRANG TRẠI RAU</h3>
-								<p class="location">HỒ CHÍ MINH - ĐÀ LẠT</p>
-							</div>
-							<div class="prop-more-info">
-								<div class="inner d-flex">
-									<div class="col">
-										<span>Thời gian:</span> <strong>4 ngày 3 đêm</strong>
-									</div>
-									<div class="col">
-										<span>Phương tiện:</span> <strong>Đi về bằng xe</strong>
-									</div>
-									<div class="col">
-										<span>Mô tả:</span> <strong>Dambri - hùng vĩ</strong>
-									</div>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
 
-				<div class="col-md-6 col-lg-4 mb-4">
-					<a href="booking.jsp" class="prop-entry d-block">
-						<figure>
-							<img src="user/images/tour5.jpg" alt="Image" class="img-fluid">
-						</figure>
-						<div class="prop-text">
-							<div class="inner">
-								<span class="price rounded">1,550,000đ</span>
-								<h3 class="title">DU LỊCH KHÁM PHÁ CÁI BÈ</h3>
-								<p class="location">TP. HỒ CHÍ MINH - MIỀN TÂY</p>
-							</div>
-							<div class="prop-more-info">
-								<div class="inner d-flex">
-									<div class="col">
-										<span>Thời gian :</span> <strong>4 ngày 3 đêm</strong>
-									</div>
-									<div class="col">
-										<span>Phương tiện:</span> <strong>Đi về bằng xe</strong>
-									</div>
-									<div class="col">
-										<span>Mô tả:</span> <strong>Tham quan</strong>
+				<c:url value="detail-tour" var="details">
+					<c:param name="id" value=""></c:param>
+				</c:url>
+				<c:forEach items="" var="">
+					<div class="col-md-6 col-lg-4 mb-4">
+						<a href="${details}" class="prop-entry d-block">
+							<figure>
+								<img src="user/images/tour5.jpg" alt="Image" class="img-fluid">
+							</figure>
+							<div class="prop-text">
+								<div class="inner">
+									<span class="price rounded">1,550,000đ</span>
+									<h3 class="title">DU LỊCH KHÁM PHÁ CÁI BÈ</h3>
+									<p class="location">TP. HỒ CHÍ MINH - MIỀN TÂY</p>
+								</div>
+								<div class="prop-more-info">
+									<div class="inner d-flex">
+										<div class="col">
+											<span>Thời gian :</span> <strong>4 ngày 3 đêm</strong>
+										</div>
+										<div class="col">
+											<span>Phương tiện:</span> <strong>Đi về bằng xe</strong>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class="col-md-6 col-lg-4 mb-4">
-					<a href="booking.jsp" class="prop-entry d-block">
-						<figure>
-							<img src="user/images/tour6.jpg" alt="Image" class="img-fluid">
-						</figure>
-						<div class="prop-text">
-							<div class="inner">
-								<span class="price rounded">4,291,000đ</span>
-								<h3 class="title">DU LỊCH PHÚ QUỐC - CÂU CÁ</h3>
-								<p class="location">HỒ CHÍ MINH - PHÚ QUỐC</p>
-							</div>
-							<div class="prop-more-info">
-								<div class="inner d-flex">
-									<div class="col">
-										<span>Thời gian:</span> <strong>3 ngày 2 đêm</strong>
-									</div>
-									<div class="col">
-										<span>Phương tiện:</span> <strong>Hàng không</strong>
-									</div>
-									<div class="col">
-										<span>Mô tả:</span> <strong>Du ngoạn biển</strong>
-									</div>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-
-			</div>
-			<div class="row">
-				<div class="col-md-12 text-center" style="margin-bottom: 50px">
-					<div class="site-pagination">
-						<a href="#" class="active">1</a> <a href="#">2</a> <a href="#">3</a>
-						<a href="#">4</a> <a href="#">5</a> <span>...</span> <a href="#">10</a>
+						</a>
 					</div>
-				</div>
+				</c:forEach>
+
 			</div>
+
 
 		</div>
 	</div>
+
+
 
 	<div class="site-section"
 		style="margin-bottom: 70px; margin-top: 50px;">
@@ -398,537 +262,60 @@
 				</div>
 			</div>
 
-			<div class="card">
-				<div class="row ">
-					<div class="col-md-4">
-						<img src="user/images/image11.jpg" class="w-100">
-					</div>
 
-					<div class="row">
-						<div class=".col-12 .col-md-8">
-							<div class="card-block px-3">
-								<h4 class="card-title">DU LỊCH ĐÀ NẴNG</h4>
-								<h6 class="card-text-city">HÀ NỘI - ĐÀ NẴNG</h6>
-								<p class="card-text">
-									Thời gian: 4 ngày 3 đêm <br>Phương tiện : Hàng không Việt
-									Nam Airlines <br>- Tham quan Đà Nẵng, Rừng dừa Bảy Mẫu,
-									phố cổ Hội An
-								</p>
-							</div>
+			<c:forEach items="" var="">
+				<div class="card">
+					<div class="row ">
+						<div class="col-md-4">
+							<img src="user/images/image12.jpg" class="w-100">
 						</div>
-						<div class=".col-6 .col-md-4">
-							<div class="col-md align-self-end">
-								<div class="form-group">
-									<div class="form-field">
-										<input type="submit" value="Giá từ 3,739,000đ"
-											class="form-control-date btn btn-primary">
-									</div>
+
+						<div class="row">
+							<div class=".col-12 .col-md-8">
+								<div class="card-block px-3">
+									<h4 class="card-title">DU LỊCH SUNSET SANATO BEACH</h4>
+									<h6 class="card-text-city">HÀ NỘI - ĐÀ NẴNG</h6>
+									<p class="card-text">
+										Thời gian: 4 ngày 3 đêm <br>Phương tiện : Hàng không Việt
+										Nam Airlines <br>- Tham quan Đà Nẵng, Rừng dừa Bảy Mẫu,
+										phố cổ Hội An
+									</p>
+								</div>
+							</div>
+							<div class=".col-6 .col-md-4">
+								<div class="col-md align-self-end">
 									<div class="form-group">
 										<div class="form-field">
-											<div class="row" style="text-align: center;">
-												<span style="margin-left: 50px;" class="icon-calendar"></span>
-												<p
-													style="text-decoration: underline; margin-left: 10px; margin-top: -5px;">Xem
-													thêm</p>
+											<input type="submit" value="Giá từ 3,739,000đ"
+												class="form-control-date btn btn-primary">
+										</div>
+										<div class="form-group">
+											<div class="form-field">
+												<div class="row" style="text-align: center;">
+													<span style="margin-left: 50px;" class="icon-calendar"></span>
+													<p
+														style="text-decoration: underline; margin-left: 10px; margin-top: -5px;">Xem
+														thêm</p>
+												</div>
+												<input type="text" class="form-control"
+													placeholder=" 03/11/2019"
+													style="pointer-events: none; text-align: center; margin-top: 5px;">
 											</div>
-											<input type="text" class="form-control"
-												placeholder=" 27/10/2019"
-												style="pointer-events: none; text-align: center;"> <input
-												type="text" class="form-control" placeholder=" 03/11/2019"
-												style="pointer-events: none; text-align: center; margin-top: 5px;">
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+
 					</div>
 				</div>
-			</div>
+			</c:forEach>
 
-			<div class="card">
-				<div class="row ">
-					<div class="col-md-4">
-						<img src="user/images/image3.jpg" class="w-100">
-					</div>
-
-					<div class="row">
-						<div class=".col-12 .col-md-8">
-							<div class="card-block px-3">
-								<h4 class="card-title">DU LỊCH ĐÀ NẴNG</h4>
-								<h6 class="card-text-city">HÀ NỘI - ĐÀ NẴNG</h6>
-								<p class="card-text">
-									Thời gian: 4 ngày 3 đêm <br>Phương tiện : Hàng không Việt
-									Nam Airlines <br>- Tham quan Đà Nẵng, Rừng dừa Bảy Mẫu,
-									phố cổ Hội An
-								</p>
-							</div>
-						</div>
-						<div class=".col-6 .col-md-4">
-							<div class="col-md align-self-end">
-								<div class="form-group">
-									<div class="form-field">
-										<input type="submit" value="Giá từ 3,739,000đ"
-											class="form-control-date btn btn-primary">
-									</div>
-									<div class="form-group">
-										<div class="form-field">
-											<div class="row" style="text-align: center;">
-												<span style="margin-left: 50px;" class="icon-calendar"></span>
-												<p
-													style="text-decoration: underline; margin-left: 10px; margin-top: -5px;">Xem
-													thêm</p>
-											</div>
-											<input type="text" class="form-control"
-												placeholder=" 27/10/2019"
-												style="pointer-events: none; text-align: center;"> <input
-												type="text" class="form-control" placeholder=" 03/11/2019"
-												style="pointer-events: none; text-align: center; margin-top: 5px;">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="card">
-				<div class="row ">
-					<div class="col-md-4">
-						<img src="user/images/image4.jpg" class="w-100">
-					</div>
-
-					<div class="row">
-						<div class=".col-12 .col-md-8">
-							<div class="card-block px-3">
-								<h4 class="card-title">DU LỊCH NHA TRANG</h4>
-								<h6 class="card-text-city">HÀ NỘI - ĐÀ NẴNG</h6>
-								<p class="card-text">
-									Thời gian: 4 ngày 3 đêm <br>Phương tiện : Hàng không Việt
-									Nam Airlines <br>- Tham quan Đà Nẵng, Rừng dừa Bảy Mẫu,
-									phố cổ Hội An
-								</p>
-							</div>
-						</div>
-						<div class=".col-6 .col-md-4">
-							<div class="col-md align-self-end">
-								<div class="form-group">
-									<div class="form-field">
-										<input type="submit" value="Giá từ 3,739,000đ"
-											class="form-control-date btn btn-primary">
-									</div>
-									<div class="form-group">
-										<div class="form-field">
-											<div class="row" style="text-align: center;">
-												<span style="margin-left: 50px;" class="icon-calendar"></span>
-												<p
-													style="text-decoration: underline; margin-left: 10px; margin-top: -5px;">Xem
-													thêm</p>
-											</div>
-											<input type="text" class="form-control"
-												placeholder=" 27/10/2019"
-												style="pointer-events: none; text-align: center;"> <input
-												type="text" class="form-control" placeholder=" 03/11/2019"
-												style="pointer-events: none; text-align: center; margin-top: 5px;">
-										</div>
-									</div>
-
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-			<div class="card">
-				<div class="row ">
-					<div class="col-md-4">
-						<img src="user/images/image5.jpg" class="w-100">
-					</div>
-
-					<div class="row">
-						<div class=".col-12 .col-md-8">
-							<div class="card-block px-3">
-								<h4 class="card-title">DU LỊCH PHÚ QUỐC</h4>
-								<h6 class="card-text-city">HÀ NỘI - ĐÀ NẴNG</h6>
-								<p class="card-text">
-									Thời gian: 4 ngày 3 đêm <br>Phương tiện : Hàng không Việt
-									Nam Airlines <br>- Tham quan Đà Nẵng, Rừng dừa Bảy Mẫu,
-									phố cổ Hội An
-								</p>
-							</div>
-						</div>
-						<div class=".col-6 .col-md-4">
-							<div class="col-md align-self-end">
-								<div class="form-group">
-									<div class="form-field">
-										<input type="submit" value="Giá từ 3,739,000đ"
-											class="form-control-date btn btn-primary">
-									</div>
-									<div class="form-group">
-										<div class="form-field">
-											<div class="row" style="text-align: center;">
-												<span style="margin-left: 50px;" class="icon-calendar"></span>
-												<p
-													style="text-decoration: underline; margin-left: 10px; margin-top: -5px;">Xem
-													thêm</p>
-											</div>
-											<input type="text" class="form-control"
-												placeholder=" 27/10/2019"
-												style="pointer-events: none; text-align: center;"> <input
-												type="text" class="form-control" placeholder=" 03/11/2019"
-												style="pointer-events: none; text-align: center; margin-top: 5px;">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="card">
-				<div class="row ">
-					<div class="col-md-4">
-						<img src="user/images/image6.jpg" class="w-100">
-					</div>
-
-					<div class="row">
-						<div class=".col-12 .col-md-8">
-							<div class="card-block px-3">
-								<h4 class="card-title">DU LỊCH HẠ LONG</h4>
-								<h6 class="card-text-city">HÀ NỘI - ĐÀ NẴNG</h6>
-								<p class="card-text">
-									Thời gian: 4 ngày 3 đêm <br>Phương tiện : Hàng không Việt
-									Nam Airlines <br>- Tham quan Đà Nẵng, Rừng dừa Bảy Mẫu,
-									phố cổ Hội An
-								</p>
-							</div>
-						</div>
-						<div class=".col-6 .col-md-4">
-							<div class="col-md align-self-end">
-								<div class="form-group">
-									<div class="form-field">
-										<input type="submit" value="Giá từ 3,739,000đ"
-											class="form-control-date btn btn-primary">
-									</div>
-									<div class="form-group">
-										<div class="form-field">
-											<div class="row" style="text-align: center;">
-												<span style="margin-left: 50px;" class="icon-calendar"></span>
-												<p
-													style="text-decoration: underline; margin-left: 10px; margin-top: -5px;">Xem
-													thêm</p>
-											</div>
-											<input type="text" class="form-control"
-												placeholder=" 27/10/2019"
-												style="pointer-events: none; text-align: center;"> <input
-												type="text" class="form-control" placeholder=" 03/11/2019"
-												style="pointer-events: none; text-align: center; margin-top: 5px;">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="card">
-				<div class="row ">
-					<div class="col-md-4">
-						<img src="user/images/image7.jpg" class="w-100">
-					</div>
-
-					<div class="row">
-						<div class=".col-12 .col-md-8">
-							<div class="card-block px-3">
-								<h4 class="card-title">DU LICH BA BỂ</h4>
-								<h6 class="card-text-city">HÀ NỘI - ĐÀ NẴNG</h6>
-								<p class="card-text">
-									Thời gian: 4 ngày 3 đêm <br>Phương tiện : Hàng không Việt
-									Nam Airlines <br>- Tham quan Đà Nẵng, Rừng dừa Bảy Mẫu,
-									phố cổ Hội An
-								</p>
-							</div>
-						</div>
-						<div class=".col-6 .col-md-4">
-							<div class="col-md align-self-end">
-								<div class="form-group">
-									<div class="form-field">
-										<input type="submit" value="Giá từ 3,739,000đ"
-											class="form-control-date btn btn-primary">
-									</div>
-									<div class="form-group">
-										<div class="form-field">
-											<div class="row" style="text-align: center;">
-												<span style="margin-left: 50px;" class="icon-calendar"></span>
-												<p
-													style="text-decoration: underline; margin-left: 10px; margin-top: -5px;">Xem
-													thêm</p>
-											</div>
-											<input type="text" class="form-control"
-												placeholder=" 27/10/2019"
-												style="pointer-events: none; text-align: center;"> <input
-												type="text" class="form-control" placeholder=" 03/11/2019"
-												style="pointer-events: none; text-align: center; margin-top: 5px;">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="card">
-				<div class="row ">
-					<div class="col-md-4">
-						<img src="user/images/image8.jpg" class="w-100">
-					</div>
-
-					<div class="row">
-						<div class=".col-12 .col-md-8">
-							<div class="card-block px-3">
-								<h4 class="card-title">DU LỊCH PHAN THIẾT - MŨI NÉ</h4>
-								<h6 class="card-text-city">HÀ NỘI - ĐÀ NẴNG</h6>
-								<p class="card-text">
-									Thời gian: 4 ngày 3 đêm <br>Phương tiện : Hàng không Việt
-									Nam Airlines <br>- Tham quan Đà Nẵng, Rừng dừa Bảy Mẫu,
-									phố cổ Hội An
-								</p>
-							</div>
-						</div>
-						<div class=".col-6 .col-md-4">
-							<div class="col-md align-self-end">
-								<div class="form-group">
-									<div class="form-field">
-										<input type="submit" value="Giá từ 3,739,000đ"
-											class="form-control-date btn btn-primary">
-									</div>
-									<div class="form-group">
-										<div class="form-field">
-											<div class="row" style="text-align: center;">
-												<span style="margin-left: 50px;" class="icon-calendar"></span>
-												<p
-													style="text-decoration: underline; margin-left: 10px; margin-top: -5px;">Xem
-													thêm</p>
-											</div>
-											<input type="text" class="form-control"
-												placeholder=" 27/10/2019"
-												style="pointer-events: none; text-align: center;"> <input
-												type="text" class="form-control" placeholder=" 03/11/2019"
-												style="pointer-events: none; text-align: center; margin-top: 5px;">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="card">
-				<div class="row ">
-					<div class="col-md-4">
-						<img src="user/images/image9.jpg" class="w-100">
-					</div>
-
-					<div class="row">
-						<div class=".col-12 .col-md-8">
-							<div class="card-block px-3">
-								<h4 class="card-title">DU LỊCH ĐÀ NẴNG</h4>
-								<h6 class="card-text-city">HÀ NỘI - ĐÀ NẴNG</h6>
-								<p class="card-text">
-									Thời gian: 4 ngày 3 đêm <br>Phương tiện : Hàng không Việt
-									Nam Airlines <br>- Tham quan Đà Nẵng, Rừng dừa Bảy Mẫu,
-									phố cổ Hội An
-								</p>
-							</div>
-						</div>
-						<div class=".col-6 .col-md-4">
-							<div class="col-md align-self-end">
-								<div class="form-group">
-									<div class="form-field">
-										<input type="submit" value="Giá từ 3,739,000đ"
-											class="form-control-date btn btn-primary">
-									</div>
-									<div class="form-group">
-										<div class="form-field">
-											<div class="row" style="text-align: center;">
-												<span style="margin-left: 50px;" class="icon-calendar"></span>
-												<p
-													style="text-decoration: underline; margin-left: 10px; margin-top: -5px;">Xem
-													thêm</p>
-											</div>
-											<input type="text" class="form-control"
-												placeholder=" 27/10/2019"
-												style="pointer-events: none; text-align: center;"> <input
-												type="text" class="form-control" placeholder=" 03/11/2019"
-												style="pointer-events: none; text-align: center; margin-top: 5px;">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="card">
-				<div class="row ">
-					<div class="col-md-4">
-						<img src="user/images/image10.jpg" class="w-100">
-					</div>
-
-					<div class="row">
-						<div class=".col-12 .col-md-8">
-							<div class="card-block px-3">
-								<h4 class="card-title">DU LỊCH ĐÀ LẠT 3 NGÀY 2 ĐÊM</h4>
-								<h6 class="card-text-city">HÀ NỘI - ĐÀ NẴNG</h6>
-								<p class="card-text">
-									Thời gian: 4 ngày 3 đêm <br>Phương tiện : Hàng không Việt
-									Nam Airlines <br>- Tham quan Đà Nẵng, Rừng dừa Bảy Mẫu,
-									phố cổ Hội An
-								</p>
-							</div>
-						</div>
-						<div class=".col-6 .col-md-4">
-							<div class="col-md align-self-end">
-								<div class="form-group">
-									<div class="form-field">
-										<input type="submit" value="Giá từ 3,739,000đ"
-											class="form-control-date btn btn-primary">
-									</div>
-									<div class="form-group">
-										<div class="form-field">
-											<div class="row" style="text-align: center;">
-												<span style="margin-left: 50px;" class="icon-calendar"></span>
-												<p
-													style="text-decoration: underline; margin-left: 10px; margin-top: -5px;">Xem
-													thêm</p>
-											</div>
-											<input type="text" class="form-control"
-												placeholder=" 27/10/2019"
-												style="pointer-events: none; text-align: center;"> <input
-												type="text" class="form-control" placeholder=" 03/11/2019"
-												style="pointer-events: none; text-align: center; margin-top: 5px;">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-			<div class="card">
-				<div class="row ">
-					<div class="col-md-4">
-						<img src="user/images/image11.jpg" class="w-100">
-					</div>
-
-					<div class="row">
-						<div class=".col-12 .col-md-8">
-							<div class="card-block px-3">
-								<h4 class="card-title">DU LỊCH HÀ NỘI - NINH BÌNH</h4>
-								<h6 class="card-text-city">HÀ NỘI - ĐÀ NẴNG</h6>
-								<p class="card-text">
-									Thời gian: 4 ngày 3 đêm <br>Phương tiện : Hàng không Việt
-									Nam Airlines <br>- Tham quan Đà Nẵng, Rừng dừa Bảy Mẫu,
-									phố cổ Hội An
-								</p>
-							</div>
-						</div>
-						<div class=".col-6 .col-md-4">
-							<div class="col-md align-self-end">
-								<div class="form-group">
-									<div class="form-field">
-										<input type="submit" value="Giá từ 3,739,000đ"
-											class="form-control-date btn btn-primary">
-									</div>
-									<div class="form-group">
-										<div class="form-field">
-											<div class="row" style="text-align: center;">
-												<span style="margin-left: 50px;" class="icon-calendar"></span>
-												<p
-													style="text-decoration: underline; margin-left: 10px; margin-top: -5px;">Xem
-													thêm</p>
-											</div>
-											<input type="text" class="form-control"
-												placeholder=" 27/10/2019"
-												style="pointer-events: none; text-align: center;"> <input
-												type="text" class="form-control" placeholder=" 03/11/2019"
-												style="pointer-events: none; text-align: center; margin-top: 5px;">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="card">
-				<div class="row ">
-					<div class="col-md-4">
-						<img src="user/images/image12.jpg" class="w-100">
-					</div>
-
-					<div class="row">
-						<div class=".col-12 .col-md-8">
-							<div class="card-block px-3">
-								<h4 class="card-title">DU LỊCH SUNSET SANATO BEACH</h4>
-								<h6 class="card-text-city">HÀ NỘI - ĐÀ NẴNG</h6>
-								<p class="card-text">
-									Thời gian: 4 ngày 3 đêm <br>Phương tiện : Hàng không Việt
-									Nam Airlines <br>- Tham quan Đà Nẵng, Rừng dừa Bảy Mẫu,
-									phố cổ Hội An
-								</p>
-							</div>
-						</div>
-						<div class=".col-6 .col-md-4">
-							<div class="col-md align-self-end">
-								<div class="form-group">
-									<div class="form-field">
-										<input type="submit" value="Giá từ 3,739,000đ"
-											class="form-control-date btn btn-primary">
-									</div>
-									<div class="form-group">
-										<div class="form-field">
-											<div class="row" style="text-align: center;">
-												<span style="margin-left: 50px;" class="icon-calendar"></span>
-												<p
-													style="text-decoration: underline; margin-left: 10px; margin-top: -5px;">Xem
-													thêm</p>
-											</div>
-											<input type="text" class="form-control"
-												placeholder=" 27/10/2019"
-												style="pointer-events: none; text-align: center;"> <input
-												type="text" class="form-control" placeholder=" 03/11/2019"
-												style="pointer-events: none; text-align: center; margin-top: 5px;">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="row" style="margin-top: 30px;">
-				<div class="col-md-12 text-center">
-					<div class="site-pagination">
-						<a href="#" class="active">1</a> <a href="#">2</a> <a href="#">3</a>
-						<a href="#">4</a> <a href="#">5</a> <span>...</span> <a href="#">10</a>
-					</div>
-				</div>
-			</div>
 		</div>
 	</div>
-	</div>
+
+
+
 
 	<footer class="site-footer">
 		<div class="container">
