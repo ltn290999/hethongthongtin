@@ -50,10 +50,10 @@
 			<div class="container py-1">
 				<div class="row align-items-center">
 					<div class="col-8 col-md-8 col-lg-4">
-							<h1 class="">
-						<a href="trang-chu" class="h5 text-uppercase text-black"><strong>HomeTourist<span
-								class="text-danger">.</span></strong></a>
-					</h1>
+						<h1 class="">
+							<a href="trang-chu" class="h5 text-uppercase text-black"><strong>HomeTourist<span
+									class="text-danger">.</span></strong></a>
+						</h1>
 					</div>
 					<div class="col-4 col-md-4 col-lg-8">
 						<nav class="site-navigation text-right text-md-right"
@@ -90,44 +90,41 @@
 			<div class="wrap-login100">
 				<div class="login100-pic js-tilt" data-tilt>
 					<!-- <img src="user/images/img-01.png" alt="IMG"> -->
-					<br>
-					<br>
-					<br>
-					<br> <img src="user/images/planes.png" alt="IMG">
+					<br> <br> <br> <br> <img
+						src="user/images/planes.png" alt="IMG">
 				</div>
 
-				<form class="login100-form validate-form">
+				<form action="dang-nhap" method="post">
 					<span class="login100-form-title"> ĐĂNG NHẬP </span>
+					
+						<div class="wrap-input100 validate-input">
+							<input class="input100" type="text" name="username"
+								placeholder="Tên đăng nhập"> <span
+								class="focus-input100"></span> <span class="symbol-input100">
+								<i class="fa fa-envelope" aria-hidden="true"></i>
+							</span>
+						</div>
 
-					<div class="wrap-input100 validate-input"
-						data-validate="Email hợp lệ là : ex@abc.xyz">
-						<input class="input100" id="tkuser" type="text" name="email"
-							placeholder="Địa chỉ email"> <span class="focus-input100"></span>
-						<span class="symbol-input100"> <i class="fa fa-envelope"
-							aria-hidden="true"></i>
-						</span>
-					</div>
+						<div class="wrap-input100 validate-input"
+							data-validate="Vui lòng nhập mật khẩu">
+							<input class="input100" type="password" name="password"
+								placeholder="Mật khẩu"> <span class="focus-input100"></span>
+							<!-- biểu tượng kế bên phập nội dung -->
+							<span class="symbol-input100"> <i class="fa fa-lock"
+								aria-hidden="true"></i>
+							</span>
+						</div>
 
-					<div class="wrap-input100 validate-input"
-						data-validate="Vui lòng nhập mật khẩu">
-						<input class="input100" id="mkuser" type="password" name="pass"
-							placeholder="Mật khẩu"> <span class="focus-input100"></span>
-						<!-- biểu tượng kế bên phập nội dung -->
-						<span class="symbol-input100"> <i class="fa fa-lock"
-							aria-hidden="true"></i>
-						</span>
-					</div>
-
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn" onclick="myFunction122()">
-							Đăng nhập</button>
-					</div>
-					<div class="text-center p-t-136">
-						<a class="txt2" href="dang-ky"> Đăng kí tài khoản mới <i
-							class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
-						</a>
-					</div>
-				</form>
+						<div class="container-login100-form-btn">
+							<button class="login100-form-btn" type="submit">Đăng
+								nhập</button>
+						</div>
+						<div class="text-center p-t-136">
+							<a class="txt2" href="dang-ky"> Đăng kí tài khoản mới <i
+								class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+							</a>
+						</div>
+					</form>
 			</div>
 		</div>
 

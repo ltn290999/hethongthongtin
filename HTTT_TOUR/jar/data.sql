@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.13, for Win64 (x86_64)
 --
--- Host: localhost    Database: pttk
+-- Host: localhost    Database: httt
 -- ------------------------------------------------------
 -- Server version	8.0.13
 
@@ -23,16 +23,17 @@ DROP TABLE IF EXISTS `booktour`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
  SET character_set_client = utf8mb4 ;
 CREATE TABLE `booktour` (
-  `id` int(255) NOT NULL primary key AUTO_INCREMENT COMMENT 'Số thự tự',
+  `id` int(255) NOT NULL AUTO_INCREMENT COMMENT 'Số thự tự',
   `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT 'Tên Tour',
-  `quantity` int(255) DEFAULT NULL COMMENT 'Số lượng',
-  `describle` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT 'Mô tả Tour',
+  `slNguoiLon` int(255) DEFAULT NULL COMMENT 'Số lượng',
+  `slTreNho` int(255) DEFAULT NULL COMMENT 'Số lượng',
   `note` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT 'Ghi chú',
-  `date` datetime DEFAULT NULL COMMENT 'Ngày khởi hành',
-  `id_custormer` varchar(255) NOT NULL COMMENT 'Mã khách hàng',
- 
-  KEY `fk_cus` (`id_custormer`),
-  CONSTRAINT `fk_cus` FOREIGN KEY (`id_custormer`) REFERENCES `custormer` (`userid`)
+  `date` date DEFAULT NULL COMMENT 'Ngày khởi hành',
+  `id_tour` int(11) NOT NULL,
+  `id_customer` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `fk_user` (`id_customer`),
+  CONSTRAINT `fk_user` FOREIGN KEY (`id_customer`) REFERENCES `user_db` (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -46,33 +47,6 @@ LOCK TABLES `booktour` WRITE;
 UNLOCK TABLES;
 
 --
--- Table structure for table `custormer`
---
-
-DROP TABLE IF EXISTS `custormer`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
-CREATE TABLE `custormer` (
-  `userID` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT 'Mã khách hàng',
-  `fullname` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT 'Tên đầy đủ',
-  `email` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT 'Email khách hàng',
-  `phoneNumber` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT 'Số điện thoại',
-  `gender` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT 'Giới tính',
-  `address` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT 'Địa chỉ',
-  PRIMARY KEY (`userID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `custormer`
---
-
-LOCK TABLES `custormer` WRITE;
-/*!40000 ALTER TABLE `custormer` DISABLE KEYS */;
-/*!40000 ALTER TABLE `custormer` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `paytour`
 --
 
@@ -80,13 +54,15 @@ DROP TABLE IF EXISTS `paytour`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
  SET character_set_client = utf8mb4 ;
 CREATE TABLE `paytour` (
-  `id` varchar(255) NOT NULL,
-  `name` varchar(255) DEFAULT NULL,
-  `decription` varchar(255) DEFAULT NULL,
-  `id_BookTOur` int(255) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id_bookTour` int(11) NOT NULL,
+  `cus_name` varchar(255) NOT NULL,
+  `cus_email` varchar(255) NOT NULL,
+  `cus_phone` varchar(255) NOT NULL,
+  `cus_address` varchar(255) NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `fk_tour` (`id_BookTOur`),
-  CONSTRAINT `fk_tour` FOREIGN KEY (`id_BookTOur`) REFERENCES `booktour` (`id`)
+  KEY `fk_tour` (`id_bookTour`),
+  CONSTRAINT `fk_tour` FOREIGN KEY (`id_bookTour`) REFERENCES `booktour` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -100,8 +76,65 @@ LOCK TABLES `paytour` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `role_db`
+--
+
+DROP TABLE IF EXISTS `role_db`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `role_db` (
+  `role_id` int(11) NOT NULL AUTO_INCREMENT,
+  `role_name` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`role_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `role_db`
+--
+
+LOCK TABLES `role_db` WRITE;
+/*!40000 ALTER TABLE `role_db` DISABLE KEYS */;
+INSERT INTO `role_db` VALUES (1,'ROLE_ADMIN'),(2,'ROLE_USER');
+/*!40000 ALTER TABLE `role_db` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `tour`
 --
+
+DROP TABLE IF EXISTS `tour`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `tour` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `img_tour` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `description` varchar(255) DEFAULT NULL,
+  `customer seat` int(255) DEFAULT NULL,
+  `vehicle` varchar(255) DEFAULT NULL,
+  `price` double(20,1) DEFAULT NULL,
+  `price_treEm` double NOT NULL,
+  `dateStart` date NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tour`
+--
+
+LOCK TABLES `tour` WRITE;
+/*!40000 ALTER TABLE `tour` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tour` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `user_db`
+--
+
+DROP TABLE IF EXISTS `user_db`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `user_db` (
   `user_id` int(11) NOT NULL AUTO_INCREMENT,
   `user_name` varchar(50) NOT NULL,
@@ -115,35 +148,15 @@ CREATE TABLE `user_db` (
   KEY `role_id` (`role_id`),
   CONSTRAINT `user_db_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `role_db` (`role_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-CREATE TABLE `role_db` (
-  `role_id` int(11) NOT NULL AUTO_INCREMENT,
-  `role_name` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`role_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-DROP TABLE IF EXISTS `tour`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
-CREATE TABLE `tour` (
-  `id` varchar(255) NOT NULL,
-  `img_tour` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `description` varchar(255) DEFAULT NULL,
-  `customer seat` int(255) DEFAULT NULL,
-  `vehicle` varchar(255) DEFAULT NULL,
-  `price` double(20,1) DEFAULT NULL,
-  `id_tour` int(255) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `fk_tou` (`id_tour`),
-  CONSTRAINT `fk_tou` FOREIGN KEY (`id_tour`) REFERENCES `booktour` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `tour`
+-- Dumping data for table `user_db`
 --
 
-LOCK TABLES `tour` WRITE;
-/*!40000 ALTER TABLE `tour` DISABLE KEYS */;
-/*!40000 ALTER TABLE `tour` ENABLE KEYS */;
+LOCK TABLES `user_db` WRITE;
+/*!40000 ALTER TABLE `user_db` DISABLE KEYS */;
+/*!40000 ALTER TABLE `user_db` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -155,4 +168,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-12-24 20:15:25
+-- Dump completed on 2019-12-24 22:31:05
