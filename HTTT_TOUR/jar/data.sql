@@ -23,14 +23,14 @@ DROP TABLE IF EXISTS `booktour`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
  SET character_set_client = utf8mb4 ;
 CREATE TABLE `booktour` (
-  `id` int(255) NOT NULL AUTO_INCREMENT COMMENT 'Số thự tự',
+  `id` int(255) NOT NULL primary key AUTO_INCREMENT COMMENT 'Số thự tự',
   `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT 'Tên Tour',
   `quantity` int(255) DEFAULT NULL COMMENT 'Số lượng',
   `describle` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT 'Mô tả Tour',
   `note` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT 'Ghi chú',
   `date` datetime DEFAULT NULL COMMENT 'Ngày khởi hành',
   `id_custormer` varchar(255) NOT NULL COMMENT 'Mã khách hàng',
-  PRIMARY KEY (`id`),
+ 
   KEY `fk_cus` (`id_custormer`),
   CONSTRAINT `fk_cus` FOREIGN KEY (`id_custormer`) REFERENCES `custormer` (`userid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -102,7 +102,24 @@ UNLOCK TABLES;
 --
 -- Table structure for table `tour`
 --
-
+CREATE TABLE `user_db` (
+  `user_id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_name` varchar(50) NOT NULL,
+  `user_password` varchar(50) NOT NULL,
+  `user_fullname` varchar(50) DEFAULT NULL,
+  `role_id` int(11) NOT NULL,
+  `phone` varchar(11) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `address` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`user_id`),
+  KEY `role_id` (`role_id`),
+  CONSTRAINT `user_db_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `role_db` (`role_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `role_db` (
+  `role_id` int(11) NOT NULL AUTO_INCREMENT,
+  `role_name` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`role_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 DROP TABLE IF EXISTS `tour`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
  SET character_set_client = utf8mb4 ;
