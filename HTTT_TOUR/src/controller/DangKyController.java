@@ -1,4 +1,4 @@
-package Controller;
+package controller;
 
 import java.io.IOException;
 
@@ -10,16 +10,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class DangNhapController
+ * Servlet implementation class DangKyController
  */
-@WebServlet("/dang-nhap")
-public class DangNhapController extends HttpServlet {
+@WebServlet("/dang-ky")
+public class DangKyController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public DangNhapController() {
+    public DangKyController() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -28,7 +28,7 @@ public class DangNhapController extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher rd = request.getRequestDispatcher("user/Login/login.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("user/Login/register.jsp");
 		rd.forward(request, response);
 	}
 
