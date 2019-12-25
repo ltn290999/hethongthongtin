@@ -3,15 +3,11 @@
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
 <title>Chọn dịch vụ</title>
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
 <script type="text/javascript" nonce="39be21c4b7934f2cb0da9b523b0"
 	src="//local.adguard.org?ts=1574694577622&amp;type=content-script&amp;dmn=cdn.fbsbx.com&amp;css=1&amp;js=1&amp;gcss=1&amp;rel=1&amp;rji=1"></script>
 <script type="text/javascript" nonce="39be21c4b7934f2cb0da9b523b0"
