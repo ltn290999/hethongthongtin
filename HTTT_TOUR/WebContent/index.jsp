@@ -65,25 +65,16 @@
 						<ul class="site-menu js-clone-nav d-none d-lg-block"
 							style="margin-left: -200px">
 							<li><a href="tour-trong-nuoc">TOUR TRONG NƯỚC</a></li>
-							<li><a href="tour-nuoc-ngoai">TOUR NƯỚC NGOÀI</a></li>
 							<li><a href="dang-nhap">ĐĂNG NHẬP</a></li>
-							<li><a href="booking-tour"><button
-										class="btn btn-deep-orange " type="button"
-										style="width: 120px; font-size: 15px; padding-left: 8px; color: #ffffff; background: #f89d13;">
-										<i class="bookingNow"></i> ĐẶT NGAY
-									</button></a></li>
 						</ul>
 					</nav>
 				</div>
-
-
 			</div>
 		</div>
 	</div>
-	</div>
+
 
 	<div class="slide-one-item home-slider owl-carousel">
-
 		<div class="site-blocks-cover"
 			style="background-image: url(user/images/banner1.jpg);"
 			data-aos="fade" data-stellar-background-ratio="0.5">
@@ -171,19 +162,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-2">
-					<div class="form-group">
-						<label for="#">Chọn tour</label>
-						<div class="form-field">
-							<i class="icon icon-arrow-down3"></i> <select name="people"
-								id="people" class="form-control">
-								<option value="#">Trong nước</option>
-								<option value="#">Ngoài nước</option>
-								<option value="#">Tất cả</option>
-							</select>
-						</div>
-					</div>
-				</div>
+			
 				<div class="col-md align-self-end">
 					<div class="form-group">
 						<div class="form-field">
@@ -216,7 +195,7 @@
 				<c:url value="detail-tour" var="details">
 					<c:param name="id" value=""></c:param>
 				</c:url>
-				<c:forEach items="" var="">
+				<c:forEach items="${listTour}" var="tour">
 					<div class="col-md-6 col-lg-4 mb-4">
 						<a href="${details}" class="prop-entry d-block">
 							<figure>
@@ -263,7 +242,7 @@
 			</div>
 
 
-			<c:forEach items="" var="">
+			<a href="">
 				<div class="card">
 					<div class="row ">
 						<div class="col-md-4">
@@ -293,9 +272,8 @@
 											<div class="form-field">
 												<div class="row" style="text-align: center;">
 													<span style="margin-left: 50px;" class="icon-calendar"></span>
-													<p
-														style="text-decoration: underline; margin-left: 10px; margin-top: -5px;">Xem
-														thêm</p>
+
+													<p style="text-decoration: underline; margin-left: 10px; margin-top: -5px;">Ngày khởi hành</p>
 												</div>
 												<input type="text" class="form-control"
 													placeholder=" 03/11/2019"
@@ -309,7 +287,7 @@
 
 					</div>
 				</div>
-			</c:forEach>
+			</a>
 
 		</div>
 	</div>
@@ -376,7 +354,7 @@
 		</div>
 	</footer>
 
-	</div>
+	
 
 	<script src="user/js/jquery-3.3.1.min.js"></script>
 	<script src="user/js/jquery-migrate-3.0.1.min.js"></script>

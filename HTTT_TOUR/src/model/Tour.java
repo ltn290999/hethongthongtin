@@ -12,7 +12,7 @@ public class Tour {
 	private double price;
 	private double priceTreEm;
 	private Date dateStart;
-	private boolean trongNuoc;
+	
 	private int luotTruyCap;
 	private String timeTour;
 	private String tourName;
@@ -100,14 +100,7 @@ public class Tour {
 		return kq;
 	}
 
-	public boolean isTrongNuoc() {
-		return trongNuoc;
-	}
-
-	public void setTrongNuoc(boolean trongNuoc) {
-		this.trongNuoc = trongNuoc;
-	}
-
+	
 	public int getLuotTruyCap() {
 		return luotTruyCap;
 	}
