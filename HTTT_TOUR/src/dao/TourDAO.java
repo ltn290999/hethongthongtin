@@ -1,6 +1,7 @@
 package dao;
 
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -343,5 +344,37 @@ public class TourDAO {
 			ex.printStackTrace();
 		}
 		return bl;
+	}
+
+	public ArrayList<Tour> search(String text, Date dateTuNgay, Date dateDenNgay) {
+		ArrayList<Tour> list = new ArrayList<>();
+		try {
+			Connection conn = DbUtils.getConnection();
+			PreparedStatement ps = conn
+					.prepareStatement(" select * from tour where" + " tourName like '? and dateStart between? and ?");
+			ps.setString(1, "%" + text + "%");
+			ps.setDate(2, dateTuNgay);
+			ps.setDate(3, dateDenNgay);
+			ResultSet rss = ps.executeQuery();
+			while (rss.next()) {
+				Tour tour = new Tour();
+				tour.setIdTour(rss.getInt("id"));
+				tour.setImg_Tour(rss.getString("img_tour"));
+				tour.setDescription(rss.getString("description"));
+				tour.setCustomerSeat(rss.getInt("customer_seat"));
+				tour.setVehicle(rss.getString("vehicle"));
+				tour.setPrice(rss.getDouble("price"));
+				tour.setPriceTreEm(rss.getDouble("price_TreEm"));
+				tour.setDateStart(rss.getDate("dateStart"));
+				tour.setTourName(rss.getString("tourName"));
+				tour.setDiemDen(rss.getString("diemDen"));
+				tour.setDiemXuatPhat(rss.getString("diemXuatPhat"));
+				list.add(tour);
+			}
+		} catch (SQLException e) {
+
+			e.printStackTrace();
+		}
+		return list;
 	}
 }
