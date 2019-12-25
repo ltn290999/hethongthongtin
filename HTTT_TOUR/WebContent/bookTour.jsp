@@ -91,8 +91,7 @@
 			</div>
 		</div>
 	</div>
-	</div>
-
+	
 
 	<div class="slide-one-item home-slider owl-carousel tour-image">
 
@@ -135,9 +134,9 @@
 				<div class="row">
 					<div class="col">
 						<p>Người lớn(*)</p>
-						<input type="number" class="input-form" placeholder="1"><br>
+						<input type="number" class="input-form" name="slNguoiLon" required><br>
 						<p>Trẻ em</p>
-						<input type="number" class="input-form" placeholder="0">
+						<input type="number" name="slTreNho" class="input-form" >
 
 					</div>
 					<div class="col">

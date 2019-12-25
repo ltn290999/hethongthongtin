@@ -2,13 +2,12 @@
 <html lang="en">
 
 <head>
-<title>Đặt ngay</title>
+<title>Danh sách tour trong nước</title>
 <meta charset="utf-8">
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <link rel="stylesheet"
 	href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Roboto+Mono:300,400,500">
 <link rel="stylesheet" href="fonts/icomoon/style.css">
@@ -29,70 +28,6 @@
 <link rel="stylesheet" href="user/css/aos.css">
 
 <link rel="stylesheet" href="user/css/style.css">
-<link rel="stylesheet" href="user/css/style1.css">
-
-<style type="text/css">
-.main {
-	width: 85%;
-	margin: auto;
-}
-
-.title-tour {
-	border-bottom: 1px solid black;
-}
-
-.title-tour th {
-	color: #000000;
-}
-
-.title-body td {
-	color: #f89d13;
-	font-size: 14px;
-	font-weight: bold;
-}
-
-.title-body th {
-	color: #000000;
-	font-size: 14px;
-	font-weight: bold;
-}
-
-.text-strong {
-	font-weight: bold;
-	color: black;
-}
-
-.text-uppercase {
-	font-size: 14px;
-	color: black;
-}
-
-.title {
-	color: #f89d13;
-	font-weight: bold;
-}
-
-.help-tour {
-	margin-left: 30px;
-	margin-top: 20px;
-	margin-bottom: 20px
-}
-
-.help-tour p {
-	font-size: 14px;
-	color: black;
-	margin-top: 10px;
-}
-
-.help-tour a button {
-	width: 150px;
-	font-size: 13px;
-	height: 30px;
-	color: #ffffff;
-	background: #f89d13;
-	border-radius: 5px;
-}
-</style>
 
 </head>
 
@@ -101,7 +36,6 @@
 
 
 	<div class="site-wrap">
-
 		<div class="site-mobile-menu">
 			<div class="site-mobile-menu-header">
 				<div class="site-mobile-menu-close mt-3">
@@ -130,132 +64,147 @@
 								class="icon-menu h3"></span></a>
 						</div>
 
-						<ul class="site-menu js-clone-nav d-none d-lg-block">
-							<li><a href="tour-trong-nuoc">TOUR TRONG NƯỚC</a></li>
-							<li><a href="tour-nuoc-ngoai">TOUR NƯỚC NGOÀI</a></li>
+						<ul class="site-menu js-clone-nav d-none d-lg-block"
+							style="margin-left: -200px">
+							<li class="active"><a href="tour-trong-nuoc">TOUR TRONG
+									NƯỚC</a></li>
+
 							<li><a href="dang-nhap">ĐĂNG NHẬP</a></li>
 
-						</ul>
 
+						</ul>
 					</nav>
 				</div>
-
 
 			</div>
 		</div>
 	</div>
+
+
 
 	<div class="slide-one-item home-slider owl-carousel tour-image">
 
 		<div class="site-blocks-cover domestic-tour"
-			style="background-image: url(user/images/banner1.jpg); min-height: 300px; height: calc(100vh - 45vh);"
+			style="background-image: url(user/user/images/domesticbannertour.jpg); min-height: 250px; height: calc(100vh - 45vh);"
 			data-aos="fade" data-stellar-background-ratio="0.5"></div>
+	</div>
+	<div class="location-from">
+		<form action="#" class="search-destination">
+			<div class="row">
+				<div class="col-md align-items-end">
+					<div class="form-group">
+						<label for="#">Tìm tour</label>
+						<div class="form-field">
+							<div class="icon">
+								<span class="icon-map-marker"></span>
+							</div>
+							<input type="text" class="form-control"
+								placeholder=" Nhập tìm kiếm tour">
+						</div>
+					</div>
+				</div>
+				<div class="col-md align-items-end">
+					<div class="form-group">
+						<label for="#">Từ ngày </label>
+						<div class="form-field">
+							<div class="icon">
+								<span><img src="user/images/calender.png" width="18px"></span>
+							</div>
+							<input type="text" class="form-control checkin_date"
+								placeholder=" Chọn ngày đi">
+						</div>
+					</div>
+				</div>
+				<div class="col-md align-items-end">
+					<div class="form-group">
+						<label for="#">Đến ngày</label>
+						<div class="form-field">
+							<div class="icon">
+								<span><img src="user/images/calender.png" width="18px"></span>
+							</div>
+							<input type="text" class="form-control checkout_date"
+								placeholder=" Chọn ngày đến">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md align-self-end">
+					<div class="form-group">
+						<div class="form-field">
+							<input type="submit" value="Tìm kiếm"
+								class="form-control-date btn btn-primary">
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
 	</div>
 
 
-	<section class="main">
-		<div class="col-md-8 col-sm-6 col-xs-12 ">
-			<div class="card" style="border-style: none;">
-				<div class="row">
-					<div class="col-md-6 col-sm-6 col-xs-12 ">
-						<span class="text-uppercase">Thời gian:</span> <span
-							class="text-strong">4 ngày 3 đêm</span>
-					</div>
-					<div class="col-md-6 col-sm-6 col-xs-12">
-						<span class="text-uppercase">Phương tiện:</span> <span
-							class="text-strong"> Hàng không Vietnam Airlines </span>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6 col-sm-6 col-xs-12">
-						<span class="text-uppercase">Điểm xuất phát:</span> <span
-							class="text-strong">TP. Hồ Chí Minh </span>
-					</div>
-					<div class="col-md-6 col-sm-6 col-xs-12">
-						<span class="text-uppercase">Điểm đến:</span> <span
-							class="text-strong">Hà Nội - Hạ Long - Ninh Bình</span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-3 col-sm-4 col-xs-12 float-right">
+
+	<div class="site-section" style="margin-bottom: 70px;">
+		<div class="container">
 			<div class="card">
-				<div class="row">
-					<div class="col-md-12 col-sm-4 col-xs-12">
-						<div class="right-detail-tour-box help-tour">
-							<div class="title">Hỗ trợ khách hàng</div>
-							<p>Hotline: 1900</p>
-							<p style="margin-top: -10px;">Email:</p>
-							<a href="#"><button>Bạn muốn được gọi lại?</button></a>
+				<div class="row ">
+					<div class="col-md-4">
+						<img src="user/images/image7.jpg" class="w-100">
+					</div>
+
+					<div class="row">
+						<div class=".col-12 .col-md-8">
+							<div class="card-block px-3">
+								<h4 class="card-title">DU LICH BA BỂ</h4>
+								<h6 class="card-text-city">HÀ NỘI - ĐÀ NẴNG</h6>
+								<p class="card-text">
+									Thời gian: 4 ngày 3 đêm <br>Phương tiện : Hàng không Việt
+									Nam Airlines <br>- Tham quan Đà Nẵng, Rừng dừa Bảy Mẫu,
+									phố cổ Hội An
+								</p>
+							</div>
+						</div>
+						<div class=".col-6 .col-md-4">
+							<div class="col-md align-self-end">
+								<div class="form-group">
+									<div class="form-field">
+										<input type="submit" value="Giá từ 3,739,000đ"
+											class="form-control-date btn btn-primary">
+									</div>
+									<div class="form-group">
+										<div class="form-field">
+											<div class="row" style="text-align: center;">
+												<span style="margin-left: 50px;" class="icon-calendar"></span>
+												<p
+													style="text-decoration: underline; margin-left: 10px; margin-top: -5px;">Xem
+													thêm</p>
+											</div>
+											<input type="text" class="form-control"
+												placeholder=" 27/10/2019"
+												style="pointer-events: none; text-align: center;"> <input
+												type="text" class="form-control" placeholder=" 03/11/2019"
+												style="pointer-events: none; text-align: center; margin-top: 5px;">
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="card">
-				<div class="row">
-					<div class="col-md-12 col-sm-4 col-xs-12 help-tour">
-						<div class="title">Vi sao nen mua online?</div>
-						<p>An toàn - Bảo mật</p>
-						<p>Tiện lợi, tiết kiệm thời gian</p>
-						<p>Không tính phí giao dịch</p>
-						<p>Giao dịch bảo đảm</p>
-						<p>Nhận thêm ưu đãi</p>
+
+
+
+			<div class="row" style="margin-top: 30px;">
+				<div class="col-md-12 text-center">
+					<div class="site-pagination">
+						<a href="#" class="active">1</a>
 					</div>
 				</div>
 			</div>
 		</div>
-
-		<div class="col-md-12 col-sm-4 col-xs-12">
-			<div class="card"
-				style="background-color: #FFEDDF; border-style: none;">
-				<table class="table table-borderless">
-					<thead>
-						<tr class="title-tour">
-							<th scope="col">KHỞI HÀNH</th>
-							
-							<th scope="col">GIÁ</th>
-							<th scope="col">GIÁ TRẺ EM</th>
-							<th scope="col"></th>
-						</tr>
-						</div>
-					</thead>
-					<tbody>
-
-						<tr class="title-body">
-							<th scope="row">29/11/2019</th>
-								
-							<td>4.539.000</td>
-							<td>3.279.000</td>
-							<td><a href="book-tour"><button
-										class="btn btn-deep-orange " type="button"
-										style="width: 110px; font-size: 14px; height: 30px; color: #ffffff; background: #f89d13; text-align: center;">
-										MUA ONLINE</button></a></td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</div>
+	</div>
 
 
-		<div class="card" style="border-style: none;">
-			<div class="col-md-12 col-sm-4 col-xs-12">
-				<div class="title-description">Tour này có gì hay</div>
-				<div class="content-description">- Tham quan làng gốm Bát
-					Tràng với tuổi đời hơn 500 năm, từng sản xuất những loại gốm
-					quý và độc đáo. - Viếng chùa Bái Đính - ngôi chùa của những kỷ lục
-					như: Khu chùa rộng nhất Việt Nam, thờ Tượng Phật bằng đồng lớn nhất
-					Đông Nam Á. - Tham quan Khu du lịch Tràng An - nơi có cảnh quan
-					ngoạn mục với hệ thống sông, suối đan xen nối dài chảy tràn trong
-					các thung lũng, các hang xuyên thủy động và các dãy núi đá vôi
-					trùng điệp. - Du ngoạn vịnh Hạ Long - một trong 7 kỳ quan thiên
-					nhiên mới của thế giới. Chiêm ngưỡng động Thiên Cung, các hòn Đỉnh
-					Hương - Trống Mái (Gà Chọi)- Chó Đá</div>
-
-			</div>
-			
-	</section>
-	<!-- menu nav -->
 
 	<footer class="site-footer">
 		<div class="container">
@@ -315,6 +264,9 @@
 
 		</div>
 	</footer>
+
+	</div>
+
 	<script src="user/js/jquery-3.3.1.min.js"></script>
 	<script src="user/js/jquery-migrate-3.0.1.min.js"></script>
 	<script src="user/js/jquery-ui.js"></script>
@@ -329,6 +281,8 @@
 	<script src="user/js/aos.js"></script>
 
 	<script src="user/js/main.js"></script>
+
+
 </body>
 
 </html>

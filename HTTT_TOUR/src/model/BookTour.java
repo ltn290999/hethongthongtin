@@ -6,7 +6,6 @@ public class BookTour {
 
 	
 	private int id;
-	private String name;
 	private int slNguoiLon;
 	private int slTreNho;
 	private String note;
@@ -26,13 +25,7 @@ public class BookTour {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
+	
 
 	public int getSlNguoiLon() {
 		return slNguoiLon;
