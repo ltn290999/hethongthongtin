@@ -76,8 +76,8 @@
 
 	<div class="slide-one-item home-slider owl-carousel">
 		<div class="site-blocks-cover"
-			style="background-image: url(images/banner1.jpg);"
-			data-aos="fade" data-stellar-background-ratio="0.5">
+			style="background-image: url(images/banner1.jpg);" data-aos="fade"
+			data-stellar-background-ratio="0.5">
 
 			<div class="text">
 				<h2>Quảng trường đà lạt</h2>
@@ -99,8 +99,8 @@
 		</div>
 
 		<div class="site-blocks-cover"
-			style="background-image: url(images/banner2.jpg);"
-			data-aos="fade" data-stellar-background-ratio="0.5">
+			style="background-image: url(images/banner2.jpg);" data-aos="fade"
+			data-stellar-background-ratio="0.5">
 
 			<div class="text">
 				<h2>Cầu rồng</h2>
@@ -162,7 +162,7 @@
 						</div>
 					</div>
 				</div>
-			
+
 				<div class="col-md align-self-end">
 					<div class="form-group">
 						<div class="form-field">
@@ -195,7 +195,7 @@
 				<c:url value="detail-tour" var="details">
 					<c:param name="id" value=""></c:param>
 				</c:url>
-				<c:forEach items="${listTour}" var="tour">
+				<c:forEach items="${listTour1}" var="tour">
 					<div class="col-md-6 col-lg-4 mb-4">
 						<a href="${details}" class="prop-entry d-block">
 							<figure>
@@ -241,53 +241,57 @@
 				</div>
 			</div>
 
-
-			<a href="">
-				<div class="card">
-					<div class="row ">
-						<div class="col-md-4">
-							<img src="images/image12.jpg" class="w-100">
-						</div>
-
-						<div class="row">
-							<div class=".col-12 .col-md-8">
-								<div class="card-block px-3">
-									<h4 class="card-title">DU LỊCH SUNSET SANATO BEACH</h4>
-									<h6 class="card-text-city">HÀ NỘI - ĐÀ NẴNG</h6>
-									<p class="card-text">
-										Thời gian: 4 ngày 3 đêm <br>Phương tiện : Hàng không Việt
-										Nam Airlines <br>- Tham quan Đà Nẵng, Rừng dừa Bảy Mẫu,
-										phố cổ Hội An
-									</p>
-								</div>
+			<c:forEach items="${listTour}" var="list">
+			<c:url value="detail-tour" var="detailTour">
+					<c:param name="id" value="${list.idTour }"></c:param>
+				</c:url>
+				<a href="${detailTour}">
+					<div class="card">
+						<div class="row ">
+							<div class="col-md-4">
+								<img src="${list.img_Tour }" class="w-100">
 							</div>
-							<div class=".col-6 .col-md-4">
-								<div class="col-md align-self-end">
-									<div class="form-group">
-										<div class="form-field">
-											<input type="submit" value="Giá từ 3,739,000đ"
-												class="form-control-date btn btn-primary">
-										</div>
+
+							<div class="row">
+								<div class=".col-12 .col-md-8">
+									<div class="card-block px-3">
+										<h4 class="card-title">${list.tourName }</h4>
+										<h6 class="card-text-city">${list.diemDen }</h6>
+										<p class="card-text">
+											Thời gian:${list.timeTour } <br>Phương tiện :
+											${list.vehicle } <br>
+										</p>
+									</div>
+								</div>
+								<div class=".col-6 .col-md-4">
+									<div class="col-md align-self-end">
 										<div class="form-group">
 											<div class="form-field">
-												<div class="row" style="text-align: center;">
-													<span style="margin-left: 50px;" class="icon-calendar"></span>
+												<input type="submit" value="Giá từ 3,739,000đ"
+													class="form-control-date btn btn-primary">
+											</div>
+											<div class="form-group">
+												<div class="form-field">
+													<div class="row" style="text-align: center;">
+														<span style="margin-left: 50px;" class="icon-calendar"></span>
+														<p
+															style="text-decoration: underline; margin-left: 10px; margin-top: -5px;">Xem
+															thêm</p>
+													</div>
 
-													<p style="text-decoration: underline; margin-left: 10px; margin-top: -5px;">Ngày khởi hành</p>
+													<input type="text" class="form-control"
+														value="${list.dateStart }"
+														style="pointer-events: none; text-align: center; margin-top: 5px;">
 												</div>
-												<input type="text" class="form-control"
-													placeholder=" 03/11/2019"
-													style="pointer-events: none; text-align: center; margin-top: 5px;">
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-
 					</div>
-				</div>
-			</a>
+				</a>
+			</c:forEach>
 
 		</div>
 	</div>
@@ -354,7 +358,7 @@
 		</div>
 	</footer>
 
-	
+
 
 	<script src="user/js/jquery-3.3.1.min.js"></script>
 	<script src="user/js/jquery-migrate-3.0.1.min.js"></script>

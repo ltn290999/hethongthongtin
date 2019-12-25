@@ -30,6 +30,8 @@ public class BookTourController extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		String 
+		
 		RequestDispatcher rd = request.getRequestDispatcher("bookTour.jsp");
 		rd.forward(request, response);
 	}

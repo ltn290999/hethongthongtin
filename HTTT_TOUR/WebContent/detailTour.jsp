@@ -159,21 +159,21 @@
 				<div class="row">
 					<div class="col-md-6 col-sm-6 col-xs-12 ">
 						<span class="text-uppercase">Thời gian:</span> <span
-							class="text-strong">4 ngày 3 đêm</span>
+							class="text-strong">${tour.timeTour }</span>
 					</div>
 					<div class="col-md-6 col-sm-6 col-xs-12">
 						<span class="text-uppercase">Phương tiện:</span> <span
-							class="text-strong"> Hàng không Vietnam Airlines </span>
+							class="text-strong">${tour.vehicle } </span>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-6 col-sm-6 col-xs-12">
 						<span class="text-uppercase">Điểm xuất phát:</span> <span
-							class="text-strong">TP. Hồ Chí Minh </span>
+							class="text-strong">${tour.diemXuatPhat } </span>
 					</div>
 					<div class="col-md-6 col-sm-6 col-xs-12">
 						<span class="text-uppercase">Điểm đến:</span> <span
-							class="text-strong">Hà Nội - Hạ Long - Ninh Bình</span>
+							class="text-strong">${tour.diemDen }</span>
 					</div>
 				</div>
 			</div>
@@ -223,11 +223,11 @@
 					<tbody>
 
 						<tr class="title-body">
-							<th scope="row">29/11/2019</th>
+							<th scope="row">${tour.dateStart}</th>
 								
-							<td>4.539.000</td>
-							<td>3.279.000</td>
-							<td><a href="book-tour?id="><button
+							<td>${tour.price }</td>
+							<td>${tour.priceTreEm }</td>
+							<td><a href="book-tour?id=${tour.idTour }"><button
 										class="btn btn-deep-orange " type="button"
 										style="width: 110px; font-size: 14px; height: 30px; color: #ffffff; background: #f89d13; text-align: center;">
 										MUA ONLINE</button></a></td>
@@ -240,17 +240,8 @@
 
 		<div class="card" style="border-style: none;">
 			<div class="col-md-12 col-sm-4 col-xs-12">
-				<div class="title-description">Tour này có gì hay</div>
-				<div class="content-description">- Tham quan làng gốm Bát
-					Tràng với tuổi đời hơn 500 năm, từng sản xuất những loại gốm
-					quý và độc đáo. - Viếng chùa Bái Đính - ngôi chùa của những kỷ lục
-					như: Khu chùa rộng nhất Việt Nam, thờ Tượng Phật bằng đồng lớn nhất
-					Đông Nam Á. - Tham quan Khu du lịch Tràng An - nơi có cảnh quan
-					ngoạn mục với hệ thống sông, suối đan xen nối dài chảy tràn trong
-					các thung lũng, các hang xuyên thủy động và các dãy núi đá vôi
-					trùng điệp. - Du ngoạn vịnh Hạ Long - một trong 7 kỳ quan thiên
-					nhiên mới của thế giới. Chiêm ngưỡng động Thiên Cung, các hòn Đỉnh
-					Hương - Trống Mái (Gà Chọi)- Chó Đá</div>
+				<div class="title-description">TOUR NÀY CÓ Gì HAY</div>
+				<div class="content-description">- ${tour.description }</div>
 
 			</div>
 			

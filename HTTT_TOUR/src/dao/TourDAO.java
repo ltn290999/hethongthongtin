@@ -53,9 +53,8 @@ public class TourDAO {
 				tour.setCustomerSeat(rss.getInt("customer seat"));
 				tour.setVehicle(rss.getString("vehicle"));
 				tour.setPrice(rss.getDouble("price"));
-				tour.setPriceTreEm(rss.getDouble("priceTreEm"));
+				tour.setPriceTreEm(rss.getDouble("price_TreEm"));
 				tour.setDateStart(rss.getDate("dateStart"));
-
 				tour.setTimeTour(rss.getString("timeTour"));
 				tour.setTourName(rss.getString("tourName"));
 				tour.setDiemDen(rss.getString("diemDen"));
@@ -66,6 +65,11 @@ public class TourDAO {
 		}
 
 		return tour;
+	}
+	
+	public static void main(String[] args) {
+		TourDAO d = new TourDAO();
+		System.out.println(d.getTour(1));
 	}
 
 
@@ -85,9 +89,8 @@ public class TourDAO {
 				tour.setCustomerSeat(rss.getInt("customer seat"));
 				tour.setVehicle(rss.getString("vehicle"));
 				tour.setPrice(rss.getDouble("price"));
-				tour.setPriceTreEm(rss.getDouble("priceTreEm"));
+				tour.setPriceTreEm(rss.getDouble("price_TreEm"));
 				tour.setDateStart(rss.getDate("dateStart"));
-
 				tour.setTourName(rss.getString("tourName"));
 				tour.setDiemDen(rss.getString("diemDen"));
 				tour.setDiemXuatPhat(rss.getString("diemXuatPhat"));
