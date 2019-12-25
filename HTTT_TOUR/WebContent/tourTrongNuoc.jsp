@@ -153,7 +153,7 @@
 					<div class="row">
 						<div class=".col-12 .col-md-8">
 							<div class="card-block px-3">
-								<h4 class="card-title">DU LICH BA BỂ</h4>
+								<a href = "detail-tour"> <h4 class="card-title">DU LICH BA BỂ</h4></a>
 								<h6 class="card-text-city">HÀ NỘI - ĐÀ NẴNG</h6>
 								<p class="card-text">
 									Thời gian: 4 ngày 3 đêm <br>Phương tiện : Hàng không Việt
@@ -173,9 +173,9 @@
 										<div class="form-field">
 											<div class="row" style="text-align: center;">
 												<span style="margin-left: 50px;" class="icon-calendar"></span>
-												<p
+												<a href = "detail-tour"><p
 													style="text-decoration: underline; margin-left: 10px; margin-top: -5px;">Xem
-													thêm</p>
+													thêm</p></a>
 											</div>
 											<input type="text" class="form-control"
 												placeholder=" 27/10/2019"
@@ -188,6 +188,8 @@
 							</div>
 						</div>
 					</div>
+					
+					
 				</div>
 			</div>
 
