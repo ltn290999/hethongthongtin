@@ -201,4 +201,40 @@ public class TourDAO {
 		}
 		return total;
 	}
+	
+	public boolean updateTour(Tour tour) {
+		boolean result = false;
+		Connection conn = null;
+		try {
+			conn = DbUtils.getConnection();
+			PreparedStatement ps = conn.prepareStatement("update phone set description = ?, "
+					+ "customer seat = ?, vehicle = ?,price= ?, price_treEm = ?, dateStart = ?,"
+					+ " timeTour = ?,  tourName = ?,  diemDen = ?, diemXuatPhat = ? where id = ?");
+			ps.setString(1, tour.getDescription());
+			ps.setInt(2, tour.getCustomerSeat());
+			ps.setString(3, tour.getVehicle());
+			ps.setDouble(4, tour.getPrice());
+			ps.setDouble(5, tour.getPriceTreEm());
+			ps.setDate(6, tour.getDateStart());
+			ps.setString(7, tour.getTimeTour());
+			ps.setString(8, tour.getTourName());
+			ps.setString(9, tour.getDiemDen());
+			ps.setString(10, tour.getDiemXuatPhat());
+			ps.setInt(11, 0);
+			int kq = ps.executeUpdate();
+			if (kq > 0) {
+				result = true;
+				conn.commit();
+
+			}
+		} catch (SQLException ex) {
+			try {
+				conn.rollback();
+			} catch (SQLException e) {
+				result = false;
+			}
+		}
+
+		return result;
+	}
 }
