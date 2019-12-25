@@ -24,7 +24,6 @@ DROP TABLE IF EXISTS `booktour`;
  SET character_set_client = utf8mb4 ;
 CREATE TABLE `booktour` (
   `id` int(255) NOT NULL AUTO_INCREMENT COMMENT 'Số thự tự',
-  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT 'Tên Tour',
   `slNguoiLon` int(255) DEFAULT NULL COMMENT 'Số lượng',
   `slTreNho` int(255) DEFAULT NULL COMMENT 'Số lượng',
   `note` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT 'Ghi chú',
@@ -33,6 +32,7 @@ CREATE TABLE `booktour` (
   `id_customer` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_user` (`id_customer`),
+  CONSTRAINT `fk_tour1` FOREIGN KEY (`id_customer`) REFERENCES `tour` (`id`),
   CONSTRAINT `fk_user` FOREIGN KEY (`id_customer`) REFERENCES `user_db` (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -60,6 +60,7 @@ CREATE TABLE `paytour` (
   `cus_email` varchar(255) NOT NULL,
   `cus_phone` varchar(255) NOT NULL,
   `cus_address` varchar(255) NOT NULL,
+  `trangThai` tinyint(4) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_tour` (`id_bookTour`),
   CONSTRAINT `fk_tour` FOREIGN KEY (`id_bookTour`) REFERENCES `booktour` (`id`)
@@ -115,6 +116,11 @@ CREATE TABLE `tour` (
   `price` double(20,1) DEFAULT NULL,
   `price_treEm` double NOT NULL,
   `dateStart` date NOT NULL,
+  `luotTruyCap` int(11) DEFAULT NULL,
+  `timeTour` varchar(255) DEFAULT NULL,
+  `tourName` varchar(255) DEFAULT NULL,
+  `diemDen` varchar(255) DEFAULT NULL,
+  `diemXuatPhat` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -168,4 +174,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-12-24 22:31:05
+-- Dump completed on 2019-12-25 12:23:16
