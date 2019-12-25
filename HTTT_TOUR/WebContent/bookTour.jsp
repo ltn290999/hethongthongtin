@@ -1,10 +1,6 @@
 
-<div class="col-md-6 col-sm-6 col-xs-12 no-padding">
-	<span class="prepayment-description">Sau khi đặt cọc, quý khác
-		vui lòng hoàn tất thanh toán trong <strong> 48h</strong>
-	</span>
-</div>
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -90,7 +86,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 
 	<div class="slide-one-item home-slider owl-carousel tour-image">
 
@@ -125,7 +121,7 @@
 		</div>
 
 	</div>
-	<form action="" method="">
+	<form action="book-tour" method="post">
 		<div class="row" style="width: 80%; margin: auto; padding-top: 50px;">
 			<div class="col-8">
 				<h4 style="font-weight: bold; color: #000000;">SỐ LƯỢNG HÀNH
@@ -135,7 +131,13 @@
 						<p>Người lớn(*)</p>
 						<input type="number" class="input-form" name="slNguoiLon" required><br>
 						<p>Trẻ em</p>
-						<input type="number" name="slTreNho" class="input-form" >
+						<input type="number" name="slTreNho" class="input-form">
+						<p>Tên người đặt(*)</p>
+						<input type="text" class="input-form" name="name" required><br>
+						<p>Số điện thoại(*)</p>
+						<input type="text" class="input-form" name="sdt" required><br>
+						<p>Địa chỉ(*)</p>
+						<input type="text" class="input-form" name="address" required><br>
 
 					</div>
 					<div class="col">
@@ -333,7 +335,7 @@
 				<div style="margin-bottom: 50px;">
 					<div class="row">
 						<div class="col" style="float: left;">
-							<a href="booking.jsp"><button class="button">TRỞ VỀ</button></a>
+							<a href="trang-chu"><button class="button">TRỞ VỀ</button></a>
 						</div>
 						<div class="col" style="text-align: right;">
 							<input type="submit" class="button" value="TIẾP TỤC">
@@ -345,16 +347,6 @@
 
 		</div>
 	</form>
-
-
-
-
-
-	</div>
-	</div>
-
-
-
 
 
 	<footer class="site-footer">

@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import model.BookTour;
 import model.Tour;
 import utils.DbUtils;
 
@@ -65,11 +66,6 @@ public class TourDAO {
 		}
 
 		return tour;
-	}
-	
-	public static void main(String[] args) {
-		TourDAO d = new TourDAO();
-		System.out.println(d.getTour(1));
 	}
 
 
@@ -140,7 +136,7 @@ public class TourDAO {
 
 		return result;
 	}
-	
+
 	public boolean deleteTour(int id) {
 		boolean bl = false;
 		try {
@@ -157,6 +153,7 @@ public class TourDAO {
 		}
 		return bl;
 	}
+
 	public ArrayList<Tour> listTour(int limit, int offset) {
 		ArrayList<Tour> list = new ArrayList<>();
 		String sql = "SELECT * FROM tour LIMIT ? , ?";
@@ -174,9 +171,8 @@ public class TourDAO {
 				tour.setCustomerSeat(rss.getInt("customer seat"));
 				tour.setVehicle(rss.getString("vehicle"));
 				tour.setPrice(rss.getDouble("price"));
-				tour.setPriceTreEm(rss.getDouble("priceTreEm"));
+				tour.setPriceTreEm(rss.getDouble("price_TreEm"));
 				tour.setDateStart(rss.getDate("dateStart"));
-
 				tour.setTourName(rss.getString("tourName"));
 				tour.setDiemDen(rss.getString("diemDen"));
 				tour.setDiemXuatPhat(rss.getString("diemXuatPhat"));
@@ -188,6 +184,11 @@ public class TourDAO {
 		}
 		return list;
 
+	}
+
+	public static void main(String[] args) {
+		TourDAO t = new TourDAO();
+		System.out.println(t.listTour(10, 0));
 	}
 
 	public int getCountTour() {
@@ -205,7 +206,7 @@ public class TourDAO {
 		}
 		return total;
 	}
-	
+
 	public boolean updateTour(Tour tour) {
 		boolean result = false;
 		Connection conn = null;
@@ -240,5 +241,41 @@ public class TourDAO {
 		}
 
 		return result;
+	}
+	
+	public boolean addPayTour(BookTour bookTour) {
+		boolean result = false;
+		Connection conn = null;
+		try {
+			conn = DbUtils.getConnection();
+			PreparedStatement ps = conn.prepareStatement("insert into booktour values(?,?,?,?,?,?,?,?,?,?,?)");
+			ps.setInt(1, 0);
+			ps.setInt(2, bookTour.getSlNguoiLon());
+			ps.setInt(3, bookTour.getSlTreNho());
+			ps.setString(4, "");
+			ps.setDate(5, bookTour.getDateCreate());
+			ps.setInt(6, bookTour.getIdTour());
+			ps.setInt(7, bookTour.getIdCus());
+			ps.setBoolean(8, bookTour.isTrangThai());
+			ps.setString(9, bookTour.getCus_address());
+			ps.setString(10, bookTour.getCus_address());
+			ps.setString(11, bookTour.getCus_phone());
+			int kq = ps.executeUpdate();
+			if (kq > 0) {
+				result = true;
+				conn.commit();
+			}
+		} catch (SQLException ex) {
+			try {
+				conn.rollback();
+			} catch (SQLException e) {
+
+				result = false;
+			}
+		}
+
+		return result;
+		
+		
 	}
 }

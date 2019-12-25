@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import dao.TourDAO;
 import model.Tour;
@@ -34,8 +35,8 @@ public class DetailsTourController extends HttpServlet {
 		String id = request.getParameter("id");
 		TourDAO tourDAO = new TourDAO();
 		Tour tour = tourDAO.getTour(Integer.parseInt(id));
-		request.setAttribute("tour", tour);
-		
+		HttpSession session = request.getSession();
+		session.setAttribute("tour", tour);
 		RequestDispatcher rd = request.getRequestDispatcher("detailTour.jsp");
 		rd.forward(request, response);
 	}

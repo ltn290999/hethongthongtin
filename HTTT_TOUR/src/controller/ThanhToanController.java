@@ -8,6 +8,10 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import dao.TourDAO;
+import model.BookTour;
 
 /**
  * Servlet implementation class ThanhToanController
@@ -38,7 +42,13 @@ public class ThanhToanController extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+		HttpSession session = request.getSession();
+		BookTour bookTour = (BookTour) session.getAttribute("bookTour");
+		TourDAO tourDAO = new TourDAO();
+		if(tourDAO.addPayTour(bookTour)) {
+			response.sendRedirect(request.getContextPath()+"/trang-chu");
+		}
+		
 	}
 
 }

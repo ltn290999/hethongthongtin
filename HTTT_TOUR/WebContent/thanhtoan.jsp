@@ -1,4 +1,6 @@
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -136,28 +138,31 @@
 
 					<tbody class="">
 						<tr>
-							<td>Mã tour</td>
-							<td>TNA14263-26012020-SD</td>
+							<td>Tên tour</td>
+							<td>${tour.tourName }</td>
 						</tr>
 						<tr>
 							<td>Ngày khởi hành</td>
-							<td>26/01/2020</td>
+							<td>${tour.dateStart }</td>
 						</tr>
 						<tr>
 							<td>Thời gian đi</td>
-							<td>3 Ngày - 2 Đêm</td>
+							<td>${tour.timeTour }</td>
 						</tr>
 						<tr>
 							<td>Phương tiện:</td>
-							<td><span class="depdate  pt_oto"></span>Xe ôto</td>
+							<td><span class="depdate  pt_oto"></span>${tour.vehicle }</td>
 						</tr>
 						<tr>
+
 							<td>Giá</td>
-							<td>3,390,000 đ</td>
+							<td><c:out
+									value="${bookTour.slNguoiLon*tour.price + tour.priceTreEm*bookTour.slTreNho}" />đ</td>
 						</tr>
 						<tr>
 							<td>Số chỗ nhận</td>
-							<td>5</td>
+							<td><c:out
+									value="${bookTour.slNguoiLon + bookTour.slTreNho}" /></td>
 						</tr>
 					</tbody>
 
@@ -171,41 +176,32 @@
 					<tbody>
 						<tr>
 							<td>Họ tên</td>
-							<td>Em thu</td>
+							<td>${bookTour.cus_name }</td>
 						</tr>
 						<tr>
 							<td>Điện thoại</td>
-							<td>09090909</td>
+							<td>${bookTour.cus_phone }</td>
 						</tr>
 						<tr>
 							<td>Địa chỉ</td>
-							<td>hai ba trung</td>
+							<td>${bookTour.cus_address }</td>
 						</tr>
-						<tr>
-							<td>Email</td>
-							<td>emthuma@gmail.com</td>
-						</tr>
+
 
 					</tbody>
 				</table>
 			</div>
 			<span>Tổng cộng: </span> <input name="txt_tongcong" type="text"
-				value="3,390,000 đ" id="txt_tongcong" readonly="readonly"
-				class="aspNetDisabled">
-			<div class="div_next">
-				<input type="submit" value="Thanh toán"
-					class="form-control-date btn btn-primary">
-			</div>
+				value="<c:out value="${bookTour.slNguoiLon*tour.price + tour.priceTreEm*bookTour.slTreNho}"/>"
+				readonly="readonly" class="aspNetDisabled">
+
+			<form action="thanh-toan" method="post">
+				<div class="div_next">
+					<input type="submit" value="Thanh toán"
+						class="form-control-date btn btn-primary">
+				</div>
+			</form>
 	</section>
-
-
-
-
-
-
-
-
-
 
 
 	<footer class="site-footer">

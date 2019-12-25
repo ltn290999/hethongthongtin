@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -191,7 +192,7 @@
 				</div>
 			</div>
 
-			
+
 		</div>
 
 		<div class="col-md-12 col-sm-4 col-xs-12">
@@ -201,7 +202,7 @@
 					<thead>
 						<tr class="title-tour">
 							<th scope="col">KHỞI HÀNH</th>
-							
+
 							<th scope="col">GIÁ</th>
 							<th scope="col">GIÁ TRẺ EM</th>
 							<th scope="col"></th>
@@ -212,10 +213,13 @@
 
 						<tr class="title-body">
 							<th scope="row">${tour.dateStart}</th>
-								
+
 							<td>${tour.price }</td>
 							<td>${tour.priceTreEm }</td>
-							<td><a href="book-tour?id=${tour.idTour }"><button
+							<c:url value="book-tour" var="bookTour">
+								<c:param name="id" value="${tour.idTour }"></c:param>
+							</c:url>
+							<td><a href="${bookTour }"><button
 										class="btn btn-deep-orange " type="button"
 										style="width: 110px; font-size: 14px; height: 30px; color: #ffffff; background: #f89d13; text-align: center;">
 										MUA ONLINE</button></a></td>
@@ -232,7 +236,6 @@
 				<div class="content-description">- ${tour.description }</div>
 
 			</div>
-			
 	</section>
 	<!-- menu nav -->
 
