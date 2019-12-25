@@ -4,6 +4,8 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
+  <%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>BackEnd</title>
   <!-- plugins:css -->
@@ -61,7 +63,7 @@
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
       <!-- partial:partials/_sidebar.html -->
-		  <nav class="sidebar sidebar-offcanvas" id="sidebar">
+		    <nav class="sidebar sidebar-offcanvas" id="sidebar">
 			<ul class="nav">
 			  <li class="nav-item">
 				<a class="nav-link" href="admin_index.html">
@@ -93,67 +95,65 @@
 			  
 			</ul>
 		  </nav>
-	        <div class="col-lg-12 stretch-card" style = "width :14%">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Bảng thống kê điện thoại đã bán</h4>
-                  <div class="table-responsive pt-3" >
-                    <table class="table table-bordered" >
-                      <thead>
-                        <tr>
-                         
-                         <th style="width: 5%;">STT</th>
-                          	<th style="width: 15%;">
-                            Tên	khách hàng 
-                          </th>
-						<th style="width: 10%;">Năm sinh</th>
-                         	<th style="width: 13%;">
-							Số điện thoại
-                          </th>
-		<th style="width: 20%;">
-							Địa chỉ
-                          </th>
-						   <th>
-							Sản phẩm đã mua
-                          </th>
-						   
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr class="table-info" >
-                       
-                          <td>
-                            01
-                          </td>
-                          <td>
-							Nguyễn Văn A
-                          </td>
-                          <td>
-							1999
-                          </td>
-                          <td>
-                           0912226362
-                          </td>
-						   <td>
-                           Thủ Đức, Hồ Chí Minh
-                          </td>
-				   <td>
-                          Iphone 8 plus
-                          </td>
-						 
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-           
-          </div>
-        </div>
-		  
       <!-- partial -->
-      
+       <div class="main-panel">
+                <div class="content-wrapper">
+                    <div class="row">
+                        <div class="col-12 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+
+                                    <form class="forms-sample">
+                                        <div class="form-group">
+                                            <label for="exampleInputName1"> Mã Tour</label>
+                                            <input type="text" class="form-control" id="exampleInputName1"
+                                                placeholder="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail3">Ngày khởi hành</label>
+                                            <input type="text" class="form-control" id="exampleInputEmail3"
+                                                placeholder="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword4">Thời gian đi</label>
+                                            <input type="text" class="form-control" id="exampleInputPassword4"
+                                                placeholder="">
+                                        </div>
+										    <div class="form-group">
+                                            <label for="exampleTextarea1">Phương tiện</label>
+                                            <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
+                                        </div>
+										    <div class="form-group">
+                                            <label for="exampleTextarea1">Số chỗ nhận</label>
+                                            <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Hình ảnh</label>
+                                            <input type="file" name="img[]" class="file-upload-default">
+                                            <div class="input-group col-xs-12">
+                                                <input type="text" class="form-control file-upload-info" disabled
+                                                    placeholder="Upload Image">
+                                                <span class="input-group-append">
+                                                    <button class="file-upload-browse btn btn-primary"
+                                                        type="button">Upload</button>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                    
+                                        <a href="quanlytintuc.html"><button type="button"
+                                                class="btn btn-primary mr-2">
+                                                <i class="ace-icon fa fa-plus-circle bigger-120 blue"></i> Thêm
+                                            </button></a>
+                                        <button class="btn btn-light">Cancel</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.html -->
 
@@ -164,8 +164,6 @@
     <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
-
-  
 
   <!-- plugins:js -->
   <script src="vendors/base/vendor.bundle.base.js"></script>

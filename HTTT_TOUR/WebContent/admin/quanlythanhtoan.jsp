@@ -4,6 +4,8 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
+  <%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>BackEnd</title>
   <!-- plugins:css -->
@@ -25,7 +27,7 @@
       <div class="navbar-brand-wrapper d-flex justify-content-center">
         <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">  
           <a class="navbar-brand brand-logo" href="admin_index.html"><img src="logo.png" alt="logo"/></a>
-      
+
           <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
             <span class="mdi mdi-sort-variant"></span>
           </button>
@@ -33,38 +35,10 @@
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
         <ul class="navbar-nav mr-lg-4 w-100">
-          <li class="nav-item nav-search d-none d-lg-block w-100">
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="search">
-                  <i class="mdi mdi-magnify"></i>
-                </span>
-              </div>
-              <input type="text" class="form-control" placeholder="Tìm kiếm" aria-label="search" aria-describedby="search">
-            </div>
-          </li>
+      
         </ul>
         <ul class="navbar-nav navbar-nav-right">
-          <li class="nav-item dropdown mr-1">
-            <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown">
-              <i class="mdi mdi-message-text mx-0"></i>
-              <span class="count"></span>
-            </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="messageDropdown">
-              <p class="mb-0 font-weight-normal float-left dropdown-header">Tin nhắn</p>
-              
-   
-            </div>
-          </li>
-          <li class="nav-item dropdown mr-4">
-            <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center notification-dropdown" id="notificationDropdown" href="#" data-toggle="dropdown">
-              <i class="mdi mdi-bell mx-0"></i>
-              <span class="count"></span>
-            </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="notificationDropdown">
-              <p class="mb-0 font-weight-normal float-left dropdown-header">Thông báo</p>
-            </div>
-          </li>
+          
           <li class="nav-item nav-profile dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
               <img src="logo.png" alt="profile"/>
@@ -86,57 +60,42 @@
           <span class="mdi mdi-menu"></span>
         </button>
       </div>
-    </nav>
+   </nav>
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
-      <!-- partial:../../partials/_sidebar.html -->
-      <nav class="sidebar sidebar-offcanvas" id="sidebar">
-        <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">
-              <i class="mdi mdi-home menu-icon"></i>
-              <span class="menu-title">Trang quản lý</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-              <i class="mdi mdi-circle-outline menu-icon"></i>
-               <span class="menu-title">Quản lý kho </span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="ui-basic">
-              <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="sanphamdaban.html">Sản phẩm đã bán</a></li>
-					<li class="nav-item"> <a class="nav-link" href="sanphamconlai.html">Sản phẩm còn lại</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item">
-           <a class="nav-link" href="quanlydienthoai.html">
-              <i class="mdi mdi-view-headline menu-icon"></i>
-               <span class="menu-title">Quản lý điện thoại</span>
-            </a>
-          </li>
-         <li class="nav-item">
-            <a class="nav-link" href="quanlydonhang.html">
-              <i class="mdi mdi-chart-pie menu-icon"></i>
-             <span class="menu-title">Quản lý đơn hàng</span>
-            </a>
-          </li>
-		  <li class="nav-item active">
-				<a class="nav-link" href="quanlythanhtoan.html">
+      <!-- partial:partials/_sidebar.html -->
+		  <nav class="sidebar sidebar-offcanvas" id="sidebar">
+			<ul class="nav">
+			  <li class="nav-item">
+				<a class="nav-link" href="admin_index.html">
+				  <i class="mdi mdi-home menu-icon"></i>
+				  <span class="menu-title">Trang quản lý</span>
+				</a>
+			  </li>
+			
+			  <li class="nav-item">
+				<a class="nav-link" href="quanlydienthoai.html">
+				  <i class="mdi mdi-view-headline menu-icon"></i>
+				  <span class="menu-title">Quản lý Tour</span>
+				</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="quanlydonhang.html">
 				  <i class="mdi mdi-chart-pie menu-icon"></i>
 				  <span class="menu-title">Quản lý thanh toán</span>
 				</a>
 			  </li>
-          <li class="nav-item">
-            <a class="nav-link" href="quanlykhachhang.html">
-              <i class="mdi mdi-grid-large menu-icon"></i>
-               <span class="menu-title">Quản lý khách hàng</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+			
+			  <li class="nav-item">
+				<a class="nav-link" href="quanlykhachhang.html">
+				  <i class="mdi mdi-grid-large menu-icon"></i>
+				  <span class="menu-title">Quản lý đơn đặt Tour</span>
+				</a>
+			  </li>
+			  
+			  
+			</ul>
+		  </nav>
       <!-- partial -->
       <div class="col-xs-12">
         <table id="datatable-buttons" class="table table-striped table-bordered dataTable no-footer" role="grid"
@@ -174,9 +133,13 @@
               <!-- phần xóa  -->
               <td class="center">
                 <a data-toggle="modal" data-target="#myModal1" style="display: inline-block">
-                  <button title="Xóa bài viết" type="button" class="btn btn-xs btn-danger btn-round text-center">xác nhận thanh toán                 
+                  <button title="Xóa bài viết" type="button" class="btn btn-xs btn-danger btn-round text-center">xác nhận
+                  
                   </button></a>
-               
+                <a href="">
+                  <button title="Sửa bài viết" class="btn btn-xs btn-info btn-round text-center">Hủy                 
+                  </button>
+                </a>
               </td>
               <!-- kết thúc phần xóa  -->
             </tr>
@@ -192,9 +155,13 @@
               <!-- phần xóa  -->
               <td class="center">
                 <a data-toggle="modal" data-target="#myModal1" style="display: inline-block">
-                  <button title="Xóa bài viết" type="button" class="btn btn-xs btn-danger btn-round text-center">xác nhận thanh toán                 
+                  <button title="Xóa bài viết" type="button" class="btn btn-xs btn-danger btn-round text-center">xác nhận
+                  
                   </button></a>
-               
+                <a href="">
+                  <button title="Sửa bài viết" class="btn btn-xs btn-info btn-round text-center">Hủy                 
+                  </button>
+                </a>
               </td>
               <!-- kết thúc phần xóa  -->
             </tr>
@@ -208,11 +175,15 @@
               <td></td>
 
               <!-- phần xóa  -->
-             <td class="center">
+              <td class="center">
                 <a data-toggle="modal" data-target="#myModal1" style="display: inline-block">
-                  <button title="Xóa bài viết" type="button" class="btn btn-xs btn-danger btn-round text-center">xác nhận thanh toán                 
+                  <button title="Xóa bài viết" type="button" class="btn btn-xs btn-danger btn-round text-center">xác nhận
+                  
                   </button></a>
-               
+                <a href="">
+                  <button title="Sửa bài viết" class="btn btn-xs btn-info btn-round text-center">Hủy                 
+                  </button>
+                </a>
               </td>
               <!-- kết thúc phần xóa  -->
             </tr>
@@ -228,9 +199,13 @@
               <!-- phần xóa  -->
               <td class="center">
                 <a data-toggle="modal" data-target="#myModal1" style="display: inline-block">
-                  <button title="Xóa bài viết" type="button" class="btn btn-xs btn-danger btn-round text-center">xác nhận thanh toán                 
+                  <button title="Xóa bài viết" type="button" class="btn btn-xs btn-danger btn-round text-center">xác nhận
+                  
                   </button></a>
-               
+                <a href="">
+                  <button title="Sửa bài viết" class="btn btn-xs btn-info btn-round text-center">Hủy                 
+                  </button>
+                </a>
               </td>
               <!-- kết thúc phần xóa  -->
             </tr>

@@ -32,41 +32,10 @@
         </div>  
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
-        <ul class="navbar-nav mr-lg-4 w-100">
-          <li class="nav-item nav-search d-none d-lg-block w-100">
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="search">
-                  <i class="mdi mdi-magnify"></i>
-                </span>
-              </div>
-              <input type="text" class="form-control" placeholder="Tìm kiếm" aria-label="search" aria-describedby="search">
-            </div>
-          </li>
-        </ul>
+       
         <ul class="navbar-nav navbar-nav-right">
-          <li class="nav-item dropdown mr-1">
-            <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown">
-              <i class="mdi mdi-message-text mx-0"></i>
-              <span class="count"></span>
-            </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="messageDropdown">
-              <p class="mb-0 font-weight-normal float-left dropdown-header">Tin nhắn</p>
-            
-              
-            </div>
-          </li>
-          <li class="nav-item dropdown mr-4">
-            <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center notification-dropdown" id="notificationDropdown" href="#" data-toggle="dropdown">
-              <i class="mdi mdi-bell mx-0"></i>
-              <span class="count"></span>
-            </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="notificationDropdown">
-              <p class="mb-0 font-weight-normal float-left dropdown-header">Thông báo</p>
-             
-               
-            </div>
-          </li>
+       
+         
           <li class="nav-item nav-profile dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
               <img src="logo.png" alt="profile"/>
@@ -88,53 +57,36 @@
           <span class="mdi mdi-menu"></span>
         </button>
       </div>
-    </nav>
+   </nav>
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
       <!-- partial:partials/_sidebar.html -->
-			  <nav class="sidebar sidebar-offcanvas" id="sidebar">
+		  <nav class="sidebar sidebar-offcanvas" id="sidebar">
 			<ul class="nav">
 			  <li class="nav-item">
-				<a class="nav-link" href="index.html">
+				<a class="nav-link" href="admin_index.html">
 				  <i class="mdi mdi-home menu-icon"></i>
 				  <span class="menu-title">Trang quản lý</span>
 				</a>
 			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-				  <i class="mdi mdi-circle-outline menu-icon"></i>
-				  <span class="menu-title">Quản lý Kho </span>
-				  <i class="menu-arrow"></i>
-				</a>
-				<div class="collapse" id="ui-basic">
-				  <ul class="nav flex-column sub-menu">
-					<li class="nav-item"> <a class="nav-link" href="sanphamdaban.html">Sản phẩm đã bán</a></li>
-					<li class="nav-item"> <a class="nav-link" href="sanphamconlai.html">Sản phẩm còn lại</a></li>
-				  </ul>
-				</div>
-			  </li>
+			
 			  <li class="nav-item">
 				<a class="nav-link" href="quanlydienthoai.html">
 				  <i class="mdi mdi-view-headline menu-icon"></i>
-				  <span class="menu-title">Quản lý điện thoại</span>
+				  <span class="menu-title">Quản lý Tour</span>
 				</a>
 			  </li>
 			  <li class="nav-item">
 				<a class="nav-link" href="quanlydonhang.html">
 				  <i class="mdi mdi-chart-pie menu-icon"></i>
-				  <span class="menu-title">Quản lý đơn hàng</span>
-				</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="quanlythanhtoan.html">
-				  <i class="mdi mdi-chart-pie menu-icon"></i>
 				  <span class="menu-title">Quản lý thanh toán</span>
 				</a>
 			  </li>
+			
 			  <li class="nav-item">
 				<a class="nav-link" href="quanlykhachhang.html">
 				  <i class="mdi mdi-grid-large menu-icon"></i>
-				  <span class="menu-title">Quản lý khách hàng</span>
+				  <span class="menu-title">Quản lý đơn đặt Tour</span>
 				</a>
 			  </li>
 			  
@@ -144,53 +96,35 @@
 	        <div class="col-lg-12 stretch-card" style = "width :14%">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Bảng thống kê điện thoại còn lại</h4>
+
                   <div class="table-responsive pt-3" >
                     <table class="table table-bordered" >
                       <thead>
                         <tr>
                          
-                          <th>
-							ID điện thoại
+                         <th  style = "width: 5px">STT </th>
+                          	<th >
+                            Tên	khách hàng 
                           </th>
-                          <th>
-                            Tên điện thoại
+				
+                         	<th >
+							Số điện thoại
                           </th>
-						  <th>
-							Kiểu điện thoại
+		<th >
+							Địa chỉ
                           </th>
-                          <th>
-							Nhà sản xuất 
-                          </th>
-                          <th>
-                          Giá cả
+						   <th>
+							Mã đơn đã đặt
                           </th>
 						      <th>
-                         Số lượng
+							Ngày đặt
                           </th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr class="table-info" >
+                       
                         
-                          <td>
-                            01
-                          </td>
-                          <td>
-							Iphone 11 pro max
-                          </td>
-                          <td>
-                          Smart Phone
-                          </td>
-                          <td>
-                            Apple
-                          </td>
-						   <td>
-                           30,990,000 Vnđ
-                          </td>
-				   <td>
-                           10 cái
-                          </td>
 						 
                         </tr>
                       </tbody>
