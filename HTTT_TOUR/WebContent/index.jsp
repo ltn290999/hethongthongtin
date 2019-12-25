@@ -64,7 +64,7 @@
 
 						<ul class="site-menu js-clone-nav d-none d-lg-block"
 							style="margin-left: -200px">
-							<li><a href="tour-trong-nuoc">TOUR TRONG NƯỚC</a></li>
+							<li><a href="tour-trong-nuoc">TOUR</a></li>
 							<li><a href="dang-nhap">ĐĂNG NHẬP</a></li>
 						</ul>
 					</nav>
@@ -242,7 +242,7 @@
 			</div>
 
 			<c:forEach items="${listTour}" var="list">
-			<c:url value="detail-tour" var="detailTour">
+				<c:url value="detail-tour" var="detailTour">
 					<c:param name="id" value="${list.idTour }"></c:param>
 				</c:url>
 				<a href="${detailTour}">
@@ -258,7 +258,7 @@
 										<h4 class="card-title">${list.tourName }</h4>
 										<h6 class="card-text-city">${list.diemDen }</h6>
 										<p class="card-text">
-											Thời gian:${list.timeTour } <br>Phương tiện :
+											Thời gian: ${list.timeTour } <br>Phương tiện :
 											${list.vehicle } <br>
 										</p>
 									</div>

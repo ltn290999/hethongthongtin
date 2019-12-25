@@ -66,14 +66,13 @@
 
 							<ul class="site-menu js-clone-nav d-none d-lg-block"
 								style="margin-left: -200px">
-								<li><a href="tour-trong-nuoc">TOUR TRONG NƯỚC</a></li>
-								<li><a href="tour-nuoc-ngoai">TOUR NƯỚC NGOÀI</a></li>
+								<li><a href="tour-trong-nuoc">TOUR </a></li>
 								<li class="active"><a href="#">ĐĂNG NHẬP</a></li>
 
 								<li><a href="booking-tour"><button
 											class="btn btn-deep-orange " type="button"
 											style="width: 120px; font-size: 15px; padding-left: 8px; color: #ffffff; background: #f89d13;">
-											<i class="booking-tour"></i> ĐẶT NGAY
+											<i class="book-tour"></i> ĐẶT NGAY
 										</button></a></li>
 							</ul>
 						</nav>

@@ -93,6 +93,7 @@ public class TourDAO {
 				tour.setDateStart(rss.getDate("dateStart"));
 				tour.setTourName(rss.getString("tourName"));
 				tour.setDiemDen(rss.getString("diemDen"));
+				tour.setTimeTour(rss.getString("timeTour"));
 				tour.setDiemXuatPhat(rss.getString("diemXuatPhat"));
 				list.add(tour);
 			}

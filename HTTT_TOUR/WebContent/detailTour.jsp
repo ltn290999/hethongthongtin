@@ -131,8 +131,7 @@
 						</div>
 
 						<ul class="site-menu js-clone-nav d-none d-lg-block">
-							<li><a href="tour-trong-nuoc">TOUR TRONG NƯỚC</a></li>
-							<li><a href="tour-nuoc-ngoai">TOUR NƯỚC NGOÀI</a></li>
+							<li><a href="tour-trong-nuoc">TOUR </a></li>
 							<li><a href="dang-nhap">ĐĂNG NHẬP</a></li>
 
 						</ul>
@@ -192,18 +191,7 @@
 				</div>
 			</div>
 
-			<div class="card">
-				<div class="row">
-					<div class="col-md-12 col-sm-4 col-xs-12 help-tour">
-						<div class="title">Vi sao nen mua online?</div>
-						<p>An toàn - Bảo mật</p>
-						<p>Tiện lợi, tiết kiệm thời gian</p>
-						<p>Không tính phí giao dịch</p>
-						<p>Giao dịch bảo đảm</p>
-						<p>Nhận thêm ưu đãi</p>
-					</div>
-				</div>
-			</div>
+			
 		</div>
 
 		<div class="col-md-12 col-sm-4 col-xs-12">

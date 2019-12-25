@@ -54,8 +54,7 @@
 
 							<ul class="site-menu js-clone-nav d-none d-lg-block">
 								<li></li>
-								<li><a href="tour-trong-nuoc">TOUR TRONG NƯỚC</a></li>
-								<li><a href="tour-nuoc-ngoai">TOUR NƯỚC NGOÀI</a></li>
+								<li><a href="tour-trong-nuoc">TOUR </a></li>
 								<li><a href="booking-tour"><button
 											class="btn btn-deep-orange " type="button"
 											style="width: 120px; font-size: 15px; padding-left: 8px; color: #ffffff; background: #f89d13;">

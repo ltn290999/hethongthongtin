@@ -66,8 +66,7 @@
 
 						<ul class="site-menu js-clone-nav d-none d-lg-block"
 							style="margin-left: -200px">
-							<li class="active"><a href="tour-trong-nuoc">TOUR TRONG
-									NƯỚC</a></li>
+							<li class="active"><a href="tour-trong-nuoc">TOUR</a></li>
 
 							<li><a href="dang-nhap">ĐĂNG NHẬP</a></li>
 
