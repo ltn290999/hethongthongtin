@@ -4,6 +4,7 @@
 <head>
 <title>Danh sách tour trong nước</title>
 <meta charset="utf-8">
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -143,66 +144,74 @@
 
 	<div class="site-section" style="margin-bottom: 70px;">
 		<div class="container">
-			<div class="card">
-				<div class="row ">
-					<div class="col-md-4">
-						<img src="images/image7.jpg" class="w-100">
-					</div>
-
-					<div class="row">
-						<div class=".col-12 .col-md-8">
-							<div class="card-block px-3">
-								<a href = "detail-tour"> <h4 class="card-title">DU LICH BA BỂ</h4></a>
-								<h6 class="card-text-city">HÀ NỘI - ĐÀ NẴNG</h6>
-								<p class="card-text">
-									Thời gian: 4 ngày 3 đêm <br>Phương tiện : Hàng không Việt
-									Nam Airlines <br>- Tham quan Đà Nẵng, Rừng dừa Bảy Mẫu,
-									phố cổ Hội An
-								</p>
-							</div>
+			<c:forEach items="${listTour}" var="list">
+				<div class="card">
+					<div class="row ">
+						<div class="col-md-4">
+							<img src="${list.img_Tour }" class="w-100">
 						</div>
-						<div class=".col-6 .col-md-4">
-							<div class="col-md align-self-end">
-								<div class="form-group">
-									<div class="form-field">
-										<input type="submit" value="Giá từ 3,739,000đ"
-											class="form-control-date btn btn-primary">
-									</div>
+
+						<div class="row">
+							<div class=".col-12 .col-md-8">
+								<div class="card-block px-3">
+									<a href="detail-tour">
+										<h4 class="card-title">${list.tourName }</h4>
+									</a>
+									<h6 class="card-text-city">${list.diemXuatPhat } - ${list.diemDen }</h6>
+									<p class="card-text">
+										Thời gian: ${list.timeTour } <br>Phương tiện :${list.vehicle }
+									</p>
+								</div>
+							</div>
+							<div class=".col-6 .col-md-4">
+								<div class="col-md align-self-end">
 									<div class="form-group">
 										<div class="form-field">
-											<div class="row" style="text-align: center;">
-												<span style="margin-left: 50px;" class="icon-calendar"></span>
-												<a href = "detail-tour"><p
-													style="text-decoration: underline; margin-left: 10px; margin-top: -5px;">Xem
-													thêm</p></a>
+											<input type="submit" value=" Giá : ${list.price}"
+												class="form-control-date btn btn-primary">
+										</div>
+										<div class="form-group">
+											<div class="form-field">
+												<div class="row" style="text-align: center;">
+													<span style="margin-left: 50px;" class="icon-calendar"></span>
+													<a href="detail-tour"><p
+															style="text-decoration: underline; margin-left: 10px; margin-top: -5px;">Xem
+															thêm</p></a>
+												</div>
+												<input type="text" class="form-control"
+													placeholder="${list.dateStart}"
+													style="pointer-events: none; text-align: center;">
+												
 											</div>
-											<input type="text" class="form-control"
-												placeholder=" 27/10/2019"
-												style="pointer-events: none; text-align: center;"> <input
-												type="text" class="form-control" placeholder=" 03/11/2019"
-												style="pointer-events: none; text-align: center; margin-top: 5px;">
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					
-					
-				</div>
-			</div>
 
+
+					</div>
+				</div>
+			</c:forEach>
 
 
 
 			<div class="row" style="margin-top: 30px;">
 				<div class="col-md-12 text-center">
 					<div class="site-pagination">
-						<a href="#" class="active">1</a>
+					<c:forEach begin="1" end="${countpage}" step="1" var="count">
+			<c:url value="tour-trong-nuoc" var="pages">
+				<c:param name="page" value="${(count-1)}">
+				</c:param>
+			</c:url>
+			<a href="${pages }" class="active">${count}</a>
+		</c:forEach>
+						
 					</div>
 				</div>
 			</div>
 		</div>
+
 	</div>
 
 
