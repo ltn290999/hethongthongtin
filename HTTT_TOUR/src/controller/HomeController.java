@@ -19,7 +19,7 @@ import model.Tour;
 @WebServlet("/trang-chu")
 public class HomeController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private static final int LIMIT = 6;
+	private static final int LIMIT = 5;
 
     /**
      * Default constructor. 

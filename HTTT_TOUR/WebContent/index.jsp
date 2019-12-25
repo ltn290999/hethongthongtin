@@ -175,61 +175,6 @@
 		</form>
 	</div>
 
-
-
-
-	<div class="site-section site-section-sm bg-light"
-		style="margin-top: 50px;">
-		<div class="container">
-			<div class="row mb-5">
-				<div class="col-12">
-					<div class="site-section-title">
-						<h3 style="margin-top: 20px">Tour phổ biến</h3>
-					</div>
-				</div>
-			</div>
-			<div class="row mb-5">
-
-
-
-				<c:url value="detail-tour" var="details">
-					<c:param name="id" value=""></c:param>
-				</c:url>
-				<c:forEach items="${listTour1}" var="tour">
-					<div class="col-md-6 col-lg-4 mb-4">
-						<a href="${details}" class="prop-entry d-block">
-							<figure>
-								<img src="images/tour5.jpg" alt="Image" class="img-fluid">
-							</figure>
-							<div class="prop-text">
-								<div class="inner">
-									<span class="price rounded">1,550,000đ</span>
-									<h3 class="title">DU LỊCH KHÁM PHÁ CÁI BÈ</h3>
-									<p class="location">TP. HỒ CHÍ MINH - MIỀN TÂY</p>
-								</div>
-								<div class="prop-more-info">
-									<div class="inner d-flex">
-										<div class="col">
-											<span>Thời gian :</span> <strong>4 ngày 3 đêm</strong>
-										</div>
-										<div class="col">
-											<span>Phương tiện:</span> <strong>Đi về bằng xe</strong>
-										</div>
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-				</c:forEach>
-
-			</div>
-
-
-		</div>
-	</div>
-
-
-
 	<div class="site-section"
 		style="margin-bottom: 70px; margin-top: 50px;">
 		<div class="container">

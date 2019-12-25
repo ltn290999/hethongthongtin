@@ -42,7 +42,7 @@ public class DangKyController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		String username = request.getParameter("username");
-		String password = request.getParameter("password");
+		String password = request.getParameter("pass");
 		String email = request.getParameter("email");
 		String confirm = request.getParameter("confirm");
 		String error = "";
