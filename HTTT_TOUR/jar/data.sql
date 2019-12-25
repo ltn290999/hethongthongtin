@@ -30,11 +30,15 @@ CREATE TABLE `booktour` (
   `date` date DEFAULT NULL COMMENT 'Ngày khởi hành',
   `id_tour` int(11) NOT NULL,
   `id_customer` int(11) NOT NULL,
+  `trang_thai` tinyint(4) DEFAULT NULL,
+  `cus_name` varchar(255) DEFAULT NULL,
+  `cus_address` varchar(255) DEFAULT NULL,
+  `cus_phone` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_user` (`id_customer`),
   CONSTRAINT `fk_tour1` FOREIGN KEY (`id_customer`) REFERENCES `tour` (`id`),
   CONSTRAINT `fk_user` FOREIGN KEY (`id_customer`) REFERENCES `user_db` (`user_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -43,37 +47,8 @@ CREATE TABLE `booktour` (
 
 LOCK TABLES `booktour` WRITE;
 /*!40000 ALTER TABLE `booktour` DISABLE KEYS */;
+INSERT INTO `booktour` VALUES (1,2,3,'','2019-12-25',4,9,0,'zxczxczxc','zxczxczxc','0949630817'),(2,2,3,'','2019-12-25',4,9,0,'zxczxczxc','zxczxczxc','0949630817'),(3,2,2,'','2019-12-25',4,9,0,'zxczxc','zxczxc','0949630817');
 /*!40000 ALTER TABLE `booktour` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `paytour`
---
-
-DROP TABLE IF EXISTS `paytour`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
-CREATE TABLE `paytour` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `id_bookTour` int(11) NOT NULL,
-  `cus_name` varchar(255) NOT NULL,
-  `cus_email` varchar(255) NOT NULL,
-  `cus_phone` varchar(255) NOT NULL,
-  `cus_address` varchar(255) NOT NULL,
-  `trangThai` tinyint(4) DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `fk_tour` (`id_bookTour`),
-  CONSTRAINT `fk_tour` FOREIGN KEY (`id_bookTour`) REFERENCES `booktour` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `paytour`
---
-
-LOCK TABLES `paytour` WRITE;
-/*!40000 ALTER TABLE `paytour` DISABLE KEYS */;
-/*!40000 ALTER TABLE `paytour` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -154,7 +129,7 @@ CREATE TABLE `user_db` (
   PRIMARY KEY (`user_id`),
   KEY `role_id` (`role_id`),
   CONSTRAINT `user_db_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `role_db` (`role_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -163,12 +138,9 @@ CREATE TABLE `user_db` (
 
 LOCK TABLES `user_db` WRITE;
 /*!40000 ALTER TABLE `user_db` DISABLE KEYS */;
+INSERT INTO `user_db` VALUES (9,'ltn','123',NULL,2,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `user_db` ENABLE KEYS */;
 UNLOCK TABLES;
-
---
--- Dumping routines for database 'httt'
---
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -179,4 +151,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-12-25 16:09:49
+-- Dump completed on 2019-12-25 20:03:07

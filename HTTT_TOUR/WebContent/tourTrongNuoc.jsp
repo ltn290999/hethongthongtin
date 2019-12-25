@@ -145,6 +145,10 @@
 	<div class="site-section" style="margin-bottom: 70px;">
 		<div class="container">
 			<c:forEach items="${listTour}" var="list">
+				<c:url value="detail-tour" var="detailTour">
+					<c:param name="id" value="${list.idTour }"></c:param>
+				</c:url>
+
 				<div class="card">
 					<div class="row ">
 						<div class="col-md-4">
@@ -157,9 +161,11 @@
 									<a href="detail-tour">
 										<h4 class="card-title">${list.tourName }</h4>
 									</a>
-									<h6 class="card-text-city">${list.diemXuatPhat } - ${list.diemDen }</h6>
+									<h6 class="card-text-city">${list.diemXuatPhat }-
+										${list.diemDen }</h6>
 									<p class="card-text">
-										Thời gian: ${list.timeTour } <br>Phương tiện :${list.vehicle }
+										Thời gian: ${list.timeTour } <br>Phương tiện
+										:${list.vehicle }
 									</p>
 								</div>
 							</div>
@@ -174,14 +180,15 @@
 											<div class="form-field">
 												<div class="row" style="text-align: center;">
 													<span style="margin-left: 50px;" class="icon-calendar"></span>
-													<a href="detail-tour"><p
+													<a href="${detailTour }"><p
 															style="text-decoration: underline; margin-left: 10px; margin-top: -5px;">Xem
 															thêm</p></a>
+
 												</div>
 												<input type="text" class="form-control"
 													placeholder="${list.dateStart}"
 													style="pointer-events: none; text-align: center;">
-												
+
 											</div>
 										</div>
 									</div>
@@ -192,6 +199,7 @@
 
 					</div>
 				</div>
+
 			</c:forEach>
 
 
@@ -199,14 +207,14 @@
 			<div class="row" style="margin-top: 30px;">
 				<div class="col-md-12 text-center">
 					<div class="site-pagination">
-					<c:forEach begin="1" end="${countpage}" step="1" var="count">
-			<c:url value="tour-trong-nuoc" var="pages">
-				<c:param name="page" value="${(count-1)}">
-				</c:param>
-			</c:url>
-			<a href="${pages }" class="active">${count}</a>
-		</c:forEach>
-						
+						<c:forEach begin="1" end="${countpage}" step="1" var="count">
+							<c:url value="tour-trong-nuoc" var="pages">
+								<c:param name="page" value="${(count-1)}">
+								</c:param>
+							</c:url>
+							<a href="${pages }" class="active">${count}</a>
+						</c:forEach>
+
 					</div>
 				</div>
 			</div>
