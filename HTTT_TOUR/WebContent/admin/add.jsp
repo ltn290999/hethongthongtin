@@ -1,189 +1,138 @@
-<!DOCTYPE html>
-<html lang="en">
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<html>
+
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>BackEnd</title>
-  <!-- plugins:css -->
-  <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
-  <link rel="stylesheet" href="vendors/base/vendor.bundle.base.css">
-  <!-- endinject -->
-  <!-- plugin css for this page -->
-  <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
-  <!-- End plugin css for this page -->
-  <!-- inject:css -->
-  <link rel="stylesheet" href="css/style.css">
-  <!-- endinject -->
-  <link rel="shortcut icon" href="logo.png" />
+<!-- Required meta tags -->
+<meta charset="utf-8">
+
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>BackEnd</title>
+<!-- plugins:css -->
+<link rel="stylesheet"
+	href="admin/vendors/mdi/css/materialdesignicons.min.css">
+<link rel="stylesheet" href="admin/vendors/base/vendor.bundle.base.css">
+<!-- endinject -->
+<!-- plugin css for this page -->
+<link rel="stylesheet"
+	href="admin/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+<!-- End plugin css for this page -->
+<!-- inject:css -->
+<link rel="stylesheet" href="admin/css/style.css">
+<!-- endinject -->
+<link rel="shortcut icon" href="logo.png" />
+<script src="admin/ckeditor/ckeditor.js"></script>
 </head>
 <body>
-  <div class="container-scroller">
-    <!-- partial:partials/_navbar.html -->
-    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
-      <div class="navbar-brand-wrapper d-flex justify-content-center">
-        <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">  
-          <a class="navbar-brand brand-logo" href="admin_index.html"><img src="logo.png" alt="logo"/></a>
+	<jsp:include page="header.jsp" />
 
-          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
-            <span class="mdi mdi-sort-variant"></span>
-          </button>
-        </div>  
-      </div>
-      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
-       
-        <ul class="navbar-nav navbar-nav-right">
-       
-         
-          <li class="nav-item nav-profile dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
-              <img src="logo.png" alt="profile"/>
-              <span class="nav-profile-name"> Admin</span>
-            </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-              <a class="dropdown-item">
-                <i class="mdi mdi-settings text-primary"></i>
-                Cài đặt tài khoản
-              </a>
-              <a class="dropdown-item">
-                <i class="mdi mdi-logout text-primary"></i>
-               Đăng xuất
-              </a>
-            </div>
-          </li>
-        </ul>
-        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
-          <span class="mdi mdi-menu"></span>
-        </button>
-      </div>
-   </nav>
-    <!-- partial -->
-    <div class="container-fluid page-body-wrapper">
-      <!-- partial:partials/_sidebar.html -->
-		    <nav class="sidebar sidebar-offcanvas" id="sidebar">
-			<ul class="nav">
-			  <li class="nav-item">
-				<a class="nav-link" href="admin_index.html">
-				  <i class="mdi mdi-home menu-icon"></i>
-				  <span class="menu-title">Trang quản lý</span>
-				</a>
-			  </li>
-			
-			  <li class="nav-item">
-				<a class="nav-link" href="quanlydienthoai.html">
-				  <i class="mdi mdi-view-headline menu-icon"></i>
-				  <span class="menu-title">Quản lý Tour</span>
-				</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="quanlydonhang.html">
-				  <i class="mdi mdi-chart-pie menu-icon"></i>
-				  <span class="menu-title">Quản lý thanh toán</span>
-				</a>
-			  </li>
-			
-			  <li class="nav-item">
-				<a class="nav-link" href="quanlykhachhang.html">
-				  <i class="mdi mdi-grid-large menu-icon"></i>
-				  <span class="menu-title">Quản lý đơn đặt Tour</span>
-				</a>
-			  </li>
-			  
-			  
-			</ul>
-		  </nav>
-      <!-- partial -->
-       <div class="main-panel">
-                <div class="content-wrapper">
-                    <div class="row">
-                        <div class="col-12 grid-margin stretch-card">
-                            <div class="card">
-                                <div class="card-body">
+	<!-- partial -->
+	<div class="main-panel">
+		<div class="content-wrapper">
+			<div class="row">
+				<div class="col-12 grid-margin stretch-card">
+					<div class="card">
+						<div class="card-body">
 
-                                    <form class="forms-sample">
-                                        <div class="form-group">
-                                            <label for="exampleInputName1"> Mã Tour</label>
-                                            <input type="text" class="form-control" id="exampleInputName1"
-                                                placeholder="">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail3">Ngày khởi hành</label>
-                                            <input type="text" class="form-control" id="exampleInputEmail3"
-                                                placeholder="">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputPassword4">Thời gian đi</label>
-                                            <input type="text" class="form-control" id="exampleInputPassword4"
-                                                placeholder="">
-                                        </div>
-										    <div class="form-group">
-                                            <label for="exampleTextarea1">Phương tiện</label>
-                                            <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
-                                        </div>
-										    <div class="form-group">
-                                            <label for="exampleTextarea1">Số chỗ nhận</label>
-                                            <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Hình ảnh</label>
-                                            <input type="file" name="img[]" class="file-upload-default">
-                                            <div class="input-group col-xs-12">
-                                                <input type="text" class="form-control file-upload-info" disabled
-                                                    placeholder="Upload Image">
-                                                <span class="input-group-append">
-                                                    <button class="file-upload-browse btn btn-primary"
-                                                        type="button">Upload</button>
-                                                </span>
-                                            </div>
-                                        </div>
+							<form action="admin-add-tour" method="post"
+								enctype="multipart/form-data">
 
-                                    
-                                        <a href="quanlytintuc.html"><button type="button"
-                                                class="btn btn-primary mr-2">
-                                                <i class="ace-icon fa fa-plus-circle bigger-120 blue"></i> Thêm
-                                            </button></a>
-                                        <button class="btn btn-light">Cancel</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+								<div class="">
+									<label style="width: 130px;">Tour name</label> <input
+										type="text" name="name" value="">
 
-                    </div>
-                </div>
-            </div>
-        <!-- content-wrapper ends -->
-        <!-- partial:partials/_footer.html -->
+								</div>
+								<div class="">
+									<label style="width: 130px;">Vehicle</label> <input
+										type="text" name="vehicle" value="" placeholder="" required>
+								</div>
+								<div class="">
+									<label style="width: 130px;">Số chỗ</label> <input
+										type="number" name="soCho" value="" placeholder="" required>
+								</div>
+								<div class="">
+									<label style="width: 130px;">Giá người lớn</label> <input
+										type="number" name="price" required>
+								</div>
+								<div class="">
+									<label style="width: 130px;">Giá trẻ em</label> <input
+										type="text" name="priceTreEm" required>
+								</div>
+								<div class="">
+									<label style="width: 130px;">Ngày xuất phát</label> <input
+										type="date" name="ngayXuatPhat" required>
+								</div>
+								<div class="">
+									<label style="width: 130px;">Thời gian tour</label> <input
+										type="text" name="thoiGian" required>
+								</div>
 
-        <!-- partial -->
-      </div>
-      <!-- main-panel ends -->
-    </div>
-    <!-- page-body-wrapper ends -->
-  </div>
-  <!-- container-scroller -->
+								<div class="">
+									<label style="width: 130px;">Điểm đến</label> <input
+										type="text" name="diemDen" required>
+								</div>
+								<div class="">
+									<label style="width: 130px;">Điểm xuất phát</label> <input
+										type="text" name="diemXuatPhat" required>
+								</div>
+								<label>Hình ảnh</label> <input type="file" name="img"
+									accept="image/" required> <br> <label>Miêu
+									tả</label>
+								<textarea class="form-control" id="noiDung" name="des" rows="4"
+									required></textarea>
 
-  <!-- plugins:js -->
-  <script src="vendors/base/vendor.bundle.base.js"></script>
-  <!-- endinject -->
-  <!-- Plugin js for this page-->
-  <script src="vendors/chart.js/Chart.min.js"></script>
-  <script src="vendors/datatables.net/jquery.dataTables.js"></script>
-  <script src="vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
-  <!-- End plugin js for this page-->
-  <!-- inject:js -->
-  <script src="js/off-canvas.js"></script>
-  <script src="js/hoverable-collapse.js"></script>
-  <script src="js/template.js"></script>
-  <!-- endinject -->
-  <!-- Custom js for this page-->
-  <script src="js/dashboard.js"></script>
-  <script src="js/data-table.js"></script>
-  <script src="js/jquery.dataTables.js"></script>
-  <script src="js/dataTables.bootstrap4.js"></script>
-  <!-- End custom js for this page-->
+								<input type="submit" value="Thêm"> <a
+									href="${pageContext.request.contextPath }/admin-quan-ly-dien-thoai"><button
+										class="btn btn-light">Cancel</button></a>
+
+								<p style="color: red">${error }</p>
+							</form>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- content-wrapper ends -->
+	<!-- partial:partials/_footer.jsp -->
+
+	<!-- partial -->
+	</div>
+	<!-- main-panel ends -->
+	</div>
+	<!-- page-body-wrapper ends -->
+	</div>
+	<!-- container-scroller -->
+	<script>
+		// Replace the <textarea id="editor1"> with a CKEditor
+		// instance, using default configuration.
+		CKEDITOR.replace('noiDung');
+	</script>
+
+
+	<!-- plugins:js -->
+	<script src="admin/vendors/base/vendor.bundle.base.js"></script>
+	<!-- endinject -->
+	<!-- Plugin js for this page-->
+	<script src="admin/vendors/chart.js/Chart.min.js"></script>
+	<script src="admin/vendors/datatables.net/jquery.dataTables.js"></script>
+	<script src="admin/vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+	<!-- End plugin js for this page-->
+	<!-- inject:js -->
+	<script src="admin/js/off-canvas.js"></script>
+	<script src="admin/js/hoverable-collapse.js"></script>
+	<script src="admin/js/template.js"></script>
+	<!-- endinject -->
+	<!-- Custom js for this page-->
+	<script src="admin/js/dashboard.js"></script>
+	<script src="admin/js/data-table.js"></script>
+	<script src="admin/js/jquery.dataTables.js"></script>
+	<script src="admin/js/dataTables.bootstrap4.js"></script>
+	<!-- End custom js for this page-->
 </body>
 
 </html>
