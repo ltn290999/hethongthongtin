@@ -189,11 +189,6 @@ public class TourDAO {
 
 	}
 
-	public static void main(String[] args) {
-		TourDAO t = new TourDAO();
-		System.out.println(t.listTour(10, 0));
-	}
-
 	public int getCountTour() {
 		int total = 0;
 		String sql = "select count(*) as total from tour";
@@ -346,12 +341,17 @@ public class TourDAO {
 		return bl;
 	}
 
+	public static void main(String[] args) {
+		TourDAO tour = new TourDAO();
+		System.out.println(tour.search("Phú Quốc", Date.valueOf("2019-01-01"), Date.valueOf("2019-01-03")));
+	}
+
 	public ArrayList<Tour> search(String text, Date dateTuNgay, Date dateDenNgay) {
 		ArrayList<Tour> list = new ArrayList<>();
 		try {
 			Connection conn = DbUtils.getConnection();
 			PreparedStatement ps = conn
-					.prepareStatement(" select * from tour where" + " tourName like '? and dateStart between? and ?");
+					.prepareStatement("select * from tour where tourName like ? and dateStart between ? and ? ");
 			ps.setString(1, "%" + text + "%");
 			ps.setDate(2, dateTuNgay);
 			ps.setDate(3, dateDenNgay);
