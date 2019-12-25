@@ -227,7 +227,7 @@
 								
 							<td>4.539.000</td>
 							<td>3.279.000</td>
-							<td><a href="book-tour"><button
+							<td><a href="book-tour?id="><button
 										class="btn btn-deep-orange " type="button"
 										style="width: 110px; font-size: 14px; height: 30px; color: #ffffff; background: #f89d13; text-align: center;">
 										MUA ONLINE</button></a></td>

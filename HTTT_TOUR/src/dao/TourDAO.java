@@ -155,7 +155,7 @@ public class TourDAO {
 	}
 	public ArrayList<Tour> listTour(int limit, int offset) {
 		ArrayList<Tour> list = new ArrayList<>();
-		String sql = "SELECT * FROM phone LIMIT ? , ?";
+		String sql = "SELECT * FROM tour LIMIT ? , ?";
 		try {
 			Connection conn = DbUtils.getConnection();
 			PreparedStatement ps = conn.prepareStatement(sql);
