@@ -58,7 +58,7 @@
 								<li><a href="booking-tour"><button
 											class="btn btn-deep-orange " type="button"
 											style="width: 120px; font-size: 15px; padding-left: 8px; color: #ffffff; background: #f89d13;">
-											<i class="booking-tour"></i> ĐẶT NGAY
+											<i class="book-tour"></i> ĐẶT NGAY
 										</button></a></li>
 							</ul>
 						</nav>
@@ -75,17 +75,17 @@
 		<div class="container-login100">
 			<div class="wrap-login100">
 				<div class="login100-pic js-tilt" data-tilt>
-					<br>
-					<br> <img src="images/img-01.png" alt="IMG">
+					<br> <br> <img src="images/img-01.png" alt="IMG">
 					<!-- <br><br><br><br>
 					<img src="user/images/planes.png" alt="IMG"> -->
 				</div>
 
-				<form action="dang-ky" class="login100-form validate-form" method="post"> 
+				<form action="dang-ky" class="login100-form validate-form"
+					method="post">
 					<span class="login100-form-title"> ĐĂNG KÝ </span>
 					<div class="wrap-input100 validate-input"
 						data-validate="Vui lòng nhập tên">
-						<input class="input100" type="text" name= "username"
+						<input class="input100" type="text" name="username"
 							placeholder="Tên đăng nhập(*)"> <span
 							class="focus-input100"></span>
 						<!-- biểu tượng kế bên phập nội dung -->

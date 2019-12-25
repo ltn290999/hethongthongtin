@@ -163,13 +163,7 @@
 						<strong>Về sở hữu bản quyền</strong>
 					</p>
 
-					<p>
-						Trang web <a href="http://www.tourmanagement.tk">www.tourmanagement.tk</a>
-						thuộc quyền sở hữu của Lữ hành tourmanagement và được bảo vệ theo
-						luật bản quyền, quý khách chỉ được sử dụng trang web này với mục
-						đích xem thông tin và đăng ký thanh toán online cho cá nhân chứ
-						không được sử dụng cho bất cứ mục đích thương mại nào khác.
-					</p>
+		
 
 					<p>Việc lấy nội dung để tham khảo, làm tài liệu cho nghiên cứu
 						phải ghi rõ ràng nguồn lấy từ nội dung trang web Lữ hành
@@ -300,8 +294,8 @@
 						<div class="col" style="float: left;">
 							<a href="trang-chu"><button class="button">TRỞ VỀ</button></a>
 						</div>
-						<div class="col" style="text-align: right;">
-							<input type="submit" class="button" value="TIẾP TỤC">
+					</a><div class="col" style="text-align: right;">
+								<a href  = "thanh-toan"><input type="submit" class="button" value="TIẾP TỤC"></a>
 						</div>
 					</div>
 				</div>
