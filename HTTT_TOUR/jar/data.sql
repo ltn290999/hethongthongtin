@@ -122,7 +122,7 @@ CREATE TABLE `tour` (
   `diemDen` varchar(255) DEFAULT NULL,
   `diemXuatPhat` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -131,6 +131,7 @@ CREATE TABLE `tour` (
 
 LOCK TABLES `tour` WRITE;
 /*!40000 ALTER TABLE `tour` DISABLE KEYS */;
+INSERT INTO `tour` VALUES (2,'img/9.jpg','<p>zzxc</p>\r\n',123,'123',123.0,123,'3122-12-21',0,'3 ngÃ y 2 ÄÃªm','Cáº§n ThÆ¡','PhÃº Quá»c','Cáº§n ThÆ¡');
 /*!40000 ALTER TABLE `tour` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -174,4 +175,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-12-25 12:23:16
+-- Dump completed on 2019-12-25 13:43:38
