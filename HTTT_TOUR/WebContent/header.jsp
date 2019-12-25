@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,7 +25,7 @@
 <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 <link rel="stylesheet" href="user/css/fl-bigmug-line.css">
 
-
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="user/css/aos.css">
 <link rel="stylesheet" href="user/css/style.css">
 
@@ -65,7 +66,23 @@
 						<ul class="site-menu js-clone-nav d-none d-lg-block"
 							style="margin-left: -200px">
 							<li><a href="tour-trong-nuoc">TOUR</a></li>
+							<c:choose> 
+									<c:when test="${user.user_name == null }">
 							<li><a href="dang-nhap">ĐĂNG NHẬP</a></li>
+							</c:when>
+								<c:otherwise>
+							<li><div class="w3-container">
+									<div class="w3-dropdown-hover">
+										<button class="w3-button w3-yellow">Chào, ${user.user_name}</button>
+										<div class="w3-dropdown-content w3-bar-block w3-border">
+											<a href="#" class="w3-bar-item w3-button">Cài đặt tài
+												khoản</a> <a href="dang-xuat" class="w3-bar-item w3-button">Đăng
+												Xuất</a>
+										</div>
+									</div>
+								</div></li>
+								</c:otherwise>
+								</c:choose>
 						</ul>
 					</nav>
 				</div>

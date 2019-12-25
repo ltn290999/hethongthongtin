@@ -76,7 +76,7 @@
 			<div class="wrap-login100">
 				<div class="login100-pic js-tilt" data-tilt>
 					<br>
-					<br> <img src="user/images/img-01.png" alt="IMG">
+					<br> <img src="images/img-01.png" alt="IMG">
 					<!-- <br><br><br><br>
 					<img src="user/images/planes.png" alt="IMG"> -->
 				</div>

@@ -51,40 +51,7 @@
 		</div>
 		<!-- .site-mobile-menu -->
 	</div>
-	<div class="site-navbar">
-		<div class="container py-1">
-			<div class="row align-items-center">
-				<div class="col-8 col-md-8 col-lg-4">
-					<h1 class="">
-						<a href="trang-chu" class="h5 text-uppercase text-black"><strong>HomeTourist<span
-								class="text-danger">.</span></strong></a>
-					</h1>
-				</div>
-				<div class="col-4 col-md-4 col-lg-8">
-					<nav class="site-navigation text-right text-md-right"
-						role="navigation">
-
-						<div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3">
-							<a href="#" class="site-menu-toggle js-menu-toggle text-black"><span
-								class="icon-menu h3"></span></a>
-						</div>
-
-						<ul class="site-menu js-clone-nav d-none d-lg-block"
-							style="margin-left: -200px">
-							<li><a href="tour-trong-nuoc">TOUR</a></li>
-							<li><a href="dang-nhap">ĐĂNG NHẬP</a></li>
-							<li><a href="booking-tour"><button
-										class="btn btn-deep-orange " type="button"
-										style="width: 120px; font-size: 15px; padding-left: 8px; color: #ffffff; background: #f89d13;">
-										<i class="bookingNow"></i> ĐẶT NGAY
-									</button></a></li>
-						</ul>
-					</nav>
-				</div>
-
-			</div>
-		</div>
-	</div>
+		<jsp:include page="header.jsp" />
 
 
 
