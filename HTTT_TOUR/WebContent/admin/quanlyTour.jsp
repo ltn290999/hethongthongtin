@@ -68,37 +68,44 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr role="row" class="odd">
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<!-- phần xóa  -->
-					<td class="center"><a data-toggle="modal"
-						data-target="#myModal1" style="display: inline-block">
-							<button title="Xóa bài viết" type="button"
-								class="btn btn-xs btn-danger btn-round text-center">
-								<i class="ace-icon fa fa-trash-o" style="font-size: 11px">Xóa</i>
-							</button>
-					</a> <a href="">
-							<button title="Sửa bài viết"
-								class="btn btn-xs btn-info btn-round text-center">
-								<i class="ace-icon fa fa-pencil" style="font-size: 11px">Cập
-									nhật</i>
-							</button>
-					</a></td>
-					<!-- kết thúc phần xóa  -->
-				</tr>
+				<c:forEach items="${listTour}" var="list">
+					<tr role="row" class="odd">
+						<td>${list.idTour }</td>
+						<td>${list.tourName }</td>
+						<td>${list.dateStart }</td>
+						<td>${list.timeTour }</td>
+						<td>${list.vehicle }</td>
+						<td>${list.price }</td>
+						<td>${list.customerSeat	 }</td>
 
+						<!-- phần xóa  -->
+						<td class="center"><a data-toggle="modal"
+							data-target="#myModal1" style="display: inline-block">
+								<button title="Xóa bài viết" type="button"
+									class="btn btn-xs btn-danger btn-round text-center">
+									<i class="ace-icon fa fa-trash-o" style="font-size: 11px">Xóa</i>
+								</button> <c:url value="admin-add-tour" var="edit">
+									<c:param name="edit" value="${list.idTour}" />
+								</c:url>
+						</a> <a href="${edit }">
+								<button title="Sửa bài viết"
+									class="btn btn-xs btn-info btn-round text-center">
+									<i class="ace-icon fa fa-pencil" style="font-size: 11px">Cập
+										nhật</i>
+								</button>
+						</a></td>
+						<!-- kết thúc phần xóa  -->
+					</tr>
+				</c:forEach>
 
 
 
 			</tbody>
 		</table>
-		<a href="admin-add-tour"><button type="button"
+		<c:url value="admin-add-tour" var="add">
+
+		</c:url>
+		<a href="${add }"><button type="button"
 				class="btn btn-white btn-warning btn-round"
 				style="margin-right: 5px; position: absolute; right: 20px;">
 				<i class="ace-icon fa fa-plus-circle bigger-120 blue"></i> Thêm

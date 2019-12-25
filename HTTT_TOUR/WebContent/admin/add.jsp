@@ -42,48 +42,61 @@
 
 								<div class="">
 									<label style="width: 130px;">Tour name</label> <input
-										type="text" name="name" value="">
+										type="text" name="name" value="${tour.tourName }">
 
 								</div>
 								<div class="">
-									<label style="width: 130px;">Vehicle</label> <input
-										type="text" name="vehicle" value="" placeholder="" required>
+									<label style="width: 130px;">Vehicle</label> <input type="text"
+										name="vehicle" value="${tour.vehicle }" placeholder=""
+										required>
 								</div>
 								<div class="">
 									<label style="width: 130px;">Số chỗ</label> <input
-										type="number" name="soCho" value="" placeholder="" required>
+										type="number" name="soCho" value="${tour.customerSeat }"
+										placeholder="" required>
 								</div>
 								<div class="">
 									<label style="width: 130px;">Giá người lớn</label> <input
-										type="number" name="price" required>
+										type="number" name="price" value="${tour.price }" required>
 								</div>
 								<div class="">
 									<label style="width: 130px;">Giá trẻ em</label> <input
-										type="text" name="priceTreEm" required>
+										type="text" name="priceTreEm" value="${tour.priceTreEm }"
+										required>
 								</div>
 								<div class="">
 									<label style="width: 130px;">Ngày xuất phát</label> <input
-										type="date" name="ngayXuatPhat" required>
+										type="date" name="ngayXuatPhat" value="${tour.dateStart }"
+										required>
 								</div>
 								<div class="">
 									<label style="width: 130px;">Thời gian tour</label> <input
-										type="text" name="thoiGian" required>
+										type="text" name="thoiGian" value="${tour.timeTour }" required>
 								</div>
 
 								<div class="">
 									<label style="width: 130px;">Điểm đến</label> <input
-										type="text" name="diemDen" required>
+										type="text" name="diemDen" value="${tour.diemDen }" required>
 								</div>
 								<div class="">
 									<label style="width: 130px;">Điểm xuất phát</label> <input
-										type="text" name="diemXuatPhat" required>
+										type="text" name="diemXuatPhat" value="${tour.diemXuatPhat }"
+										required>
 								</div>
-								<label>Hình ảnh</label> <input type="file" name="img"
-									accept="image/" required> <br> <label>Miêu
-									tả</label>
-								<textarea class="form-control" id="noiDung" name="des" rows="4"
-									required></textarea>
 
+
+								<c:if test="${tour.idTour == null}">
+									<label>Hình ảnh</label>
+									<input type="file" name="img" accept="image/" required>
+									<br>
+								</c:if>
+								<label>Miêu tả</label>
+
+
+								<textarea class="form-control" id="noiDung" name="des" rows="4"
+									required>${tour.description }</textarea>
+
+								<input type="hidden" name="id" value="${tour.idTour }">
 								<input type="submit" value="Thêm"> <a
 									href="${pageContext.request.contextPath }/admin-quan-ly-dien-thoai"><button
 										class="btn btn-light">Cancel</button></a>

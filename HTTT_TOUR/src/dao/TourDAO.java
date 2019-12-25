@@ -31,6 +31,9 @@ public class TourDAO {
 				tour.setDateStart(rss.getDate("dateStart"));
 
 				tour.setTimeTour(rss.getString("timeTour"));
+				tour.setTourName(rss.getString("tourName"));
+				tour.setDiemDen(rss.getString("diemDen"));
+				tour.setDiemXuatPhat(rss.getString("diemXuatPhat"));
 				listTour.add(tour);
 			}
 		} catch (SQLException e) {

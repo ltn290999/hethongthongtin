@@ -44,8 +44,18 @@ public class AdminAddTourController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		RequestDispatcher rd = request.getRequestDispatcher("admin/add.jsp");
-		rd.forward(request, response);
+		String edit = request.getParameter("edit");
+	
+		if (edit == null) {
+			RequestDispatcher rd = request.getRequestDispatcher("admin/add.jsp");
+			rd.forward(request, response);
+		} else {
+			TourDAO tourDAO = new TourDAO();
+			Tour tour = tourDAO.getTour(Integer.parseInt(edit));
+			request.setAttribute("tour", tour);
+			RequestDispatcher rd = request.getRequestDispatcher("admin/add.jsp");
+			rd.forward(request, response);
+		}
 	}
 
 	/**
@@ -155,8 +165,8 @@ public class AdminAddTourController extends HttpServlet {
 			tour.setDiemDen(diemDen);
 			tour.setDiemXuatPhat(diemXuatPhat);
 			TourDAO tourDAO = new TourDAO();
-			if(tourDAO.saveTour(tour)) {
-				response.sendRedirect(request.getContextPath()+"/admin-add-tour");
+			if (tourDAO.saveTour(tour)) {
+				response.sendRedirect(request.getContextPath() + "/admin-tour");
 			}
 		} catch (Exception ex) {
 			ex.printStackTrace();
