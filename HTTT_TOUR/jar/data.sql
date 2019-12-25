@@ -107,7 +107,7 @@ CREATE TABLE `tour` (
 
 LOCK TABLES `tour` WRITE;
 /*!40000 ALTER TABLE `tour` DISABLE KEYS */;
-INSERT INTO `tour` VALUES (5,'images/image7.jpg','- Viếng Thiền Viện Trúc Lâm Hộ Quốc ngôi chùa đẹp và lớn nhất đảo ngọc.Tắm biển Bãi Sao (hoặc bãi Ông Lang) - một trong những bãi biển đẹp nhất tại Phú Quốc.',15,'Hàng không Vietjet',4679000.0,3539000,'2019-01-01',10,'3 ngày 2 đêm','DU LỊCH PHÚ QUỐC','Phú Quốc','TP. Hồ Chí Minh'),(6,'images/image9.jpg','- Tham quan làng cổ Đường Lâm với cây đa, bến nước, mái đình, ... đặc trưng của vùng nông thôn Bắc Bộ.Tham quan Khu du lịch Tràng An - nơi có cảnh quan ngoạn mục với hệ thống sông, suối đan xen nối dài chảy tràn trong các thung lũng.Viếng chùa Tam Chúc - quần thể khu tâm linh được kỳ vọng là lớn nhất thế giới khi hoàn thành vào năm 2048. Lên thuyền du ngoạn vịnh Hạ Long - một trong 7 kỳ quan thiên nhiên mới của thế giới.',20,'Hàng không Vietjet Air',7939000.0,5650000,'2019-01-01',10,'4 ngày 3 đêm','DU LỊCH HÀ NỘI ','Hà Nội - Hạ Long - Ninh Bình','TP. Hồ Chí Minh'),(7,'images/intour2.jpg','- Thăm Cao nguyên đá Đồng Văn - Công viên địa chất toàn cầu.Thỏa sức ngắm nhìn những vườn hoa tam giác mạch đương nở rộ.Chinh phục Cột cờ Lũng Cú - nơi đánh dấu điểm địa đầu cực Bắc của Việt Nam. Chiêm ngưỡng cảnh sắc đầy hùng vĩ và thơ mộng của thác Bản Giốc - một trong bốn thác nước là đường biên giới tự nhiên giữa các quốc gia lớn nhất thế giới. ',10,'Hàng không Vietjet',9379000.0,5898000,'2019-01-01',12,'6 ngày 5 đêm','DU LỊCH HÀ GIANG ','Đông Bắc','TP. Hồ Chí Minh'),(8,'images/intour4.jpg','- Tham quan thác Dambri - ngọn thác hùng vĩ tại cao nguyên Bảo Lộc ',20,'Đi về bằng xe',3379000.0,1690000,'2019-01-01',10,'4 ngày 3 đêm','DU LỊCH ĐÀ LẠT ','Đà Lạt','TP. Hồ Chí Minh'),(9,'images/intour5.jpg','- Chiêm ngưỡng vẻ đẹp của Bãi biển cát trắng Cà Ná. Tham quan khu du lịch Sỏi Island .Tham quan Làng Yến Mai Sinh để tận mắt chiêm ngưỡng hang Yến, tìm hiểu quá trình chim Yến làm tổ... ',12,'Đi về bằng xe',4239000.0,2230000,'2019-01-01',12,'4 ngày 3 đêm','DU LỊCH NHA TRANG ','Nha Trang','TP. Hồ Chí Minh'),(10,'images/intour6.jpg','- Đến Mỹ Tho thưởng thức trái cây theo mùa, nghe nhạc tài tử Nam Bộ. Một Tour hot trong năm mới mà bạn nên đi đến đây.',20,'Đi về bằng xe',3679000.0,1840000,'2019-01-01',10,'4 ngày 3 đêm','DU LỊCH MỸ THO ','Miền Tây - ĐBSCL','TP. Hồ Chí Minh');
+INSERT INTO `tour` VALUES (5,'images/image7.jpg','<p>- Viếng Thiền Viện Tr&uacute;c L&acirc;m Hộ Quốc ng&ocirc;i ch&ugrave;a đẹp v&agrave; lớn nhất đảo ngọc.Tắm biển B&atilde;i Sao (hoặc b&atilde;i &Ocirc;ng Lang) - một trong những b&atilde;i biển đẹp nh&acirc;́t tại Ph&uacute; Quốc.</p>\r\n',15,'Hàng không Vietjet',4679000.0,3539000,'2019-12-01',10,'3 ngày 2 đêm','DU LỊCH PHÚ QUỐC','Phú Quốc','TP. Hồ Chí Minh'),(6,'images/image9.jpg','- Tham quan làng cổ Đường Lâm với cây đa, bến nước, mái đình, ... đặc trưng của vùng nông thôn Bắc Bộ.Tham quan Khu du lịch Tràng An - nơi có cảnh quan ngoạn mục với hệ thống sông, suối đan xen nối dài chảy tràn trong các thung lũng.Viếng chùa Tam Chúc - quần thể khu tâm linh được kỳ vọng là lớn nhất thế giới khi hoàn thành vào năm 2048. Lên thuyền du ngoạn vịnh Hạ Long - một trong 7 kỳ quan thiên nhiên mới của thế giới.',20,'Hàng không Vietjet Air',7939000.0,5650000,'2019-01-03',10,'4 ngày 3 đêm','DU LỊCH HÀ NỘI ','Hà Nội - Hạ Long - Ninh Bình','TP. Hồ Chí Minh'),(7,'images/intour2.jpg','- Thăm Cao nguyên đá Đồng Văn - Công viên địa chất toàn cầu.Thỏa sức ngắm nhìn những vườn hoa tam giác mạch đương nở rộ.Chinh phục Cột cờ Lũng Cú - nơi đánh dấu điểm địa đầu cực Bắc của Việt Nam. Chiêm ngưỡng cảnh sắc đầy hùng vĩ và thơ mộng của thác Bản Giốc - một trong bốn thác nước là đường biên giới tự nhiên giữa các quốc gia lớn nhất thế giới. ',10,'Hàng không Vietjet',9379000.0,5898000,'2019-01-01',12,'6 ngày 5 đêm','DU LỊCH HÀ GIANG ','Đông Bắc','TP. Hồ Chí Minh'),(8,'images/intour4.jpg','- Tham quan thác Dambri - ngọn thác hùng vĩ tại cao nguyên Bảo Lộc ',20,'Đi về bằng xe',3379000.0,1690000,'2019-01-01',10,'4 ngày 3 đêm','DU LỊCH ĐÀ LẠT ','Đà Lạt','TP. Hồ Chí Minh'),(9,'images/intour5.jpg','- Chiêm ngưỡng vẻ đẹp của Bãi biển cát trắng Cà Ná. Tham quan khu du lịch Sỏi Island .Tham quan Làng Yến Mai Sinh để tận mắt chiêm ngưỡng hang Yến, tìm hiểu quá trình chim Yến làm tổ... ',12,'Đi về bằng xe',4239000.0,2230000,'2019-01-01',12,'4 ngày 3 đêm','DU LỊCH NHA TRANG ','Nha Trang','TP. Hồ Chí Minh'),(10,'images/intour6.jpg','- Đến Mỹ Tho thưởng thức trái cây theo mùa, nghe nhạc tài tử Nam Bộ. Một Tour hot trong năm mới mà bạn nên đi đến đây.',20,'Đi về bằng xe',3679000.0,1840000,'2019-01-01',10,'4 ngày 3 đêm','DU LỊCH MỸ THO ','Miền Tây - ĐBSCL','TP. Hồ Chí Minh');
 /*!40000 ALTER TABLE `tour` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -130,7 +130,7 @@ CREATE TABLE `user_db` (
   PRIMARY KEY (`user_id`),
   KEY `role_id` (`role_id`),
   CONSTRAINT `user_db_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `role_db` (`role_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -139,7 +139,7 @@ CREATE TABLE `user_db` (
 
 LOCK TABLES `user_db` WRITE;
 /*!40000 ALTER TABLE `user_db` DISABLE KEYS */;
-INSERT INTO `user_db` VALUES (9,'ltn','123',NULL,2,NULL,NULL,NULL);
+INSERT INTO `user_db` VALUES (9,'ltn','123',NULL,2,NULL,NULL,NULL),(10,'zxc','123',NULL,1,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `user_db` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -152,4 +152,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-12-26  1:41:48
+-- Dump completed on 2019-12-26  4:03:27

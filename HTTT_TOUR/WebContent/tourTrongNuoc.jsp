@@ -57,7 +57,7 @@
 			data-aos="fade" data-stellar-background-ratio="0.5"></div>
 	</div>
 	<div class="location-from">
-		<form action="#" class="search-destination">
+		<form action="tour-trong-nuoc" method="post">
 			<div class="row">
 				<div class="col-md align-items-end">
 					<div class="form-group">
@@ -66,7 +66,7 @@
 							<div class="icon">
 								<span class="icon-map-marker"></span>
 							</div>
-							<input type="text" class="form-control"
+							<input type="text" name="text" class="form-control"
 								placeholder=" Nhập tìm kiếm tour">
 						</div>
 					</div>
@@ -75,11 +75,8 @@
 					<div class="form-group">
 						<label for="#">Từ ngày </label>
 						<div class="form-field">
-							<div class="icon">
-								<span><img src="images/calender.png" width="18px"></span>
-							</div>
-							<input type="text" class="form-control checkin_date"
-								placeholder=" Chọn ngày đi">
+
+							<input type="date" name="tuNgay">
 						</div>
 					</div>
 				</div>
@@ -87,11 +84,8 @@
 					<div class="form-group">
 						<label for="#">Đến ngày</label>
 						<div class="form-field">
-							<div class="icon">
-								<span><img src="images/calender.png" width="18px"></span>
-							</div>
-							<input type="text" class="form-control checkout_date"
-								placeholder=" Chọn ngày đến">
+
+							<input type="date" name="denNgay">
 						</div>
 					</div>
 				</div>

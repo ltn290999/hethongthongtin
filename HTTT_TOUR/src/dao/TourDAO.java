@@ -343,18 +343,18 @@ public class TourDAO {
 
 	public static void main(String[] args) {
 		TourDAO tour = new TourDAO();
-		System.out.println(tour.search("Phú Quốc", Date.valueOf("2019-01-01"), Date.valueOf("2019-01-03")));
+		System.out.println(tour.search("Phú Quốc", "2019-01-01", "2019-12-01"));
 	}
 
-	public ArrayList<Tour> search(String text, Date dateTuNgay, Date dateDenNgay) {
+	public ArrayList<Tour> search(String text, String dateTuNgay, String dateDenNgay) {
 		ArrayList<Tour> list = new ArrayList<>();
 		try {
 			Connection conn = DbUtils.getConnection();
 			PreparedStatement ps = conn
 					.prepareStatement("select * from tour where tourName like ? and dateStart between ? and ? ");
 			ps.setString(1, "%" + text + "%");
-			ps.setDate(2, dateTuNgay);
-			ps.setDate(3, dateDenNgay);
+			ps.setDate(2, Date.valueOf(dateTuNgay));
+			ps.setDate(3, Date.valueOf(dateDenNgay));
 			ResultSet rss = ps.executeQuery();
 			while (rss.next()) {
 				Tour tour = new Tour();

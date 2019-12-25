@@ -1,7 +1,6 @@
 package controller;
 
 import java.io.IOException;
-import java.sql.Date;
 import java.util.ArrayList;
 
 import javax.servlet.RequestDispatcher;
@@ -50,7 +49,7 @@ public class TourTrongNuocController extends HttpServlet {
 		}
 		request.setAttribute("countpage", countpage);
 		ArrayList<Tour> listTour = tourDAO.listTour(LIMIT, Integer.parseInt(offset) * 10);
-		request.setAttribute("listTour", listTour);	
+		request.setAttribute("listTour", listTour);
 		RequestDispatcher rd = request.getRequestDispatcher("/tourTrongNuoc.jsp");
 		rd.forward(request, response);
 	}
@@ -68,8 +67,8 @@ public class TourTrongNuocController extends HttpServlet {
 		String tuNgay = request.getParameter("tuNgay");
 		String denNgay = request.getParameter("denNgay");
 		TourDAO tourDAO = new TourDAO();
-		ArrayList<Tour> listTour = tourDAO.search(text, Date.valueOf(tuNgay), Date.valueOf(denNgay));
-		request.setAttribute("listTour", listTour);	
+		ArrayList<Tour> listTour = tourDAO.search(text, tuNgay, denNgay);
+		request.setAttribute("listTour", listTour);
 		RequestDispatcher rd = request.getRequestDispatcher("/tourTrongNuoc.jsp");
 		rd.forward(request, response);
 	}
