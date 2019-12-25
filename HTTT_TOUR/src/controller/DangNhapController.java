@@ -58,7 +58,7 @@ public class DangNhapController extends HttpServlet {
 			for (Role role : roles) {
 				session.setAttribute("user", user);
 				if (role.getRole_name().equals("ROLE_ADMIN")) {
-					response.sendRedirect(request.getContextPath() + "/admin-trang-chu");
+					response.sendRedirect(request.getContextPath() + "/admin-tour");
 					break;
 				} else {
 					response.sendRedirect(request.getContextPath() + "/trang-chu");
