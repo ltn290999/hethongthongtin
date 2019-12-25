@@ -19,31 +19,42 @@ import model.Tour;
 @WebServlet("/admin-tour")
 public class AdminTour extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public AdminTour() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
 
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#HttpServlet()
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		TourDAO tourDAO = new TourDAO();
-		ArrayList<Tour> list = tourDAO.getAllTour();
-		request.setAttribute("listTour", list);
-		RequestDispatcher rd = request.getRequestDispatcher("admin/quanlyTour.jsp");
-		rd.forward(request, response);
+	public AdminTour() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
 
 	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		String delete = request.getParameter("delete");
+		TourDAO tourDAO = new TourDAO();
+		if (delete == null) {
+			ArrayList<Tour> list = tourDAO.getAllTour();
+			request.setAttribute("listTour", list);
+			RequestDispatcher rd = request.getRequestDispatcher("admin/quanlyTour.jsp");
+			rd.forward(request, response);
+		} else {
+			if (tourDAO.deleteTour(Integer.parseInt(delete))) {
+				response.sendRedirect(request.getContextPath() + "/admin-tour");
+			}
+		}
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 	}

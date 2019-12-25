@@ -38,11 +38,16 @@
 						<div class="card-body">
 
 							<form action="admin-add-tour" method="post"
-								enctype="multipart/form-data">
+								<c:if test="${tour.idTour == null }">enctype="multipart/form-data"
+								</c:if>>
+								<input type="hidden" name="id" value="${tour.idTour}">
 
 								<div class="">
+
 									<label style="width: 130px;">Tour name</label> <input
-										type="text" name="name" value="${tour.tourName }">
+										type="text" name="name" value="${tour.tourName }"
+										<c:if test="${tour.idTour != null }">readonly="readonly"
+								</c:if>>
 
 								</div>
 								<div class="">
@@ -91,14 +96,12 @@
 									<br>
 								</c:if>
 								<label>Miêu tả</label>
-
-
 								<textarea class="form-control" id="noiDung" name="des" rows="4"
 									required>${tour.description }</textarea>
 
-								<input type="hidden" name="id" value="${tour.idTour }">
+
 								<input type="submit" value="Thêm"> <a
-									href="${pageContext.request.contextPath }/admin-quan-ly-dien-thoai"><button
+									href="${pageContext.request.contextPath }/admin-tour"><button
 										class="btn btn-light">Cancel</button></a>
 
 								<p style="color: red">${error }</p>

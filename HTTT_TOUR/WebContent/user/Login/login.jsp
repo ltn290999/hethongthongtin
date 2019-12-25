@@ -90,7 +90,7 @@
 				<div class="login100-pic js-tilt" data-tilt>
 					<!-- <img src="user/images/img-01.png" alt="IMG"> -->
 					<br> <br> <br> <br> <img
-						src="user/images/planes.png" alt="IMG">
+						src="images/planes.png" alt="IMG">
 				</div>
 
 				<form action="dang-nhap" method="post">

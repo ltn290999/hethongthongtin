@@ -24,7 +24,7 @@ public class TourDAO {
 				tour.setIdTour(rss.getInt("id"));
 				tour.setImg_Tour(rss.getString("img_tour"));
 				tour.setDescription(rss.getString("description"));
-				tour.setCustomerSeat(rss.getInt("customer seat"));
+				tour.setCustomerSeat(rss.getInt("customer_seat"));
 				tour.setVehicle(rss.getString("vehicle"));
 				tour.setPrice(rss.getDouble("price"));
 				tour.setPriceTreEm(rss.getDouble("price_TreEm"));
@@ -54,7 +54,7 @@ public class TourDAO {
 				tour.setIdTour(rss.getInt("id"));
 				tour.setImg_Tour(rss.getString("img_tour"));
 				tour.setDescription(rss.getString("description"));
-				tour.setCustomerSeat(rss.getInt("customer seat"));
+				tour.setCustomerSeat(rss.getInt("customer_seat"));
 				tour.setVehicle(rss.getString("vehicle"));
 				tour.setPrice(rss.getDouble("price"));
 				tour.setPriceTreEm(rss.getDouble("price_TreEm"));
@@ -71,7 +71,6 @@ public class TourDAO {
 		return tour;
 	}
 
-
 	public ArrayList<Tour> sortByView(int limit) {
 		ArrayList<Tour> list = new ArrayList<>();
 		String sql = "SELECT  DISTINCT * FROM tour ORDER BY luotTruyCap desc LIMIT ?";
@@ -85,7 +84,7 @@ public class TourDAO {
 				tour.setIdTour(rss.getInt("id"));
 				tour.setImg_Tour(rss.getString("img_tour"));
 				tour.setDescription(rss.getString("description"));
-				tour.setCustomerSeat(rss.getInt("customer seat"));
+				tour.setCustomerSeat(rss.getInt("customer_seat"));
 				tour.setVehicle(rss.getString("vehicle"));
 				tour.setPrice(rss.getDouble("price"));
 				tour.setPriceTreEm(rss.getDouble("price_TreEm"));
@@ -171,7 +170,7 @@ public class TourDAO {
 				tour.setIdTour(rss.getInt("id"));
 				tour.setImg_Tour(rss.getString("img_tour"));
 				tour.setDescription(rss.getString("description"));
-				tour.setCustomerSeat(rss.getInt("customer seat"));
+				tour.setCustomerSeat(rss.getInt("customer_seat"));
 				tour.setVehicle(rss.getString("vehicle"));
 				tour.setPrice(rss.getDouble("price"));
 				tour.setPriceTreEm(rss.getDouble("price_TreEm"));
@@ -215,8 +214,8 @@ public class TourDAO {
 		Connection conn = null;
 		try {
 			conn = DbUtils.getConnection();
-			PreparedStatement ps = conn.prepareStatement("update phone set description = ?, "
-					+ "customer seat = ?, vehicle = ?,price= ?, price_treEm = ?, dateStart = ?,"
+			PreparedStatement ps = conn.prepareStatement("update tour set description = ?, "
+					+ "customer_seat = ?, vehicle = ?, price= ?, price_treEm = ?, dateStart = ?,"
 					+ " timeTour = ?,  tourName = ?,  diemDen = ?, diemXuatPhat = ? where id = ?");
 			ps.setString(1, tour.getDescription());
 			ps.setInt(2, tour.getCustomerSeat());
@@ -228,7 +227,7 @@ public class TourDAO {
 			ps.setString(8, tour.getTourName());
 			ps.setString(9, tour.getDiemDen());
 			ps.setString(10, tour.getDiemXuatPhat());
-			ps.setInt(11, 0);
+			ps.setInt(11, tour.getIdTour());
 			int kq = ps.executeUpdate();
 			if (kq > 0) {
 				result = true;
@@ -245,13 +244,13 @@ public class TourDAO {
 
 		return result;
 	}
-	
+
 	public boolean addPayTour(BookTour bookTour) {
 		boolean result = false;
 		Connection conn = null;
 		try {
 			conn = DbUtils.getConnection();
-			PreparedStatement ps = conn.prepareStatement("insert into booktour values(?,?,?,?,?,?,?,?,?,?,?)");
+			PreparedStatement ps = conn.prepareStatement("insert into booktour values(?,?,?,?,?,?,?,?,?,?,?,?)");
 			ps.setInt(1, 0);
 			ps.setInt(2, bookTour.getSlNguoiLon());
 			ps.setInt(3, bookTour.getSlTreNho());
@@ -263,6 +262,7 @@ public class TourDAO {
 			ps.setString(9, bookTour.getCus_address());
 			ps.setString(10, bookTour.getCus_address());
 			ps.setString(11, bookTour.getCus_phone());
+			ps.setString(12, bookTour.getTourName());
 			int kq = ps.executeUpdate();
 			if (kq > 0) {
 				result = true;
@@ -276,9 +276,72 @@ public class TourDAO {
 				result = false;
 			}
 		}
-
 		return result;
-		
-		
+	}
+
+	public ArrayList<BookTour> getBookTour(int trangThai) {
+		ArrayList<BookTour> listBookTour = new ArrayList<>();
+		String sql = "SELECT * FROM booktour where trang_thai = ?";
+		try {
+			Connection conn = DbUtils.getConnection();
+			PreparedStatement ps = conn.prepareStatement(sql);
+			ps.setInt(1, trangThai);
+			ResultSet rss = ps.executeQuery();
+			while (rss.next()) {
+				BookTour bookTour = new BookTour();
+				bookTour.setId(rss.getInt("id"));
+				bookTour.setSlNguoiLon(rss.getInt("slNguoiLon"));
+				bookTour.setSlTreNho(rss.getInt("slTreNho"));
+				bookTour.setNote(rss.getString("note"));
+				bookTour.setDateCreate(rss.getDate("date"));
+				bookTour.setIdTour(rss.getInt("id_tour"));
+				bookTour.setIdCus(rss.getInt("id_customer"));
+				bookTour.setTrangThai(rss.getBoolean("trang_thai"));
+				bookTour.setCus_name(rss.getString("cus_name"));
+				bookTour.setCus_address(rss.getString("cus_address"));
+				bookTour.setCus_phone(rss.getString("cus_phone"));
+				bookTour.setTourName(rss.getString("tourName"));
+				listBookTour.add(bookTour);
+			}
+		} catch (SQLException e) {
+
+			e.printStackTrace();
+		}
+		return listBookTour;
+	}
+
+	public boolean deleteBookTour(int id) {
+		boolean bl = false;
+		try {
+			Connection conn = DbUtils.getConnection();
+			PreparedStatement ps = conn.prepareStatement("delete from booktour where id = ?");
+			ps.setInt(1, id);
+			int kq = ps.executeUpdate();
+			if (kq > 0) {
+				bl = true;
+				conn.commit();
+			}
+		} catch (SQLException ex) {
+			ex.printStackTrace();
+		}
+		return bl;
+	}
+
+	public boolean confirm(int id) {
+
+		boolean bl = false;
+		try {
+			Connection conn = DbUtils.getConnection();
+			PreparedStatement ps = conn.prepareStatement("	update booktour set trang_thai = 1 where id = ?");
+			ps.setInt(1, id);
+			int kq = ps.executeUpdate();
+			if (kq > 0) {
+				bl = true;
+				conn.commit();
+			}
+		} catch (SQLException ex) {
+			ex.printStackTrace();
+		}
+		return bl;
 	}
 }

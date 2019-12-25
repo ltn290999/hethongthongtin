@@ -37,7 +37,7 @@ public class BookTourController extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		
+
 		RequestDispatcher rd = request.getRequestDispatcher("bookTour.jsp");
 		rd.forward(request, response);
 	}
@@ -55,7 +55,7 @@ public class BookTourController extends HttpServlet {
 		String slTreEm = request.getParameter("slTreNho");
 		String sdt = request.getParameter("sdt");
 		String name = request.getParameter("name");
-		String address= request.getParameter("address");
+		String address = request.getParameter("address");
 		if (slTreEm.isEmpty()) {
 			slTreEm = "0";
 		}
@@ -64,12 +64,12 @@ public class BookTourController extends HttpServlet {
 		int result = nguoiLon + treEm;
 		HttpSession session = request.getSession();
 		Tour tour = (Tour) session.getAttribute("tour");
-		String error ="";
-		if ( (result > tour.getCustomerSeat()) && checkPhone(sdt)) {
-			if(result > tour.getCustomerSeat())
-			 error = "";
-			else{
-				error="";
+		String error = "";
+		if ((result > tour.getCustomerSeat()) && checkPhone(sdt)) {
+			if (result > tour.getCustomerSeat())
+				error = "";
+			else {
+				error = "";
 			}
 			request.setAttribute("error", error);
 			RequestDispatcher rd = request.getRequestDispatcher("bookTour.jsp");
@@ -82,10 +82,11 @@ public class BookTourController extends HttpServlet {
 			session.setAttribute("user", user);
 			long millis = System.currentTimeMillis();
 			java.sql.Date dateCreate = new java.sql.Date(millis);
-			BookTour bookTour = new BookTour(0, nguoiLon, treEm, "", dateCreate, tour.getIdTour(), user.getUser_id(), false, name, address, sdt);
+			BookTour bookTour = new BookTour(0, nguoiLon, treEm, "", dateCreate, tour.getIdTour(), user.getUser_id(),
+					false, name, address, sdt, tour.getTourName());
 			session.setAttribute("bookTour", bookTour);
-			response.sendRedirect(request.getContextPath()+"/thanh-toan");
-			
+			response.sendRedirect(request.getContextPath() + "/thanh-toan");
+
 		}
 
 	}

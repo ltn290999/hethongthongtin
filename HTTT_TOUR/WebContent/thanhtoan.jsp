@@ -1,17 +1,16 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
 <title>Chọn dịch vụ</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+
 <script type="text/javascript" nonce="39be21c4b7934f2cb0da9b523b0"
 	src="//local.adguard.org?ts=1574694577622&amp;type=content-script&amp;dmn=cdn.fbsbx.com&amp;css=1&amp;js=1&amp;gcss=1&amp;rel=1&amp;rji=1"></script>
 <script type="text/javascript" nonce="39be21c4b7934f2cb0da9b523b0"
@@ -86,7 +85,7 @@
 			</div>
 		</div>
 	</div>
-	</div>
+
 
 
 	<div class="slide-one-item home-slider owl-carousel tour-image">
@@ -124,83 +123,79 @@
 	</div>
 
 	<section class="main">
-		<form class="form-horizontal cofrm" action="/sendorder1"
-			enctype="multipart/form-data" id="sendorder" method="post"
-			novalidate="novalidate"></form>
-		<div class="container b_order">
-
-
-			<div class="show_view_thongtin_tour">
-				<div>
-					<div class="tit_order">THÔNG TIN TOUR</div>
-				</div>
-				<table class="table table-bordered">
-
-					<tbody class="">
-						<tr>
-							<td>Tên tour</td>
-							<td>${tour.tourName }</td>
-						</tr>
-						<tr>
-							<td>Ngày khởi hành</td>
-							<td>${tour.dateStart }</td>
-						</tr>
-						<tr>
-							<td>Thời gian đi</td>
-							<td>${tour.timeTour }</td>
-						</tr>
-						<tr>
-							<td>Phương tiện:</td>
-							<td><span class="depdate  pt_oto"></span>${tour.vehicle }</td>
-						</tr>
-						<tr>
-
-							<td>Giá</td>
-							<td><c:out
-									value="${bookTour.slNguoiLon*tour.price + tour.priceTreEm*bookTour.slTreNho}" />đ</td>
-						</tr>
-						<tr>
-							<td>Số chỗ nhận</td>
-							<td><c:out
-									value="${bookTour.slNguoiLon + bookTour.slTreNho}" /></td>
-						</tr>
-					</tbody>
-
-				</table>
+		<div class="show_view_thongtin_tour">
+			<div>
+				<div class="tit_order">THÔNG TIN TOUR</div>
 			</div>
-			<div class="div_order">
-				<div class="">
-					<div class="tit_tt_khachhang_coban">THÔNG TIN LIÊN HỆ</div>
-				</div>
-				<table class="table table-bordered" id="tbl_tourdetail">
-					<tbody>
-						<tr>
-							<td>Họ tên</td>
-							<td>${bookTour.cus_name }</td>
-						</tr>
-						<tr>
-							<td>Điện thoại</td>
-							<td>${bookTour.cus_phone }</td>
-						</tr>
-						<tr>
-							<td>Địa chỉ</td>
-							<td>${bookTour.cus_address }</td>
-						</tr>
+			<table class="table table-bordered">
 
+				<tbody class="">
+					<tr>
+						<td>Tên tour</td>
+						<td>${tour.tourName }</td>
+					</tr>
+					<tr>
+						<td>Ngày khởi hành</td>
+						<td>${tour.dateStart }</td>
+					</tr>
+					<tr>
+						<td>Thời gian đi</td>
+						<td>${tour.timeTour }</td>
+					</tr>
+					<tr>
+						<td>Phương tiện:</td>
+						<td><span class="depdate  pt_oto"></span>${tour.vehicle }</td>
+					</tr>
+					<tr>
 
-					</tbody>
-				</table>
+						<td>Giá</td>
+						<c:set var="total"
+							value="${bookTour.slNguoiLon*tour.price + tour.priceTreEm*bookTour.slTreNho}" />
+						<td><fmt:formatNumber type="number" maxFractionDigits="0"
+								value="${total}" /> đ</td>
+					</tr>
+					<tr>
+						<td>Số chỗ nhận</td>
+						<td><c:out value="${bookTour.slNguoiLon + bookTour.slTreNho}" /></td>
+					</tr>
+				</tbody>
+
+			</table>
+		</div>
+		<div class="div_order">
+			<div class="">
+				<div class="tit_tt_khachhang_coban">THÔNG TIN LIÊN HỆ</div>
 			</div>
-			<span>Tổng cộng: </span> <input name="txt_tongcong" type="text"
-				value="<c:out value="${bookTour.slNguoiLon*tour.price + tour.priceTreEm*bookTour.slTreNho}"/>"
-				readonly="readonly" class="aspNetDisabled">
+			<table class="table table-bordered" id="tbl_tourdetail">
+				<tbody>
+					<tr>
+						<td>Họ tên</td>
+						<td>${bookTour.cus_name }</td>
+					</tr>
+					<tr>
+						<td>Điện thoại</td>
+						<td>${bookTour.cus_phone }</td>
+					</tr>
+					<tr>
+						<td>Địa chỉ</td>
+						<td>${bookTour.cus_address }</td>
+					</tr>
 
-			<form action="thanh-toan" method="post">
-				<div class="div_next">
-					<input type="submit" value="Thanh toán"
-						class="form-control-date btn btn-primary">
-				</div>
-			</form>
+
+				</tbody>
+			</table>
+		</div>
+		<span>Tổng cộng: </span> <input name="txt_tongcong" type="text"
+			value="<fmt:formatNumber type="number" maxFractionDigits="0"
+								value="${total}" />"
+			readonly="readonly" class="aspNetDisabled">
+
+		<form action="thanh-toan" method="post">
+			<div class="div_next">
+				<input type="submit" value="Đặt tour"
+					class="form-control-date btn btn-primary">
+			</div>
+		</form>
 	</section>
 
 
@@ -263,7 +258,7 @@
 		</div>
 	</footer>
 
-	</div>
+
 
 	<script src="user/js/jquery-3.3.1.min.js"></script>
 	<script src="user/js/jquery-migrate-3.0.1.min.js"></script>

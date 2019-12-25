@@ -79,8 +79,12 @@
 						<td>${list.customerSeat	 }</td>
 
 						<!-- phần xóa  -->
-						<td class="center"><a data-toggle="modal"
-							data-target="#myModal1" style="display: inline-block">
+						<c:url value="admin-tour" var="delete">
+							<c:param name="delete" value="${list.idTour}" />
+						</c:url>
+
+						<td class="center"><a href="${delete }"
+							style="display: inline-block">
 								<button title="Xóa bài viết" type="button"
 									class="btn btn-xs btn-danger btn-round text-center">
 									<i class="ace-icon fa fa-trash-o" style="font-size: 11px">Xóa</i>

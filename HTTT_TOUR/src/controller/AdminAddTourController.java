@@ -45,7 +45,7 @@ public class AdminAddTourController extends HttpServlet {
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		String edit = request.getParameter("edit");
-	
+
 		if (edit == null) {
 			RequestDispatcher rd = request.getRequestDispatcher("admin/add.jsp");
 			rd.forward(request, response);
@@ -67,109 +67,129 @@ public class AdminAddTourController extends HttpServlet {
 		// TODO Auto-generated method stub
 		request.setCharacterEncoding("UTF-8");
 		response.setCharacterEncoding("UTF-8");
+		String id = request.getParameter("id");
+		TourDAO tourDAO = new TourDAO();
+		if (id == null) {
+			FileItemFactory factory = new DiskFileItemFactory();
+			// Set factory constraints
+			// factory.setSizeThreshold(yourMaxMemorySize);
+			// factory.setRepository(yourTempDirectory);
+			// Create a new file upload handler
+			ServletFileUpload upload = new ServletFileUpload(factory);
+			// upload.setSizeMax(yourMaxRequestSize);
+			// Parse the request
+			List<FileItem> uploadItems = null;
+			String name = "";
+			String vehicle = "";
+			String soCho = "";
+			String price = "";
+			String priceTreEm = "";
+			String ngayXuatPhat = "";
+			String thoiGian = "";
+			String des = "";
+			String diemDen = "";
+			String diemXuatPhat = "";
+			String img = "";
+			String error = "";
 
-		FileItemFactory factory = new DiskFileItemFactory();
-		// Set factory constraints
-		// factory.setSizeThreshold(yourMaxMemorySize);
-		// factory.setRepository(yourTempDirectory);
-		// Create a new file upload handler
-		ServletFileUpload upload = new ServletFileUpload(factory);
-		// upload.setSizeMax(yourMaxRequestSize);
-		// Parse the request
-		List<FileItem> uploadItems = null;
-		String name = "";
-		String vehicle = "";
-		String soCho = "";
-		String price = "";
-		String priceTreEm = "";
-		String ngayXuatPhat = "";
-		String thoiGian = "";
-		String des = "";
-		String diemDen = "";
-		String diemXuatPhat = "";
-		String img = "";
-		String error = "";
+			try {
+				HashMap<String, String> data = new HashMap<String, String>();
+				uploadItems = upload.parseRequest(request);
+				for (FileItem uploadItem : uploadItems) {
+					if (uploadItem.isFormField()) {
+						String fieldName = uploadItem.getFieldName();
+						String value = uploadItem.getString();
+						data.put(fieldName, value);
 
-		try {
-			HashMap<String, String> data = new HashMap<String, String>();
-			uploadItems = upload.parseRequest(request);
-			for (FileItem uploadItem : uploadItems) {
-				if (uploadItem.isFormField()) {
-					String fieldName = uploadItem.getFieldName();
-					String value = uploadItem.getString();
-					data.put(fieldName, value);
-
-				} else {
-					String fieldName = uploadItem.getFieldName();
-					String fileName = new File(uploadItem.getName()).getName();
-					String filePath = DATA_DIRECTORY + File.separator + fileName;
-					String path = "img/" + fileName;
-					File uploadedFile = new File(filePath);
-					data.put(fieldName, path);
-					// saves the file to upload director
-					uploadItem.write(uploadedFile);
+					} else {
+						String fieldName = uploadItem.getFieldName();
+						String fileName = new File(uploadItem.getName()).getName();
+						String filePath = DATA_DIRECTORY + File.separator + fileName;
+						String path = "img/" + fileName;
+						File uploadedFile = new File(filePath);
+						data.put(fieldName, path);
+						// saves the file to upload director
+						uploadItem.write(uploadedFile);
+					}
 				}
-			}
-			System.out.println(data.toString());
-			for (String fieldName : data.keySet()) {
-				switch (fieldName) {
-				case "name":
-					name = data.get(fieldName);
-					break;
-				case "vehicle":
-					vehicle = data.get(fieldName);
-					break;
-				case "soCho":
-					soCho = data.get(fieldName);
-					break;
-				case "price":
-					price = data.get(fieldName);
-					break;
-				case "priceTreEm":
-					priceTreEm = data.get(fieldName);
-					break;
-				case "ngayXuatPhat":
-					ngayXuatPhat = data.get(fieldName);
-					break;
-				case "thoiGian":
-					thoiGian = data.get(fieldName);
-					break;
-				case "des":
-					des = data.get(fieldName);
-					break;
-				case "diemDen":
-					diemDen = data.get(fieldName);
-					break;
-				case "diemXuatPhat":
-					diemXuatPhat = data.get(fieldName);
-					break;
-				case "img":
-					img = data.get(fieldName);
-					break;
-				default:
-					throw new IllegalArgumentException("Unexpected value: " + fieldName);
+				System.out.println(data.toString());
+				for (String fieldName : data.keySet()) {
+					switch (fieldName) {
+					case "name":
+						name = data.get(fieldName);
+						break;
+					case "vehicle":
+						vehicle = data.get(fieldName);
+						break;
+					case "soCho":
+						soCho = data.get(fieldName);
+						break;
+					case "price":
+						price = data.get(fieldName);
+						break;
+					case "priceTreEm":
+						priceTreEm = data.get(fieldName);
+						break;
+					case "ngayXuatPhat":
+						ngayXuatPhat = data.get(fieldName);
+						break;
+					case "thoiGian":
+						thoiGian = data.get(fieldName);
+						break;
+					case "des":
+						des = data.get(fieldName);
+						break;
+					case "diemDen":
+						diemDen = data.get(fieldName);
+						break;
+					case "diemXuatPhat":
+						diemXuatPhat = data.get(fieldName);
+						break;
+					case "img":
+						img = data.get(fieldName);
+						break;
+					default:
+						throw new IllegalArgumentException("Unexpected value: " + fieldName);
+					}
 				}
+				Tour tour = new Tour();
+				tour.setIdTour(0);
+				tour.setImg_Tour(img);
+				tour.setDescription(des);
+				tour.setCustomerSeat(Integer.parseInt(soCho));
+				tour.setVehicle(soCho);
+				tour.setPrice(Double.parseDouble(price));
+				tour.setPriceTreEm(Double.parseDouble(priceTreEm));
+				tour.setDateStart(Date.valueOf(ngayXuatPhat));
+				tour.setVehicle(vehicle);
+				tour.setTimeTour(thoiGian);
+				tour.setTourName(name);
+				tour.setDiemDen(diemDen);
+				tour.setDiemXuatPhat(diemXuatPhat);
+				
+				if (tourDAO.saveTour(tour)) {
+					response.sendRedirect(request.getContextPath() + "/admin-tour");
+				}
+			} catch (Exception ex) {
+				ex.printStackTrace();
 			}
-			Tour tour = new Tour();
-			tour.setIdTour(0);
-			tour.setImg_Tour(img);
-			tour.setDescription(des);
-			tour.setCustomerSeat(Integer.parseInt(soCho));
-			tour.setVehicle(soCho);
-			tour.setPrice(Double.parseDouble(price));
-			tour.setPriceTreEm(Double.parseDouble(priceTreEm));
-			tour.setDateStart(Date.valueOf(ngayXuatPhat));
-
-			tour.setTimeTour(thoiGian);
-			tour.setTourName(name);
-			tour.setDiemDen(diemDen);
-			tour.setDiemXuatPhat(diemXuatPhat);
-			TourDAO tourDAO = new TourDAO();
-			if (tourDAO.saveTour(tour)) {
+		} else {
+			String name = request.getParameter("name");
+			String vehicle = request.getParameter("vehicle");
+			String soCho = request.getParameter("soCho");
+			String price = request.getParameter("price");
+			String priceTreEm = request.getParameter("priceTreEm");
+			String ngayXuatPhat = request.getParameter("ngayXuatPhat");
+			String thoiGian = request.getParameter("thoiGian");
+			String diemDen = request.getParameter("diemDen");
+			String diemXuatPhat = request.getParameter("diemXuatPhat");
+			String des = request.getParameter("des");
+			Tour tour = new Tour(Integer.parseInt(id), "", des, Integer.parseInt(soCho), vehicle,
+					Double.parseDouble(price), Double.parseDouble(priceTreEm), Date.valueOf(ngayXuatPhat), 0, thoiGian,
+					name, diemDen, diemXuatPhat);
+			if(tourDAO.updateTour(tour)) {
 				response.sendRedirect(request.getContextPath() + "/admin-tour");
 			}
-		} catch (Exception ex) {
-			ex.printStackTrace();
 		}
 	}
 

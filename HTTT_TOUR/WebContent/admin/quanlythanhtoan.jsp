@@ -42,24 +42,22 @@
 					<th tabindex="0" aria-controls="datatable-buttons" rowspan="1"
 						colspan="1"
 						aria-label="Tên sản phẩm: activate to sort column ascending"
-						style="width: 200px;">Mã Tour</th>
-					<th tabindex="0" aria-controls="datatable-buttons" rowspan="1"
-						colspan="1"
-						aria-label="Kiểu điện thoại: activate to sort column ascending"
-						style="width: 200px;">Ngày khởi hành</th>
-					<th tabindex="0" aria-controls="datatable-buttons" rowspan="1"
-						colspan="1"
-						aria-label="Hãnh sản xuất: activate to sort column ascending"
-						style="width: 200px;">Thời gian đi</th>
+						style="width: 200px;">Tên Tour</th>
 					<th tabindex="0" aria-controls="datatable-buttons" rowspan="1"
 						colspan="1" aria-label="Giá: activate to sort column ascending"
-						style="width: 150px;">Phương tiện</th>
+						style="width: 150px;">Tên người đặt</th>
 					<th tabindex="0" aria-controls="datatable-buttons" rowspan="1"
 						colspan="1" aria-label="Giá: activate to sort column ascending"
-						style="width: 150px;">Giá</th>
+						style="width: 150px;">Địa chỉ</th>
 					<th tabindex="0" aria-controls="datatable-buttons" rowspan="1"
 						colspan="1" aria-label="Giá: activate to sort column ascending"
-						style="width: 150px;">Số chỗ</th>
+						style="width: 150px;">Số điện thoại</th>
+					<th tabindex="0" aria-controls="datatable-buttons" rowspan="1"
+						colspan="1" aria-label="Giá: activate to sort column ascending"
+						style="width: 150px;">Số người lớn</th>
+					<th tabindex="0" aria-controls="datatable-buttons" rowspan="1"
+						colspan="1" aria-label="Giá: activate to sort column ascending"
+						style="width: 150px;">Số trẻ em</th>
 					<th tabindex="0" aria-controls="datatable-buttons" rowspan="1"
 						colspan="1"
 						aria-label="Thao tác: activate to sort column ascending"
@@ -67,41 +65,46 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr role="row" class="odd">
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<!-- phần xóa  -->
-					<td class="center"><a data-toggle="modal"
-						data-target="#myModal1" style="display: inline-block">
-							<button title="Xóa bài viết" type="button"
-								class="btn btn-xs btn-danger btn-round text-center">
-								<i class="ace-icon fa fa-trash-o" style="font-size: 11px">Xóa</i>
-							</button>
-					</a> <a href="">
-							<button title="Sửa bài viết"
-								class="btn btn-xs btn-info btn-round text-center">
-								<i class="ace-icon fa fa-pencil" style="font-size: 11px">Cập
-									nhật</i>
-							</button>
-					</a></td>
-					<!-- kết thúc phần xóa  -->
-				</tr>
+				<c:forEach items="${listBookTour }" var="list">
 
+					<tr role="row" class="odd">
+						<td>${list.id }</td>
+						<td>${list.tourName }</td>
+						<td>${list.cus_name }</td>
+						<td>${list.cus_address }</td>
+						<td>${list.cus_phone }</td>
+						<td>${list.slNguoiLon }</td>
+						<td>${list.slTreNho }</td>
+
+
+						<!-- phần xóa  -->
+						<!-- phần xóa  -->
+						<c:url value="admin-thanh-toan" var="delete">
+							<c:param name="delete" value="${list.id}" />
+						</c:url>
+
+						<td class="center"><a href="${delete }"
+							style="display: inline-block">
+								<button title="Xóa bài viết" type="button"
+									class="btn btn-xs btn-danger btn-round text-center">
+									<i class="ace-icon fa fa-trash-o" style="font-size: 11px">Xóa</i>
+								</button>
+						</a> <c:url value="admin-thanh-toan" var="confirm">
+								<c:param name="confirm" value="${list.id}" />
+							</c:url> <a href="${confirm }">
+								<button class="btn btn-xs btn-info btn-round text-center">
+									<i class="ace-icon fa fa-pencil" style="font-size: 11px">Xác nhận</i>
+								</button>
+						</a></td>
+						<!-- kết thúc phần xóa  -->
+					</tr>
+				</c:forEach>
 
 
 
 			</tbody>
 		</table>
-		<a href="add.html"><button type="button"
-				class="btn btn-white btn-warning btn-round"
-				style="margin-right: 5px; position: absolute; right: 20px;">
-				<i class="ace-icon fa fa-plus-circle bigger-120 blue"></i> Thêm
-			</button></a>
+
 	</div>
 
 	<!-- plugins:js -->

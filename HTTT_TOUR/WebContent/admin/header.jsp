@@ -60,12 +60,7 @@
 							class="mdi mdi-chart-pie menu-icon"></i> <span class="menu-title">Quản lý thanh toán</span>
 					</a></li>
 					
-					<li class="nav-item"><a class="nav-link"
-						href="admin-don-dat-tour"> <i
-							class="mdi mdi-grid-large menu-icon"></i> <span
-							class="menu-title">Quản lý đơn đặt Tour</span>
-					</a></li>
-
+				
 
 				</ul>
 			</nav>
