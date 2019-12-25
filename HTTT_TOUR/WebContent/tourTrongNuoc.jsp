@@ -85,7 +85,7 @@
 	<div class="slide-one-item home-slider owl-carousel tour-image">
 
 		<div class="site-blocks-cover domestic-tour"
-			style="background-image: url(user/user/images/domesticbannertour.jpg); min-height: 250px; height: calc(100vh - 45vh);"
+			style="background-image: url(images/domesticbannertour.jpg); min-height: 250px; height: calc(100vh - 45vh);"
 			data-aos="fade" data-stellar-background-ratio="0.5"></div>
 	</div>
 	<div class="location-from">
@@ -108,7 +108,7 @@
 						<label for="#">Từ ngày </label>
 						<div class="form-field">
 							<div class="icon">
-								<span><img src="user/images/calender.png" width="18px"></span>
+								<span><img src="images/calender.png" width="18px"></span>
 							</div>
 							<input type="text" class="form-control checkin_date"
 								placeholder=" Chọn ngày đi">
@@ -120,7 +120,7 @@
 						<label for="#">Đến ngày</label>
 						<div class="form-field">
 							<div class="icon">
-								<span><img src="user/images/calender.png" width="18px"></span>
+								<span><img src="images/calender.png" width="18px"></span>
 							</div>
 							<input type="text" class="form-control checkout_date"
 								placeholder=" Chọn ngày đến">
@@ -147,7 +147,7 @@
 			<div class="card">
 				<div class="row ">
 					<div class="col-md-4">
-						<img src="user/images/image7.jpg" class="w-100">
+						<img src="images/image7.jpg" class="w-100">
 					</div>
 
 					<div class="row">

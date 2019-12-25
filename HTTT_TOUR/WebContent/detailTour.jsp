@@ -148,7 +148,7 @@
 	<div class="slide-one-item home-slider owl-carousel tour-image">
 
 		<div class="site-blocks-cover domestic-tour"
-			style="background-image: url(user/images/banner1.jpg); min-height: 300px; height: calc(100vh - 45vh);"
+			style="background-image: url(images/banner1.jpg); min-height: 300px; height: calc(100vh - 45vh);"
 			data-aos="fade" data-stellar-background-ratio="0.5"></div>
 	</div>
 

@@ -76,7 +76,7 @@
 
 	<div class="slide-one-item home-slider owl-carousel">
 		<div class="site-blocks-cover"
-			style="background-image: url(user/images/banner1.jpg);"
+			style="background-image: url(images/banner1.jpg);"
 			data-aos="fade" data-stellar-background-ratio="0.5">
 
 			<div class="text">
@@ -99,7 +99,7 @@
 		</div>
 
 		<div class="site-blocks-cover"
-			style="background-image: url(user/images/banner2.jpg);"
+			style="background-image: url(images/banner2.jpg);"
 			data-aos="fade" data-stellar-background-ratio="0.5">
 
 			<div class="text">
@@ -143,7 +143,7 @@
 						<label for="#">Từ ngày </label>
 						<div class="form-field">
 							<div class="icon">
-								<span><img src="user/images/calender.png" width="18px"></span>
+								<span><img src="images/calender.png" width="18px"></span>
 							</div>
 							<input type="text" class="form-control checkin_date"
 								placeholder=" Chọn ngày đi">
@@ -155,7 +155,7 @@
 						<label for="#">Đến ngày</label>
 						<div class="form-field">
 							<div class="icon">
-								<span><img src="user/images/calender.png" width="18px"></span>
+								<span><img src="images/calender.png" width="18px"></span>
 							</div>
 							<input type="text" class="form-control checkout_date"
 								placeholder=" Chọn ngày đến">
@@ -199,7 +199,7 @@
 					<div class="col-md-6 col-lg-4 mb-4">
 						<a href="${details}" class="prop-entry d-block">
 							<figure>
-								<img src="user/images/tour5.jpg" alt="Image" class="img-fluid">
+								<img src="images/tour5.jpg" alt="Image" class="img-fluid">
 							</figure>
 							<div class="prop-text">
 								<div class="inner">
@@ -246,7 +246,7 @@
 				<div class="card">
 					<div class="row ">
 						<div class="col-md-4">
-							<img src="user/images/image12.jpg" class="w-100">
+							<img src="images/image12.jpg" class="w-100">
 						</div>
 
 						<div class="row">

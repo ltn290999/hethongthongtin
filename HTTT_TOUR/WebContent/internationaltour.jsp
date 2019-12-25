@@ -88,7 +88,7 @@
 	<div class="slide-one-item home-slider owl-carousel tour-image">
 
 		<div class="site-blocks-cover international-tour"
-			style="background-image: url(user/images/tour.jpg); min-height: 250px; height: calc(100vh - 45vh);"
+			style="background-image: url(images/tour.jpg); min-height: 250px; height: calc(100vh - 45vh);"
 			data-aos="fade" data-stellar-background-ratio="0.5"></div>
 	</div>
 	<div class="location-from">
@@ -111,7 +111,7 @@
 						<label for="#">Từ ngày </label>
 						<div class="form-field">
 							<div class="icon">
-								<span><img src="user/images/calender.png" width="18px"></span>
+								<span><img src="images/calender.png" width="18px"></span>
 							</div>
 							<input type="text" class="form-control checkin_date"
 								placeholder=" Chọn ngày đi">
@@ -123,7 +123,7 @@
 						<label for="#">Đến ngày</label>
 						<div class="form-field">
 							<div class="icon">
-								<span><img src="user/images/calender.png" width="18px"></span>
+								<span><img src="images/calender.png" width="18px"></span>
 							</div>
 							<input type="text" class="form-control checkout_date"
 								placeholder=" Chọn ngày đến">
@@ -169,7 +169,7 @@
 			<div class="card-salesoff">
 				<div class="card sales" style="width: 400px; height: 500px">
 
-					<img class="card-img-top" height="250px" src="user/images/intour1.jpg"
+					<img class="card-img-top" height="250px" src="images/intour1.jpg"
 						alt="Card image">
 					<div class="sales-text">
 						<p>Sales 20%</p>
@@ -187,7 +187,7 @@
 					</div>
 				</div>
 				<div class="card sales2" style="width: 400px; height: 500px">
-					<img class="card-img-top" height="250px" src="user/images/intour2.jpg"
+					<img class="card-img-top" height="250px" src="images/intour2.jpg"
 						alt="Card image">
 					<div class="sales-text">
 						<p>Sales 30%</p>
@@ -207,7 +207,7 @@
 
 
 				<div class="card sales2" style="width: 400px; height: 500px">
-					<img class="card-img-top" height="250px" src="user/images/intour2.jpg"
+					<img class="card-img-top" height="250px" src="images/intour2.jpg"
 						alt="Card image">
 					<div class="sales-text">
 						<p>Sales 30%</p>
@@ -231,7 +231,7 @@
 			</div>
 			<div class="card-salesoff">
 				<div class="card sales" style="width: 400px; height: 500px">
-					<img class="card-img-top" height="250px" src="user/images/intour5.jpg"
+					<img class="card-img-top" height="250px" src="images/intour5.jpg"
 						alt="Card image">
 					<div class="sales-text">
 						<p>Sales 15%</p>
@@ -249,7 +249,7 @@
 					</div>
 				</div>
 				<div class="card sales2" style="width: 400px; height: 500px">
-					<img class="card-img-top" height="250px" src="user/images/intour4.jpg"
+					<img class="card-img-top" height="250px" src="images/intour4.jpg"
 						alt="Card image">
 					<div class="sales-text">
 						<p>Sales 10%</p>
@@ -267,7 +267,7 @@
 					</div>
 				</div>
 				<div class="card sales2" style="width: 400px; height: 500px">
-					<img class="card-img-top" height="250px" src="user/images/intour7.jpg"
+					<img class="card-img-top" height="250px" src="images/intour7.jpg"
 						alt="Card image">
 					<div class="sales-text">
 						<p>Sales 30%</p>
@@ -298,7 +298,7 @@
 			<div class="card">
 				<div class="row ">
 					<div class="col-md-4">
-						<img src="user/images/intour6.jpg" class="w-100">
+						<img src="images/intour6.jpg" class="w-100">
 					</div>
 
 					<div class="row">
@@ -345,7 +345,7 @@
 			<div class="card">
 				<div class="row ">
 					<div class="col-md-4">
-						<img src="user/images/intour8.jpg" class="w-100">
+						<img src="images/intour8.jpg" class="w-100">
 					</div>
 
 					<div class="row">
@@ -392,7 +392,7 @@
 			<div class="card">
 				<div class="row ">
 					<div class="col-md-4">
-						<img src="user/images/intour9.jpg" class="w-100">
+						<img src="images/intour9.jpg" class="w-100">
 					</div>
 
 					<div class="row">
@@ -441,7 +441,7 @@
 			<div class="card">
 				<div class="row ">
 					<div class="col-md-4">
-						<img src="user/images/intour10.jpg" class="w-100">
+						<img src="images/intour10.jpg" class="w-100">
 					</div>
 
 					<div class="row">
@@ -488,7 +488,7 @@
 			<div class="card">
 				<div class="row ">
 					<div class="col-md-4">
-						<img src="user/images/intour11.jpg" class="w-100">
+						<img src="images/intour11.jpg" class="w-100">
 					</div>
 
 					<div class="row">
@@ -535,7 +535,7 @@
 			<div class="card">
 				<div class="row ">
 					<div class="col-md-4">
-						<img src="user/images/intour12.jpg" class="w-100">
+						<img src="images/intour12.jpg" class="w-100">
 					</div>
 
 					<div class="row">
@@ -582,7 +582,7 @@
 			<div class="card">
 				<div class="row ">
 					<div class="col-md-4">
-						<img src="user/images/intour13.jpg" class="w-100">
+						<img src="images/intour13.jpg" class="w-100">
 					</div>
 
 					<div class="row">
@@ -629,7 +629,7 @@
 			<div class="card">
 				<div class="row ">
 					<div class="col-md-4">
-						<img src="user/images/intour14.jpg" class="w-100">
+						<img src="images/intour14.jpg" class="w-100">
 					</div>
 
 					<div class="row">

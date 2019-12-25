@@ -24,6 +24,26 @@ public class Tour {
 	}
 
 
+	public Tour(int idTour, String img_Tour, String description, int customerSeat, String vehicle, double price,
+			double priceTreEm, Date dateStart, int luotTruyCap, String timeTour, String tourName, String diemDen,
+			String diemXuatPhat) {
+		super();
+		this.idTour = idTour;
+		this.img_Tour = img_Tour;
+		this.description = description;
+		this.customerSeat = customerSeat;
+		this.vehicle = vehicle;
+		this.price = price;
+		this.priceTreEm = priceTreEm;
+		this.dateStart = dateStart;
+		this.luotTruyCap = luotTruyCap;
+		this.timeTour = timeTour;
+		this.tourName = tourName;
+		this.diemDen = diemDen;
+		this.diemXuatPhat = diemXuatPhat;
+	}
+
+
 	public int getIdTour() {
 		return idTour;
 	}
