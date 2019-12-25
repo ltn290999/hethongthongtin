@@ -8,7 +8,7 @@
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Quản lý khách hàng</title>
+<title>Quản lý đơn đặt Tour</title>
 <!-- plugins:css -->
 <link rel="stylesheet"
 	href="admin/vendors/mdi/css/materialdesignicons.min.css">
@@ -27,44 +27,38 @@
 </head>
 
 <body>
-	<fmt:setLocale value="${locale }" />
 
-	<fmt:setBundle basename="language/messages" />
 	<jsp:include page="header.jsp" />
 
+	<!-- partial -->
 	<div class="col-lg-12 stretch-card" style="width: 14%">
 		<div class="card">
 			<div class="card-body">
+
 				<div class="table-responsive pt-3">
 					<table class="table table-bordered">
 						<thead>
-
 							<tr>
 
-								<th style="width: 5%;"><fmt:message key="stt" /></th>
-								<th style="width: 15%;"><fmt:message key="tenKhachHang" />
-								</th>
-								<th style="width: 15%;"><fmt:message key="sdt" /></th>
-								<th style="width: 18%;"><fmt:message key="diaChi" /></th>
-								<th style="width: 18%;"><fmt:message key="tenDienThoai" />
-								</th>
-								<th><fmt:message key="ngayMua" /></th>
-
+								<th style="width: 5px">STT</th>
+								<th>Tên khách hàng</th>
+								<th>Số điện thoại</th>
+								<th>Địa chỉ</th>
+								<th>Mã đơn đã đặt</th>
+								<th>Ngày đặt</th>
 							</tr>
 						</thead>
 						<tbody>
-							<c:forEach items="${listPay}" var="list">
-								<tr class="table-info">
+							<tr class="table-info">
 
-									<td>${list.id}</td>
-									<td>${list.userName}</td>
-									<td>${list.phone}</td>
-									<td>${list.address}</td>
-									<td>${list.phoneName}</td>
-									<td>${list.dateCreate}</td>
+									<td>a</td>
+									<td>a</td>
+									<td>a</td>
+									<td>a</td>
+									<td>a</td>
+									<td>a</td>
 
-								</tr>
-							</c:forEach>
+							</tr>
 						</tbody>
 					</table>
 				</div>
@@ -95,4 +89,3 @@
 </body>
 
 </html>
-

@@ -21,18 +21,7 @@
 			</div>
 			<div
 				class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
-				<ul class="navbar-nav mr-lg-4 w-100">
-						<div class="logo" style="">
-					<form action="search" method="post" height="25"
-						style="padding: -16px 0px;">
-						<a href="${english }" title="English"> <img
-							src="img/en.png" height="25" style="padding: 0px 0px">
-						</a> <a href="${vietnam }" title="Vietnamese"> <img
-							src="img/vi.png" height="25" style="padding: 0px 0px">
-						</a> 
-					</form>
-				</div>
-				</ul>
+				
 				<ul class="navbar-nav navbar-nav-right">
 								<li class="nav-item nav-profile dropdown"><a
 						class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
@@ -60,34 +49,21 @@
 			<!-- partial:partials/_sidebar.jsp -->
 			<nav class="sidebar sidebar-offcanvas" id="sidebar">
 				<ul class="nav">
-							<li class="nav-item"><a class="nav-link"
-						data-toggle="collapse" href="#ui-basic" aria-expanded="false"
-						aria-controls="ui-basic"> <i
-							class="mdi mdi-circle-outline menu-icon"></i> <span
-							class="menu-title"><fmt:message key="quanLyKho"/> </span> <i class="menu-arrow"></i>
-					</a>
-						<div class="collapse" id="ui-basic">
-							<ul class="nav flex-column sub-menu">
-								<li class="nav-item"><a class="nav-link"
-									href="admin-san-pham-da-ban"><fmt:message key="sanPhamDaBan"/></a></li>
-								<li class="nav-item"><a class="nav-link"
-									href="admin-san-pham-con-lai"><fmt:message key="sanPhamConLai"/></a></li>
-							</ul>
-						</div></li>
+							
 					<li class="nav-item"><a class="nav-link"
-						href="admin-quan-ly-dien-thoai"> <i
+						href="admin-tour"> <i
 							class="mdi mdi-view-headline menu-icon"></i> <span
-							class="menu-title"><fmt:message key="quanLyDienThoai"/></span>
+							class="menu-title">Quản lý Tour</span>
 					</a></li>
 					<li class="nav-item"><a class="nav-link"
-						href="admin-quan-ly-don-hang"> <i
-							class="mdi mdi-chart-pie menu-icon"></i> <span class="menu-title"><fmt:message key="quanLyDonHang"/></span>
+						href="admin-thanh-toan"> <i
+							class="mdi mdi-chart-pie menu-icon"></i> <span class="menu-title">Quản lý thanh toán</span>
 					</a></li>
 					
 					<li class="nav-item"><a class="nav-link"
-						href="admin-quan-ly-khach-hang"> <i
+						href="admin-don-dat-tour"> <i
 							class="mdi mdi-grid-large menu-icon"></i> <span
-							class="menu-title"><fmt:message key="quanLyKhachHang"/></span>
+							class="menu-title">Quản lý đơn đặt Tour</span>
 					</a></li>
 
 
