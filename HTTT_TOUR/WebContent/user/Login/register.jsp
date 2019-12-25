@@ -81,11 +81,11 @@
 					<img src="user/images/planes.png" alt="IMG"> -->
 				</div>
 
-				<form class="login100-form validate-form">
+				<form action="dang-ky" class="login100-form validate-form" method="post"> 
 					<span class="login100-form-title"> ĐĂNG KÝ </span>
 					<div class="wrap-input100 validate-input"
 						data-validate="Vui lòng nhập tên">
-						<input class="input100" type="password" name="pass"
+						<input class="input100" type="text" name= "username"
 							placeholder="Tên đăng nhập(*)"> <span
 							class="focus-input100"></span>
 						<!-- biểu tượng kế bên phập nội dung -->
@@ -113,7 +113,7 @@
 					</div>
 					<div class="wrap-input100 validate-input"
 						data-validate="Vui lòng nhập lại mật khẩu">
-						<input class="input100" type="password" name="pass"
+						<input class="input100" type="password" name="confirm"
 							placeholder="Nhập lại mật khẩu(*)"> <span
 							class="focus-input100"></span>
 						<!-- biểu tượng kế bên phập nội dung -->

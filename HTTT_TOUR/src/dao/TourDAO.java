@@ -27,7 +27,7 @@ public class TourDAO {
 				tour.setCustomerSeat(rss.getInt("customer seat"));
 				tour.setVehicle(rss.getString("vehicle"));
 				tour.setPrice(rss.getDouble("price"));
-				tour.setPriceTreEm(rss.getDouble("priceTreEm"));
+				tour.setPriceTreEm(rss.getDouble("price_TreEm"));
 				tour.setDateStart(rss.getDate("dateStart"));
 
 				tour.setTimeTour(rss.getString("timeTour"));
