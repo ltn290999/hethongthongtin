@@ -76,6 +76,7 @@ public class AdminAddTourController extends HttpServlet {
 			// factory.setRepository(yourTempDirectory);
 			// Create a new file upload handler
 			ServletFileUpload upload = new ServletFileUpload(factory);
+			upload.setHeaderEncoding("UTF-8"); 
 			// upload.setSizeMax(yourMaxRequestSize);
 			// Parse the request
 			List<FileItem> uploadItems = null;
@@ -98,7 +99,7 @@ public class AdminAddTourController extends HttpServlet {
 				for (FileItem uploadItem : uploadItems) {
 					if (uploadItem.isFormField()) {
 						String fieldName = uploadItem.getFieldName();
-						String value = uploadItem.getString();
+						String value = uploadItem.getString("UTF-8");
 						data.put(fieldName, value);
 
 					} else {
@@ -144,6 +145,8 @@ public class AdminAddTourController extends HttpServlet {
 						break;
 					case "diemXuatPhat":
 						diemXuatPhat = data.get(fieldName);
+						break;
+					case "id":
 						break;
 					case "img":
 						img = data.get(fieldName);
