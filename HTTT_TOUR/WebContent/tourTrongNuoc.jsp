@@ -120,7 +120,7 @@
 						<div class="row">
 							<div class=".col-12 .col-md-8">
 								<div class="card-block px-3">
-									<a href="detail-tour">
+									<a href="${detailTour }">
 										<h4 class="card-title">${list.tourName }</h4>
 									</a>
 									<h6 class="card-text-city">${list.diemXuatPhat }-
